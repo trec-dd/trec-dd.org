@@ -1,0 +1,117 @@
+﻿<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>TREC 2015 Dynamic Domain Track</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<script>
+			now = ".overview";
+			flaggl = false;
+			flagds = false;
+			$(document).ready(function(){
+				$(".ovlink").click(function(){
+					if (now != ".overview"){
+						$(now).hide();
+						$(".overview").show();
+						now = ".overview";
+					}
+				})
+				$(".gllink").click(function(){
+					if (now != ".guideline"){
+						$(now).hide();
+						if (flaggl == false){
+							flaggl = true;
+							$(".guideline").load("guideline.html section");
+						}
+						else {
+							$(".guideline").show();
+						}
+						now = ".guideline";
+					}
+				})
+				$(".dslink").click(function(){
+					if (now != ".dataset"){
+						$(now).hide();
+						if (flagds == false){
+							flagds = true;
+							$(".dataset").load("dataset.html section");
+						}
+						else {
+							$(".dataset").show();
+						}
+						now = ".dataset";
+					}			
+				})
+			})
+		</script>
+	</head>
+	
+	<body>
+		<div class=wrapper>
+			<img class="logo" src="img/cube.png"/>
+			<header>
+			
+				TREC Dynamic Domain Track
+				
+				
+			</header>
+			
+			<nav>
+				<a class="ovlink">overview</a> |
+				<a class="gllink">guideline</a> |
+				<a class="dslink">dataset</a>
+			</nav>
+			
+			<div class="line"></div>
+			
+			<div class="overview">
+				<section class="intro">
+					<div class="welcome">Welcome to the Dynamic Domain Track website</div>
+					<br/>
+					<span>This Dynamic Domain Track starts from 2015.  You can download the general introduction <a href="resource/trec_dd.pptx">here</a> (trec_dd.pptx).</span>
+				</section>
+				<br/>	
+				<section class="news">
+						<strong>News</strong>
+						<br/><br/>
+						<ul>
+							<li><span class="date">Nov 20, 2014 </span> <span>Dynamic Domain Track planning session was held at TREC Conference, NIST, Gaithersburg</span></li>
+							
+						</ul>
+				</section>
+				<br/>	
+				<section class="organizers">
+					<strong>Organizers</strong>
+					<ul>
+						<li><a href="http://infosense.cs.georgetown.edu">Grace Hui Yang</a> - Georgetown University <a href="mailto:huiyang@cs.georgetown.edu.cn"><img src="img/email.png"/></a> </li>
+						<li>John Frank - MIT, Diffeo <a href="mailto:jrf@mit.edu"><img src="img/email.png"/></a></li>
+						<li>Ian Soboroff - NIST <a href="mailto:ian.soboroff@nist.gov"><img src="img/email.png"/></a></li>
+					</ul>
+				</section>
+				<br/>
+				<section class="links">
+					<strong>Important Links</strong>
+					<ul>
+						<li>Join our <a href="#">google group </a>for updates!</li>
+						<li><a href="http://trec.nist.gov">TREC homepage</a></li>
+					</ul>
+				</section>
+			</div>
+			
+			<div class="guideline">
+			</div>
+			
+			<div class="dataset">
+			</div>
+			
+			<div class="footerline"></div>
+			<footer>
+				This page is owned by TREC Dynamic Domain Track Group.
+			</footer>
+		</div>
+	</body>
+</html>

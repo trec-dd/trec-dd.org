@@ -1,0 +1,81 @@
+/* Reset CSS*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+strong{
+	font-weight:bold;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* --Reset CSS*/
+
+/* Customized CSS*/
+.date{
+	display:inline-block;
+}
+a:link{
+	color:#1975FF;
+}
+a:visited{
+	color:#1975FF;
+}
+
+.wrapper{position:relative; width:1000px; margin:auto; font-family:verdana; padding:20px 20px 0 20px; background:#FEFEFE; box-shadow:0 0 15px 2px #CCC}
+header{position:relative; top:4px; font-family:Minion Pro; font-size:36px; font-weight:bold;}
+.logo{width:90px; height:90px; position:absolute; top:6px; left:6px; opacity:0.4;}
+
+nav{margin-top:15px; /*padding-bottom: 5px; border-bottom:1px solid #DDD;*/}
+
+header,nav{position:relative; left:80px;}
+nav a{margin-left:15px; margin-right:15px; text-decoration:none; color:#039;}
+nav a:first-child{margin-left:0px;}
+nav a:hover{cursor:pointer; color:orange;	}
+.line{display:block; height:2px; margin-top:20px; background:#AAA; }
+section{margin-top:20px;}
+.welcome{font-size:20px;}
+.intro span{padding-left:30px;}
+li{ width:900px; padding-left:30px; }
+.date{ width:128px; font-weight:bold;}
+.organizers img{width:25px; height:25px; position:relative; top:3px; vertical-align:text-bottom;}
+.links li{line-height:25px;}
+.footerline{margin-top:100px; display:block; height:2px; background:#AAA; }
+footer{padding:10px 0; color:#AAA; font-size:14px;}
+/* --Customized CSS*/
