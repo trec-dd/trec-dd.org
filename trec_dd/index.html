@@ -8,7 +8,7 @@
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
 		<![endif]-->
-		<script>
+		<script type="text/javascript">
 			now = ".overview";
 			flaggl = false;
 			flagds = false;
@@ -72,9 +72,9 @@
 				<section class="intro">
 					<div class="welcome">Welcome to the Dynamic Domain Track website</div>
 					<br/>
-					<span>This Dynamic Domain Track starts from 2015.  You can download the general introduction <a href="resource/trec_dd.pptx">here</a> (trec_dd.pptx).</span>
+					<span>This Dynamic Domain Track starts from 2015.</span>
+					<span>You can download the general introduction  <a href="resource/2014-11-20-trec-dd.pptx">2014-11-20-trec-dd.pptx</a>.</span>
 				</section>
-				<br/>	
 				<section class="news">
 						<strong>News</strong>
 						<br/><br/>
@@ -87,7 +87,14 @@
 				<section class="organizers">
 					<strong>Organizers</strong>
 					<ul>
-						<li><a href="http://infosense.cs.georgetown.edu">Grace Hui Yang</a> - Georgetown University <a href="mailto:huiyang@cs.georgetown.edu.cn"><img src="img/email.png"/></a> </li>
+						<li><a href="http://infosense.cs.georgetown.edu">Grace Hui Yang</a> - Georgetown University 
+						<script type="text/javascript">
+							 document.write('<a href=' + 'mail' + 'to' + ':' + 'huiyang' + '@' + 'cs' + '.georgetown' + '.edu' + '>');
+							 document.write('<img src=' + 'img/email.png' + '>')
+							 document.write('</a>');
+						</script>
+						<!--<a href="mailto:huiyang@cs.georgetown.edu.cn"><img src="img/email.png"/></a>--> 
+						</li>
 						<li>John Frank - MIT, <a href="http://diffeo.com">Diffeo</a></li>
 						<li>Ian Soboroff - NIST</li>
 					</ul>

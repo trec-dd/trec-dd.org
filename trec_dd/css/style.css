@@ -71,11 +71,17 @@ nav a:hover{cursor:pointer; color:orange;	}
 .line{display:block; height:2px; margin-top:20px; background:#AAA; }
 section{margin-top:20px;}
 .welcome{font-size:20px;}
-.intro span{padding-left:30px;}
-li{ width:900px; padding-left:30px; }
+.intro span{padding-left:30px; display:block; margin-bottom:10px;}
+.overview li{ width:900px; padding-left:30px; }
 .date{ width:128px; font-weight:bold;}
 .organizers img{width:25px; height:25px; position:relative; top:3px; vertical-align:text-bottom;}
+.organizers li{margin-bottom:5px;}
 .links li{line-height:25px;}
-.footerline{margin-top:100px; display:block; height:2px; background:#AAA; }
+.footerline{margin-top:60px; display:block; height:2px; background:#AAA; }
 footer{padding:10px 0; color:#AAA; font-size:14px;}
+/* ----*/
+h4{ font-size:18px;}
+.taskDescrption li{ margin-left:40px; margin-top:10px; list-style-type:square;}
+.taskDescrption .subli{ margin-left:80px; list-style-type:disc;}
+.moreguideline{margin-top:20px; font-weight:bold;}
 /* --Customized CSS*/
