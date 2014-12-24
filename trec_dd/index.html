@@ -10,6 +10,7 @@
 		<![endif]-->
 		<script type="text/javascript">
 			now = ".overview";
+			flagtl = false;
 			flaggl = false;
 			flagds = false;
 			$(document).ready(function(){
@@ -18,6 +19,19 @@
 						$(now).hide();
 						$(".overview").show();
 						now = ".overview";
+					}
+				})
+				$(".tllink").click(function(){
+					if (now != ".timeline"){
+						$(now).hide();
+						if (flagtl == false){
+							flagtl = true;
+							$(".timeline").load("timeline.html section");
+						}
+						else {
+							$(".timeline").show();
+						}
+						now = ".timeline";
 					}
 				})
 				$(".gllink").click(function(){
@@ -62,6 +76,7 @@
 			
 			<nav>
 				<a class="ovlink">overview</a> |
+				<a class="tllink">timeline</a> |
 				<a class="gllink">guideline</a> |
 				<a class="dslink">dataset</a>
 			</nav>
@@ -72,8 +87,20 @@
 				<section class="intro">
 					<div class="welcome">Welcome to the Dynamic Domain Track website</div>
 					<br/>
-					<span>This Dynamic Domain Track starts from 2015.</span>
-					<span>You can download the general introduction  <a href="resource/2014-11-20-trec-dd.pptx">2014-11-20-trec-dd.pptx</a>.</span>
+					<ul>
+						<li>Dynamic Domain Track starts from 2015.</li>
+						<li>Our track envisions a new paradigm, where one can quickly and thoroughly search and organize a subset of the Internet relevant to one's interests.
+	</li>
+						<li>We aim to encourage new research and new systems that provide</li>
+							<li class="introsubli">Fast, flexible, and efficient access to domain-specific content</li>
+							<li class="introsubli">Valuable insight into a domain that previously remained unexplored
+and addresses shortcomings of centralized Web search</li>
+						<li>Selected Domains for the track are: </li>
+							<li class="introsubli">Counterfeit pharmaceuticals</li>
+							<li class="introsubli">Ebola (Crisis IR)</li>
+							<li class="introsubli">Local politics</li>
+						<li>You can download the general introduction  <a href="resource/2014-11-20-trec-dd.pptx">2014-11-20-trec-dd.pptx</a>.</li>
+					</ul>
 				</section>
 				<section class="news">
 						<strong>News</strong>
@@ -99,7 +126,6 @@
 						<li>Ian Soboroff - NIST</li>
 					</ul>
 				</section>
-				<br/>
 				<section class="links">
 					<strong>Important Links</strong>
 					<ul>
@@ -107,6 +133,9 @@
 						<li><a href="http://trec.nist.gov">TREC homepage</a></li>
 					</ul>
 				</section>
+			</div>
+			
+			<div class="timeline">
 			</div>
 			
 			<div class="guideline">
