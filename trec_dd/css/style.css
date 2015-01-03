@@ -82,7 +82,8 @@ section{margin-top:20px;}
 footer{padding:10px 0; color:#AAA; font-size:14px;}
 /* ----*/
 h4{ font-size:18px;}
-.taskDescrption li, .timedetail li{ margin-left:40px; margin-top:10px; list-style-type:square;}
+.taskDescrption li{ margin-left:40px; margin-top:20px; list-style-type:square;}
+.timedetail li{ margin-left:40px; margin-top:20px; list-style-type:square;}
 .taskDescrption .subli{ margin-left:80px; list-style-type:disc;}
 .moreguideline{margin-top:20px; font-weight:bold;}
 /* --Customized CSS*/
