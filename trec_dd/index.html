@@ -1,67 +1,14 @@
 <!doctype html>
 <html>
 	<head>
-		<meta charset="UTF-8">
+		<meta charset="ISO-8859-1">
 		<title>TREC 2015 Dynamic Domain Track</title>
 		<link rel="stylesheet" type="text/css" href="css/style.css"/>
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
 		<![endif]-->
-		<script type="text/javascript">
-			now = ".overview";
-			flagtl = false;
-			flaggl = false;
-			flagds = false;
-			$(document).ready(function(){
-				$(".ovlink").click(function(){
-					if (now != ".overview"){
-						$(now).hide();
-						$(".overview").show();
-						now = ".overview";
-					}
-				})
-				$(".tllink").click(function(){
-					if (now != ".timeline"){
-						$(now).hide();
-						if (flagtl == false){
-							flagtl = true;
-							$(".timeline").load("timeline.html section");
-						}
-						else {
-							$(".timeline").show();
-						}
-						now = ".timeline";
-					}
-				})
-				$(".gllink").click(function(){
-					if (now != ".guideline"){
-						$(now).hide();
-						if (flaggl == false){
-							flaggl = true;
-							$(".guideline").load("guideline.html section");
-						}
-						else {
-							$(".guideline").show();
-						}
-						now = ".guideline";
-					}
-				})
-				$(".dslink").click(function(){
-					if (now != ".dataset"){
-						$(now).hide();
-						if (flagds == false){
-							flagds = true;
-							$(".dataset").load("dataset.html section");
-						}
-						else {
-							$(".dataset").show();
-						}
-						now = ".dataset";
-					}			
-				})
-			})
-		</script>
+		<script type="text/javascript" src="js/main.js"></script>
 	</head>
 	
 	<body>
@@ -70,7 +17,6 @@
 			<header>
 			
 				TREC Dynamic Domain Track
-				
 				
 			</header>
 			
@@ -89,16 +35,17 @@
 					<br/>
 					<ul>
 						<li>Dynamic Domain Track starts from 2015.</li>
-						<li>Our track envisions a new paradigm, where one can quickly and thoroughly search and organize a subset of the Internet relevant to one's interests.
+						<li><strong>Goal: </strong>The goal of the Dynamic Domain (DD) Track is to support research in dynamic, exploratory search of complex information domains.  DD systems receive relevance feedback as they explore a space of subtopics within the collection in order to satisfy a user's information need.
 	</li>
-						<li>We aim to encourage new research and new systems that provide</li>
-							<li class="introsubli">fast, flexible, and efficient access to domain-specific content</li>
-							<li class="introsubli">valuable insight into a domain that previously remained unexplored
-and addresses shortcomings of centralized Web search</li>
-						<li>Domains for 2015: </li>
-							<li class="introsubli">illicit goods</li>
-							<li class="introsubli">ebola (crisis IR)</li>
-							<li class="introsubli">local politics</li>
+						<li><strong>How to participate: </strong>register <a href="http://trec.nist.gov/pubs/call2015.html">here</a> before <span class="bold">May 1, 2015</span></li>
+						<li><strong>Domains and datasets for 2015: </strong></li>
+							<li class="introsubli"><span class="bold">illicit goods:</span> <span> this data is related to how illicit and counterfeit goods such as fake viagra are made, advertised, and sold on the Internet.  The dataset comprises 5,000,000 million posts from underground hacking forums, arranged into threads.
+</span></li>
+							<li class="introsubli"><span class="bold">ebola: </span><span>this data is related to the Ebola outbreak in Africa in 2014-2015.  The dataset comprises 30 million tweets relating to the outbreak, and 500,000 web pages from sites hosted in the affected countries and designed to provide information to citizens and aid workers on the ground.
+</span></li>
+							<li class="introsubli"><span class="bold">local politics: </span><span>this data is related to regional politics in the Pacific Northwest and the small-town politicians and personalities that work it.  The dataset comprises 1,000,000 web news items from the TREC 2014 KBA Stream Corpus.
+</span></li>
+						<li><strong>For more details(e.g. task descrption)</strong>, please view <a class="gllink gllink2">guideline</a></li>
 						<li>You can download the general introduction  <a href="resource/2014-11-20-trec-dd.pptx">2014-11-20-trec-dd.pptx</a>.</li>
 					</ul>
 				</section>

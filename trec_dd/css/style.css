@@ -48,6 +48,7 @@ table {
 /* --Reset CSS*/
 
 /* Customized CSS*/
+html{overflow-y:scroll;}
 .date{
 	display:inline-block;
 }
@@ -71,19 +72,31 @@ nav a:hover{cursor:pointer; color:orange;	}
 .line{display:block; height:2px; margin-top:20px; background:#AAA; }
 section{margin-top:20px;}
 .welcome{font-size:20px;}
-.intro li{line-height:20px; margin-bottom:10px; list-style-type:square;}
-.intro .introsubli{ position:relative; left:32px; list-style-type: disc;}
-.overview li{ width:900px; margin-left:30px; }
-.date{ width:128px; font-weight:bold;}
+.intro li{line-height:22px; margin-bottom:15px; list-style-type:square;}
+.intro .introsubli{ list-style-type: disc; margin-left:65px;}
+.overview{padding-right:20px;}
+.overview li{  margin-left:30px; text-align:justify;}
+.overview strong{ margin-right:5px; font-size:18px;}
+.bold{ font-weight:bold;}
+.gllink2{ text-decoration:underline; cursor:pointer; color:#1975FF;}
+.date{ min-width:110px; font-weight:bold; }
 .organizers img{width:25px; height:25px; position:relative; top:3px; vertical-align:text-bottom;}
 .organizers li{line-height:25px; margin-bottom:5px;}
 .links li{line-height:25px;}
 .footerline{margin-top:60px; display:block; height:2px; background:#AAA; }
 footer{padding:10px 0; color:#AAA; font-size:14px;}
+pre{word-break:break-all; white-space:pre-wrap;}
 /* ----*/
-h4{ font-size:18px;}
-.taskDescrption li{ margin-left:40px; margin-top:20px; list-style-type:square;}
+h2{ font-size:24px; font-weight:bold; margin-bottom:10px;}
+h4{ font-size:18px; font-weight:bold; margin-top:20px;}
+#gdcontent{margin-left:30px; margin-top:10px;}
+#gdcontent li{margin-bottom:10px; }
+#gdcontent li a{color:#039;}
+.gd_details{line-height:22px; margin-top:15px; padding-left:18px; padding-right:35px;text-align:justify;}
+.gd_details li{margin-bottom:8px;}
+.gdlinebox{padding-left:30px; line-height:22px;}
+#gd_download{margin-top:20px; margin-left:5px;}
 .timedetail li{ margin-left:40px; margin-top:20px; list-style-type:square;}
-.taskDescrption .subli{ margin-left:80px; list-style-type:disc;}
-.moreguideline{margin-top:20px; font-weight:bold;}
+
+
 /* --Customized CSS*/
