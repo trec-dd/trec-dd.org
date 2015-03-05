@@ -1,0 +1,65 @@
+<html>
+<head>
+<title>TREC Dynamic Domain in AWS Public Data Sets</title>
+</head>
+</body>
+<H1>TREC Dynamic Domain in AWS Public Data Sets</H1>
+<p>Please see <a href="http://trec-dd.org/">trec-dd.org</a> for details.
+
+<p>This bucket hosts data sets for TREC, and this subdirectory holds data sets for TREC DD:
+<ul>
+ <li> <a href="#illicitgoods">Illicit Goods Forums</a></li>
+ <li> <a href="#ebola">Ebola</a></li>
+ <li> <a href="#localpolitics">Local Politics</a></li>
+</ul>
+
+<h3> Illicit Goods <a name="illicitgoods"/></h3>
+<p>coming soon...</p>
+
+<h3> Ebola <a name="ebola"/></h3>
+<p>coming soon...</p>
+
+<h3>Local Politics <a name="localpolitics"/></h3>
+
+<p>This particular corpus is a selection of the TREC KBA 2014
+StreamCorpus that has already been tagged with Serif NER, and is
+organized into hourly directories based on the origination time stamp
+on each document.
+
+<p>This subcorpus for TREC DD has 6,831,451 files that are stored in
+816,879 chunk files here in S3.  The example script linked below shows
+how to iterate over all of them to get the cleansed html, or cleansed
+visible text, or the NER output.  Note that this data has also
+been <a href="http://trec-kba.org/data/fakba1/">annotated by Google's
+internal entity linking tools to provide references to
+Freebase.</a></p>
+
+<p>The full list of files is available at
+<a href="https://aws-publicdatasets.s3.amazonaws.com/trec/dd/local-politics-streamcorpus-v0_3_0-s3-paths.txt.xz">local-politics-streamcorpus-v0_3_0-s3-paths.txt.xz</a>
+and that file must be downloaded to your local directory in order for
+<a href="https://aws-publicdatasets.s3.amazonaws.com/trec/dd/local-politics-read-example-script.py">this example script to work</a>.  To run the example script, you can:
+<pre>
+sudo apt-get install python-virtualenv liblzma-dev python-dev
+virtualenv ve
+source ve/bin/activate
+pip install requests backports.lzma streamcorpus
+</pre>
+</p>
+
+<p>Installation on CentOS/RHEL is similar using yum instead of apt-get</p>
+
+<p>This script also requires that <a href="http://trec.nist.gov/data/kba.html">you get the GPG decryption key from NIST</a>.</p>
+
+<p>The filtering process that generated this data set used these
+substrings:
+<a href="https://aws-publicdatasets.s3.amazonaws.com/trec/dd/local-politics-streamcorpus-pipeline-filter-domains.txt.xz.gpg">local-politics-streamcorpus-pipeline-filter-domains.txt.xz.gpg</a>
+and this streamcorpus_pipeline configuration file:
+<a href="https://aws-publicdatasets.s3.amazonaws.com/trec/dd/local-politics-streamcorpus-pipeline-filter-config.yaml">local-politics-streamcorpus-pipeline-filter-config.yaml</a>
+
+and this command:
+<pre>streamcorpus_pipeline -c local-politics-streamcorpus-pipeline-filter-config.yaml -i path_to_input_S3_file</pre>
+which you can install with `pip install streamcorpus-pipeline`
+
+</body>
+</html>
+
