@@ -71,7 +71,6 @@ for path in lzma.open(s3_paths_fname):
             for si in Chunk(file_obj=StringIO(data)):
 
                 print cbor.dumps({'response': {'body': si.body.clean_html}})
-                continue
 
                 ## do something with the data
                 logger.info('%d bytes of html, or %d bytes of tag-stripped clean_visible, ' +
