@@ -25,6 +25,7 @@ streamcorpus_pipeline -c local-politics-streamcorpus-pipeline-filter-config.yaml
 
 '''
 ## python standard library components
+import cbor
 from cStringIO import StringIO
 from itertools import chain
 import logging
@@ -46,28 +47,34 @@ import requests
 from streamcorpus import Chunk, decrypt_and_uncompress, compress_and_encrypt
 
 logging.basicConfig()
+logger = logging.getLogger()
 
 s3_http_host = 'https://aws-publicdatasets.s3.amazonaws.com/'
 s3_path_prefix = 'trec/dd/local-politics-streamcorpus-v0_3_0/'
 s3_paths_fname = 'local-politics-streamcorpus-v0_3_0-s3-paths.txt.xz'
 if not os.path.exists(s3_paths_fname):
-    sys.exit('please download %s/trec/dd/%s' % (s3_http_host, s3_paths_fname))
+    sys.exit('please download %strec/dd/%s' % (s3_http_host, s3_paths_fname))
 
 for path in lzma.open(s3_paths_fname):
     s3_path = s3_path_prefix + path.strip()
     url = s3_http_host + s3_path
-    print url
+    logger.info( url )
     retries = 0
     max_retries = 10
     while retries < max_retries:
         retries += 1
+        sys.stderr.flush()
         try:
             resp = requests.get(url)
             errors, data = decrypt_and_uncompress(resp.content, gpg_private='trec-kba-rsa')
-            print '\n'.join(errors)
+            logger.info( '\n'.join(errors) )
             for si in Chunk(file_obj=StringIO(data)):
+
+                print cbor.dumps({'response': {'body': si.body.clean_html}})
+                continue
+
                 ## do something with the data
-                print ('%d bytes of html, or %d bytes of tag-stripped clean_visible, ' +
+                logger.info('%d bytes of html, or %d bytes of tag-stripped clean_visible, ' +
                        'and %d sentences with %d tokens') % (
                         len(si.body.clean_html), len(si.body.clean_visible), 
                         len(si.body.sentences['serif']),
@@ -75,7 +82,7 @@ for path in lzma.open(s3_paths_fname):
                         )
             break # break out of retry loop
         except Exception, exc:
-            print traceback.format_exc(exc)
-            print 'retrying %d of %d times to fetch and access: %s' % (retries, max_retries, url)
+            logger.info( traceback.format_exc(exc) )
+            logger.info( 'retrying %d of %d times to fetch and access: %s' % (retries, max_retries, url) )
             time.sleep(1)
 
