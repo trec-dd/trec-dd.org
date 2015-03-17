@@ -70,7 +70,25 @@ for path in lzma.open(s3_paths_fname):
             logger.info( '\n'.join(errors) )
             for si in Chunk(file_obj=StringIO(data)):
 
-                print cbor.dumps({'response': {'body': si.body.clean_html}})
+                rec = {
+                    'url': si.abs_url,
+                    'timestamp': si.stream_time.epoch_ticks,
+                    'request': None,  ## not part of this data set
+                    'response': {
+                        'headers': [
+                            ['Content-Type', 'text/html'],
+                        ],
+                        'body': si.body.clean_html,
+                        ## alternatively, could use si.body.raw and
+                        ## si.body.media_type for the Content-Type
+                        ## header, but that would cause the Serif NER
+                        ## to be useless to teams...
+                    },
+                    'key': None,
+                    'imported': None,
+                }
+
+                print cbor.dumps(rec)
 
                 ## do something with the data
                 logger.info('%d bytes of html, or %d bytes of tag-stripped clean_visible, ' +
