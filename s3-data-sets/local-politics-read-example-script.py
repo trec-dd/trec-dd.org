@@ -191,7 +191,7 @@ def main():
     args = parser.parse_args()
 
     if not os.path.exists(args.s3_paths_fname):
-        sys.exit('please download %strec/dd/%s' % (s3_http_host, s3_paths_fname))
+        sys.exit('please download %strec/dd/%s' % (args.s3_http_host, args.s3_paths_fname))
 
     if args.date_hour:
         args.output_dir += '/' + args.date_hour
