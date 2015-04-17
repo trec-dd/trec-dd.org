@@ -115,6 +115,35 @@ class trec_xml_file_roller(object):
         if self.total_written % self.max_chunk_size == 0:
             self.roll()
 
+class cbor_file_roller(trec_xml_file_roller):
+    def __init__(self, output_dir, max_chunk_size=500, compress=False):
+        super(cbor_file_roller, self).__init__(output_dir, max_chunk_size, compress)
+
+    def add(self, item):
+        '''add `item` to `current_file`, opening it as temporary file if not
+        already open.  This also constructs the `current_file_path`
+        when it opens the temporary file.
+
+        '''
+        if self.current_file is None:
+            ## construct a final path to which this fil will be moved
+            ## when it rolls
+            self.current_file_path = os.path.join(
+                self.output_dir, 
+                'trec-dd-local-politics-%d.cbor' % self.total_written)
+            if self.compress:
+                self.current_file = gzip.open(self.tmp_file_path, 'wb')
+                self.current_file_path += '.gz'
+            else:
+                self.current_file =      open(self.tmp_file_path, 'wb')
+
+        ## write the data
+        cbor.dump(item, self.current_file)
+
+        ## roll the files each time we reach max_chunk_size
+        self.total_written += 1
+        if self.total_written % self.max_chunk_size == 0:
+            self.roll()
 
 
 def cca_items(args):
@@ -191,12 +220,12 @@ def main():
     args = parser.parse_args()
 
     if not os.path.exists(args.s3_paths_fname):
-        sys.exit('please download %strec/dd/%s' % (args.s3_http_host, args.s3_paths_fname))
+        sys.exit('please download %strec/dd/%s' % (s3_http_host, s3_paths_fname))
 
     if args.date_hour:
         args.output_dir += '/' + args.date_hour
 
-    with trec_xml_file_roller(args.output_dir, max_chunk_size=args.max_chunk_size, compress=args.compress) as roller:
+    with cbor_file_roller(args.output_dir, max_chunk_size=args.max_chunk_size, compress=args.compress) as roller:
         for item in cca_items(args):
             roller.add(item)
             logger.critical('added %r %r %s' % (item['key'], item['url'], md5(item['response']['body']).hexdigest()))
