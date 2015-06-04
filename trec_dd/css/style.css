@@ -89,6 +89,7 @@ h4{ font-size:18px; font-weight:bold; margin-top:20px;}
 #gdcontent{margin-left:30px; margin-top:10px;}
 #gdcontent li{margin-bottom:10px; }
 #gdcontent li a{color:#039;}
+.gdnum li{list-style-type: decimal}
 .gd_details{line-height:22px; margin-top:15px; padding-left:18px; padding-right:35px;text-align:justify;}
 .gd_details li{margin-bottom:8px;}
 .gdlinebox{padding-left:30px; line-height:22px;}
