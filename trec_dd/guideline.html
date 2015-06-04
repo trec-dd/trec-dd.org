@@ -57,15 +57,15 @@
             <div class="gd_details">
             For 2015 there are three domains, each with different data:<br/><br/>
 
-    <span class="bold">Illicit Goods:</span> this data is related to how illicit and counterfeit goods such as fake viagra are made, advertised, and sold on the Internet.  The dataset comprises 5,000,000 million posts from underground hacking forums, arranged into threads.<br/><br/>
+    <span class="bold">Illicit Goods:</span> this data is related to how illicit and counterfeit goods such as fake viagra are made, advertised, and sold on the Internet.  The dataset comprises posts from underground hacking forums, arranged into threads.<br/><br/>
 
-    <span class="bold">Ebola:</span> this data is related to the Ebola outbreak in Africa in 2014-2015.  The dataset comprises 30 million tweets relating to the outbreak, and 500,000 web pages from sites hosted in the affected countries and designed to provide information to citizens and aid workers on the ground.<br/><br/>
+    <span class="bold">Ebola:</span> this data is related to the Ebola outbreak in Africa in 2014-2015.  The dataset comprises tweets relating to the outbreak, web pages from sites hosted in the affected countries and designed to provide information to citizens and aid workers on the ground, and PDF files from West African and other government sources.<br/><br/>
 
-    <span class="bold">Local Politics:</span> this data is related to regional politics in the Pacific Northwest and the small-town politicians and personalities that work it.  The dataset comprises 1,000,000 web news items from the TREC 2014 KBA Stream Corpus.<br/><br/>
+    <span class="bold">Local Politics:</span> this data is related to regional politics in the Pacific Northwest and the small-town politicians and personalities that work it.  The dataset comprises items from the TREC 2014 KBA Stream Corpus.<br/><br/>
 
-    <span class="bold">Polar Sciences:</span> this data is a set of 50,000+ crawled web pages, scientific data (HDF, NetCDF files, Grib files), zip files, PDFs, images and science code related to the polar sciences and available publicly from the NSF funded <a href="http://www.aonacadis.org"/>Advanced Cooperative Artic Data and Information System (ACADIS)</a>, NASA funded <a href="http://gcmd.nasa.gov/portals/amd/">Antarctic Master Directory (AMD)</a>, and National Snow and Ice Data Center (NSIDC) <a href="http://nsidc.org/acadis/search/">Arctic Data Explorer</a>.<br/><br/>
+    <span class="bold">Polar Sciences:</span> this data comprises web pages, scientific data (HDF, NetCDF files, Grib files), zip files, PDFs, images and science code related to the polar sciences and available publicly from the NSF funded <a href="http://www.aonacadis.org"/>Advanced Cooperative Artic Data and Information System (ACADIS)</a>, NASA funded <a href="http://gcmd.nasa.gov/portals/amd/">Antarctic Master Directory (AMD)</a>, and National Snow and Ice Data Center (NSIDC) <a href="http://nsidc.org/acadis/search/">Arctic Data Explorer</a>.<br/><br/>
 
-    All the datasets are formatted using the streamcorpus format described at <a href="http://streamcorpus.org">http://streamcorpus.org</a>.  That site includes documentation and tools for working with the data.  For the DD track, you will be working with the datasets as static corpora, meaning that for purposes of the task you can index and search the datasets without processing them in any particular stream order.<br/><br/>
+    All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects.  See the <a href="dataset.html">datasets page</a> for more details.<br/><br/>
 
             </div>
             <h4><a name="task_description">3. Task Description</a></h4>
@@ -101,10 +101,7 @@
             <div class="gd_details">
                 In TREC, a "run" is the output of a search system over all topics.  Participating groups typically submit more than one run corresponding to different parameter settings or algorithmic choices.  The maximum number of runs allowed for DD 2015 is five from each team.
     <br/><br/>
-    The jig outputs a correctly-formatted run file, but for reference (or if you are performing manual searches), the format is as follows.  The run is a plain text line-oriented format:
-    &lt;topic&gt; &lt;step&gt; &lt;document-id&gt; &lt;score&gt; &lt;runtag&gt;<br/><br/>
-
-    where &lt;topic&gt; is the topic number,&lt;step&gt; is the step number, starting from 1, &lt;document-id&gt; is a document identifier from the datasets, &lt;score&gt; is a floating-point number indicating your systems retrieval score for that document, and &lt;runtag&gt; is an identifier such as "NISTrun1" that identifies the team and the specific run.  Whitespace separates each field.<br/><br/>
+    The jig outputs a correctly-formatted run file, but for completeness, the format will appear here soon.<br/><br/>
 
             </div>
             <h4><a name="requirement">6. Requirement</a></h4>
@@ -118,7 +115,7 @@
                 <ul>
                     <li>Domain collections available: Early June </li>
                     <li>Topics available to participants: June 15</li>
-                    <li>Runs due from participants: Aug 1</li>
+                    <li>Runs due from participants: Aug 31</li>
                     <li>Evaluation results returned: Sep 15</li>
                     <li>TREC 2015 notebook paper deadline: October</li>
                     <li>TREC 2015 conference: November 17-20, 2015</li>
