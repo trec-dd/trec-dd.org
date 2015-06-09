@@ -68,19 +68,36 @@
     All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects.  See the <a href="dataset.html">datasets page</a> for more details.<br/><br/>
 
             </div>
+
+            <h4><a name="topic">2.Sample Topic </a></h4>
+                <div class="gd_details">
+
+              Within each domain, there will be 25-50 topics that represent user search needs. The topics are developed by the NIST assessors. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation. 
+
+         <br/> <br/> 
+
+            
+
+<!-- An example topic for the Ebola domain might be titled, "foreign aid health workers."  The topics will be developed by the NIST assessors.  Each topic will have a number of subtopic interests that make up the various pieces that the user wants to know.  Following the above example, subtopics might include "how many foreign health workers are in Freetown" and "what clinics are primarily staffed by foreign health workers".
+-->
+    <br/><br/>
+         
+
+                  
+
+               </div>
+
             <h4><a name="task_description">3. Task Description</a></h4>
                 <div class="gd_details">
-                    Within each domain, there will be 25-50 topics that represent user search needs.  An example topic for the Ebola domain might be titled, "foreign aid health workers."  The topics will be developed by the NIST assessors.  Each topic will have a number of subtopic interests that make up the various pieces that the user wants to know.  Following the above example, subtopics might include "how many foreign health workers are in Freetown" and "what clinics are primarily staffed by foreign health workers".
-    <br/><br/>
-    DD systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The simulated user will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with an integer relevance rating of 1, 2, 3 or 4.  (Guidelines on the relevance rating are in preparation.)  The system may then return another five documents for more feedback.  Systems should stop when they believe they have covered all the user's subtopics sufficiently.  The subtopics are not known the system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
 
-    The system interactions with the user will be simulated using a jig that the track coordinators will provide to you.  This jig will be implemented in Python, will run on Windows, Mac OS, and Linux, and will provide a local shell-based API for your DD system to operate against.  The API jig will include all relevance information for the task, but your system may only interact with this information through the jig.  The jig produces an output file documenting the interaction that you send to NIST as your formal track participation.<br/><br/>
+    Your systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The simulated user will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with a graded relevance rating. The system may then return another five documents for more feedback.  Systems should stop when they believe they have covered all the user's subtopics sufficiently.  The subtopics are not known the system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
 
-    The test harness is under development here:<br/>  <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a> <br/><br/>
+    The system interactions with the user will be simulated using a jig that the track coordinators will provide to you.  This jigwill run on Windows, Mac OS, and Linux.  The jig will include all relevance information for the task, but your system may only interact with this information through the jig.  The simulator (jig) is under development here:<br/>  <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a> <br/><br/>
 
-    and a two-minute video of interacting with the initial version (2015-01-16) is available here:<br/>
+<!--    and a two-minute video of interacting with the initial version (2015-01-16) is available here:<br/>
     <a href="https://www.dropbox.com/s/d2h666pddjqxnsb/2015-01-16-TREC-DD-simulation-harness-demo.mov?dl=0">https://www.dropbox.com/s/d2h666pddjqxnsb/2015-01-16-TREC-DD-simulation-harness-demo.mov?dl=0</a> <br/><br/>
 
+-->
                 </div>
 
             <h4><a name="task_measures">4. Task Measures</a></h4>
