@@ -24,7 +24,8 @@
 				<a href="./index.html">overview</a> |
 				<a href="./timeline.html">timeline</a> |
 				<a href="./guideline.html">guidelines</a> |
-				<a href="./dataset.html">datasets</a>
+				<a href="./dataset.html">datasets</a> |
+				<a href="./ack.html">acknowledgment</a>
 			</nav>
 
 			<div class="line"></div>
@@ -108,8 +109,10 @@
                 <div class="gd_details">
                 The primary measures will be Cube Test, &#181;-ERR, and session NDCG.  Reference scripts will be provided by the track coordinators.  We will also likely report other diagnostic measures such as basic precision and recall.<br/><br/>
 
-    The CubeTest proposes that a search process can be understood by analogy to water filling a compartmentalized task cube. The time-sensitivity is represented by the fact that searchers want the multi-faceted components of the cube filled as quickly as possible.
-    <br/>Reference: Jiyun Luo, Christopher Wing, Hui Yang, Marti Hearst. The Water Filling Model and The Cube Test: Multi-Dimensional Evaluation for Professional Search. CIKM 2013. <a href="http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf">http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf</a><br/> 
+    The Cube Test is a search effectiveness measurement that measures the speed of gaining relevant information (could be documents or passages) in a dynamic search process. It measures the amount of relevant information a search system could gather for the entire search process with multiple runs of retrieval. A higher Cube Test score means a better DD system, which ranks relevant information (documents and/or psaasages) for a complex <a href="#topic">search topic</a>  as much as possible and as early as possible. 
+
+
+    <br/> <br/>Reference: Jiyun Luo, Christopher Wing, Hui Yang, Marti Hearst. The Water Filling Model and The Cube Test: Multi-Dimensional Evaluation for Professional Search. CIKM 2013. <a href="http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf">http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf</a><br/> 
     <br /> Codes: <a href="https://github.com/trec-dd/trec-dd-metrics/tree/master/cube-test/cubetest">CubeTest scripts in Github</a><br/> <br/> 
 
     &#181;-ERR is an extension to the cascade model of ERR by defining an outer loop in which the user changes the entity profile each time they find a useful piece of new information. <br/>
