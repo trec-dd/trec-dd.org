@@ -1,0 +1,1166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<trec_dd total_domain_num="3" total_topic_num="186" total_subtopic_num="903">
+	<domain name="Illicit_Goods" id="1" num_of_topics="49">
+		<topic name="paying for amazon book reviews" id="52" num_of_subtopics="2">
+			<subtopic name="reviews for pay" id="25" num_of_passages="29">
+				<passage id="39">
+					<docno>com_blackhatworld_www_8c016e2516a69865f871f3f8565adb8998b2d926_1427070800435</docno>
+					<rating>3</rating>
+					<text>Well you can&amp;apos;t beat this deal. Not bad for a few minutes of your time.  
+  
+I&amp;apos;ll even provide a review you can just copy &amp;apos;n paste after you buy the book.  
+  
+Verified Amazon review gets you $10+.99 cent book purchase = $10.99 sent to
+your PayPal, fees covered by me. Payment sent after review is posted on
+Amazon.  
+  
+I&amp;apos;m paying extra to attract people who know what they are doing and have a
+good Amazon account. PM and I&amp;apos;ll send details. I&amp;apos;d like to build up m iTrader
+score, too, so rest assured you will be paid!  
+  
+NOTE: DO NOT PM UNLESS YOU ARE SERIOUS AND READY TO GO. I only need about 5
+reviews at first.
+</text>
+				</passage>
+				<passage id="58">
+					<docno>com_blackhatworld_www_6021c30ce7de97780bfbf2c870077870bf2f202f_1426271092013</docno>
+					<rating>2</rating>
+					<text>
+%gt; I used to do reviews of books on a niche authority site. Whenever a new book
+was published I made a deal with either the author or publishing company to
+provide me with 10 copies that I would be able to sell on my site or on ebay.
+Making money from Amazon with books is not a big profit maker unless you can
+sell hundreds of books per item.</text>
+				</passage>
+				<passage id="69">
+					<docno>com_blackhatworld_www_584daed0fb78cbfd61f0cfdc63188ecbea78b522_1427072099994</docno>
+					<rating>2</rating>
+					<text> I release ebooks weekly on amazon and I am looking for someone who can
+obtain multiple verified reviews on each book that I launch. The book will be
+free for a 5 day period. 3 dollars per review. Is there anyone that can help?
+</text>
+				</passage>
+				<passage id="87">
+					<docno>com_blackhatworld_www_2ba19dcf4c5d8c16fd04293124b999dcae7a81ff_1427170178304</docno>
+					<rating>3</rating>
+					<text>
+As mention i am looking for Amazon review for my kindle ebook.  
+  
+  
+I am looking for Amazon account that at least purchase an product and leave an
+review before. (preferably Kindle books)  
+No newly create account for this.  
+  
+  
+How it work:  
+  
+
+%gt;
+
+%gt;   * Will pay you the amount to purchase the book.
+
+%gt;   * You will purchase book , let me know your Amazon profile page and
+username (To keep Track - So someone doesn&amp;apos;t come and use your name to scam
+us)
+
+%gt;   * 2-3 days later, you will leave a review on the product listing . (At
+least 120 Words , 5 stars )
+
+%gt;   * Payout to your Paypal with fee cover .
+
+%gt;  
+  
+  
+Do note that my book is displaying $1.47 , hence i will transfer you $2 to
+purchase the book. (Certain country may display the book more expensive, i not
+sure why either)  
+However if you are a newbie or, you will have neg rep you will have to
+purchase first.  
+  
+  
+  
+Interested member can pm me your Skype ID.  
+  
+  
+Regards
+
+
+
+---------POST 2---------
+From: prab1996
+Date: 1379653020000
+
+
+%gt; lol you are paying too less , most people charge $5 per review+cost.  
+  
+-prab- 
+
+
+
+---------POST 3---------
+From: sohom
+Date: 1379656320000
+
+
+%gt; Hello  
+If you are interested PM me the Product link at first
+
+
+
+---------POST 4---------
+From: souleclipse
+Date: 1379658480000
+
+
+%gt; Okay since i aren&amp;apos;t getting any good respond.  
+  
+First 3 people pm me get $4.50  
+Another 2 people pm me get $4  
+Another 5 people pm me get $3.50  
+  
+I will need ten .  
+  
+Once again pm me your skype.
+
+
+
+---------POST 5---------
+From: nanavlad
+Date: 1379660400000
+
+
+%gt; Still too cheap  
+Plus your book is too cheap  
+mimimum price should be $2.99  
+for you to make a profit  
+Then pay at least $5 a review, other wise you will get cheap badly written
+reviews  
+  
+Basically if you cant afford $80 dollars for your business, then you are
+doomed to failure  
+  
+Cheaper option plus you should do this too  
+get a Facebook ads voucher $5  
+and promote your kindle on fb
+
+
+
+---------POST 6---------
+From: souleclipse
+Date: 1379660700000
+
+
+%gt; My main purpose of book is not going to earn from kindle.
+![](https://static.blackhatworld.com/blackhat-seo/images/smilies/smile.png)  
+  
+We do get review from other place as well.  
+I am in Brad callen exchange review program  
+I can afford it, but which business do not wish to minimize loss.  
+  
+Okay i am paying $5 for people who leave an awesome review(Good English and
+200 words). He must have aged amazon account .  
+Only for the first 5 person. Cheers. then next 3 $4.50, and next 2 $4.
+
+
+
+---------POST 7---------
+From: souleclipse
+Date: 1379757300000
+
+
+%gt; $5 ! Anyone ?
+
+
+
+---------POST 8---------
+From: kingc
+Date: 1379767740000
+
+
+%gt; I&amp;apos;ve published kindle books before. Just type kindle review into fiverr and
+loads of options will come up.
+
+
+
+---------POST 9---------
+From: service247
+Date: 1379772000000
+
+
+%gt; i can give you 4 reviews . If you need then please knock me .  
+I m ready to give you .
+
+
+
+---------POST 10---------
+From: hiddenwriter
+Date: 1379816460000
+
+
+%gt; PM Me Please ![](https://static.blackhatworld.com/blackhat-
+seo/images/smilies/biggrin.png)
+
+
+
+---------POST 11---------
+From: Dany08
+Date: 1382551440000
+
+
+%gt; They don&amp;apos;t have to actually Purchase your book, if you will use KDP free
+days.
+
+
+
+---------POST 12---------
+From: paggu
+Date: 1386754620000
+
+
+%gt; I have also wrote a book which is under kindle free promotion.  
+I would like to exchange some reviews on it.  
+Pm me
+
+
+
+---------POST 13---------
+From: roseink
+Date: 1394498100000
+
+
+%gt; I&amp;apos;ll do it for $5 + Book fee ![](https://static.blackhatworld.com/blackhat-
+seo/images/smilies/smile.png)  
+  
+I write really well and have a long-standing Amazon account.  </text>
+				</passage>
+				<passage id="91">
+					<docno>com_blackhatworld_www_17d7b58030b96ed6981e7fd73c6e873dc5ad1313_1427267718479</docno>
+					<rating>2</rating>
+					<text>%gt; Hi guys I&amp;apos;ve made a group on Facebook for people who&amp;apos;re selling Ebook for
+kindle, everyone knows how essential reviews are for selling on Amazon, you
+can&amp;apos;t only swap reviews but buy from trusted seller as well.</text>
+				</passage>
+				<passage id="99">
+					<docno>com_blackhatworld_www_2944c2ab7c22b1cfd96af4c54ed039bc9424a68f_1427082710953</docno>
+					<rating>3</rating>
+					<text>Paying 2$ for a simple review, I will provide the text.  
+  
+Process:  
+  
+Pm me your skype  
+I provide you with a free download  
+Wait 2-3 days before reviewing  
+I provide review text to you  
+You review  
+I pay VIA paypal(USD)
+</text>
+				</passage>
+				<passage id="104">
+					<docno>com_blackhatworld_www_495940a15c87560a12f925a6a9e2d4cb0b456f1e_1426692162445</docno>
+					<rating>1</rating>
+					<text>%gt; Can someone please suggest a good place that can provide reviews on amazon
+kindle ?</text>
+				</passage>
+				<passage id="110">
+					<docno>com_blackhatworld_www_32dbf5de70a6a5fa0e84c7f7c8af160b80821741_1427079160380</docno>
+					<rating>3</rating>
+					<text>I have a book on Amazon Kindle that I have done a soft launch for. I will pay
+via Paypal, anyone who will leave a verified review. The $.99 for the cost of
+the Kindle book and the fee for the review.  
+  
+I am Paypal verified. I can also supply the reviews to leave if you don&amp;apos;t want
+to have to work too hard. ![](https://static.blackhatworld.com/blackhat-
+seo/images/smilies/smile.png)</text>
+				</passage>
+				<passage id="477">
+					<docno>com_blackhatworld_www_5beb55a0b63dd036d17f4b707294bc0985344a6b_1427079146655</docno>
+					<rating>-1</rating>
+					<text>Thread Title:$4 for verified Kindle review
+---------POST 1---------
+From: domainmadness
+Date: 1415680560000
+
+
+%gt; I have $2.99 Kindle book which needs reviews.  
+  
+I will give you $7 in Paypal for verified review, payment after review. PM me
+here for details.
+
+</text>
+				</passage>
+				<passage id="478">
+					<docno>com_blackhatworld_www_0a55e2400806051133ec0597337d60a36ab7c36a_1427168302277</docno>
+					<rating>3</rating>
+					<text>hread Title:Review Poster Needed For a Book - $4 - For the Big &amp;quot;A&amp;quot; Store (Review Text Provided)
+---------POST 1---------
+From: souleclipse
+Date: 1390012920000
+
+
+%gt; Dear all,  
+  
+As mention i am looking for Review for my kindle ebook on the &amp;quot;A&amp;quot; Store  
+  
+I am looking for account that at least purchase an product and leave an review
+before.  
+No newly create account for this.  
+The reason is simple, if your account it too fake, &amp;quot;A&amp;quot; will delete the review
+and your account as well .  
+I purchased from one guy here 4 reviews, and all is gone within 2 weeks.  
+  
+**Requirement: **  
+  
+
+%gt;
+
+%gt;   * Aged &amp;quot;A&amp;quot; Account , Prefer if you make purchase before.
+
+%gt;   * Have a working CC, they do not accept PayPal
+
+%gt;  
+  
+**How it work:**  
+  
+
+%gt;
+
+%gt;   * You will purchase book , let me know your profile page (To keep Track -
+So someone doesn&amp;apos;t come and use your name to scam us)
+
+%gt;   * 2-3 days later, you will leave a review on the product listing . (We
+will provide the review, you do not need to write)
+
+%gt;   * The book cost Less then $1, so total will payment sent will be ($4 +
+$1)$5 via PayPal
+
+%gt;  
+  </text>
+				</passage>
+				<passage id="479">
+					<docno>com_blackhatworld_www_614f869cbb627db8d85c6e31680571e557d16e6b_1427083479357</docno>
+					<rating>3</rating>
+					<text>Thread Title:Reviews for Amazon Kindle eBook from Real Accounts
+---------POST 1---------
+From: pirx2030
+Date: 1405764420000
+
+
+%gt; Hello,  
+  
+I&amp;apos;m looking for a couple of reviews for my new eBook on Amazon, just to kick-
+start it.  
+  
+**Requirements:**  
+1) **no **mass reviewing service providers  
+2) must be a **real **Amazon account, not used just for reviews  
+3) the account must be at least **6 months** old  
+4) post the review after **3 days** after the purchase  
+5) No **newbies **on the forum  
+  
+**Please send the following:**  
+\- Your public Amazon profile (link) for consideration  
+\- Your Skype ID  
+  
+I will provide the reviews - you just copy/paste it.  
+  
+Please contact me if you qualify. Thanks, I appreciate your help.
+
+
+
+---------POST 2---------
+From: joesol
+Date: 1405793160000
+
+
+%gt; I fit all other criteria other than being a newbie...would that be ok?
+
+
+
+---------POST 3---------
+From: ORM
+Date: 1405793460000
+
+
+%gt; We help our clients with both small and big marketing projects on Amazon.
+Feel free to check my sig. below  
+  
+  
+**ORM**
+
+
+
+---------POST 4---------
+From: pirx2030
+Date: 1405884240000
+
+
+%gt; Thanks to both. The job is still open. Please apply. Thanks.
+
+
+
+---------POST 5---------
+From: Sullivansoft
+Date: 1405891680000
+
+
+%gt; I can assist you, I have done over 100 verified reviews, and my account is
+over a year old. I have provided services for many on here. PM me or skype me!
+
+
+
+---------POST 6---------
+From: BassTrackerBoats
+Date: 1405892100000
+
+
+%gt; Maybe you want to mention some of the terms of your offer... cost of the
+eBook, payment amount, method of payment, timetable of payment etc.
+
+
+
+---------POST 7---------
+From: kewjah
+Date: 1405892460000
+
+
+%gt; I can do this for you, pm me some more information
+
+
+
+---------POST 8---------
+From: Traww
+Date: 1405928220000
+
+
+%gt; I can do this , add me on skype ![](https://static.blackhatworld.com
+/blackhat-seo/images/smilies/smile.png)
+
+
+
+---------POST 9---------
+From: pirx2030
+Date: 1406009580000
+
+
+%gt; ![Quote](http://cdn.blackhat-static.com/blackhat-
+seo/images/styles/blackngold4/misc/quote_icon.png) Originally Posted by
+**BassTrackerBoats** [![View Post](http://cdn.blackhat-static.com/blackhat-
+seo/images/styles/blackngold4/buttons/viewpost-
+right.png)](http://www.blackhatworld.com/blackhat-seo/hire-freelancer/689993
+-reviews-amazon-kindle-ebook-real-accounts.html#post7047856)
+
+%gt;
+
+%gt; Maybe you want to mention some of the terms of your offer... cost of the
+eBook, payment amount, method of payment, timetable of payment etc.
+
+%gt;
+
+%gt; No special terms - I pay you first (PayPal), you download the eBook, I send
+you the review, and you post it. That&amp;apos;s it.
+![](https://static.blackhatworld.com/blackhat-seo/images/smilies/smile.png) I
+pay 6 USD for a review - the eBook was 0.99 USD, but now it&amp;apos;s back to 2.99
+USD.
+
+
+</text>
+				</passage>
+				<passage id="481">
+					<docno>com_blackhatworld_www_530cb9e0919d7fe96cfc0f0d318e29f0b778547a_1427169166525</docno>
+					<rating>1</rating>
+					<text>Thread Title:I need kindle downloads/purchases/reviews.
+---------POST 1---------
+From: imgurguru
+Date: 1393445280000
+
+
+%gt; Title says it all. Send me Skype in message or on thread to discuss in
+detail.  
+  
+Thanks.
+
+
+
+---------POST 2---------
+From: seoworks
+Date: 1393456620000
+
+
+%gt; Get back to me if you are still looking for someone.  
+Pm me or mail me at Gmail - seoworks87 at gmail.com
+
+
+
+---------POST 3---------
+From: iPresenceBiz
+Date: 1393462080000
+
+
+%gt; For these reviews that you need, do you just need us to write the reviews or
+write reviews and post them by using a different IP address?  
+  </text>
+				</passage>
+				<passage id="482">
+					<docno>com_blackhatworld_www_4b536231d03333be09c92ced4a0ec307afbeb7f7_1427121943627</docno>
+					<rating>1</rating>
+					<text>Thread Title:Amazon book Reviews
+---------POST 1---------
+From: liljandjer
+Date: 1310740440000
+
+
+%gt; I need someone who has multiple amazon accounts that can provides likes and
+positive reviews for an amazon book i have listed there. if your instresed
+please pm me and we will discuss the details. Thanks</text>
+				</passage>
+				<passage id="485">
+					<docno>com_blackhatworld_www_12a2224c30d5fffccd425b6dcaf802273bb28a92_1427172725001</docno>
+					<rating>2</rating>
+					<text>hread Title:$5 per Verified Review on KINDLE (I Provide the Review + Book Fee)
+---------POST 1---------
+From: souleclipse
+Date: 1382976360000
+
+
+%gt; Dear all,  
+  
+As mention i am looking for Amazon review for my kindle ebook.  
+  
+I am looking for Amazon account that at least purchase an product and leave an
+review before. (preferably Kindle books)  
+No newly create account for this.  
+The reason is simple, if your account it too fake, amazon will delete the
+review and your account as well .  
+I purchased from one guy here 4 review, and all is gone within 2 weeks.  
+I am still trying to get back my money.  
+  
+**Requirement: **  
+Aged Amazon Account , Prefer if you make purchase before.  
+Have a working CC, they do not accept PayPal  
+Preferably from US, UK (Not a Must)  
+  
+**How it work:**  
+You will purchase book , let me know your Amazon profile page (To keep Track -
+So someone doesn&amp;apos;t come and use your name to scam us)  
+2-3 days later, you will leave a review on the product listing . (We will
+provide the review, you do not need to write)  
+The book cost Less then $1.50, so total will payment sent will be $7 via
+PayPal  
+  
+Anyone interested in this one off job in trade for a Pizza do let me know.  
+Pm me with your following:  
+
+%gt;
+</text>
+				</passage>
+				<passage id="487">
+					<docno>com_blackhatworld_www_44fcaa5f074debfa02438392f86b2860f8559bb6_1427242430279</docno>
+					<rating>1</rating>
+					<text>hread Title:Sell My Vegas Deal Book! Real Book Supported by Amazon!
+---------POST 1---------
+From: buddyboy
+Date: 1297388880000
+
+
+%gt; If you have a legal list to blast or or good traffic and want to make a
+quick buck, my Vegas Deal Guide is the thing for you. Anybody welcome to bid,
+commission varies based on sales channel, but no less than $3 per book. For an
+email blast, quick dough. Higher payouts for top production. This is a real
+book supported by Amazon, so you are dealing with legitimacy here!
+</text>
+				</passage>
+				<passage id="489">
+					<docno>com_blackhatworld_www_07295636b460aa1779a280108aee9ac8540881db_1427173872105</docno>
+					<rating>3</rating>
+					<text>Thread Title:Easy $3 for every Kindle review
+---------POST 1---------
+From: nabeelshams
+Date: 1414769100000
+
+
+%gt; I have 99 cent kindle that needs some reviews. I will transfer $4 ($1 for
+Kindle Purchase and $3 for review) paypal money for every verified purchase
+review that appears there. You must mention your pen name using which you will
+review my kindle. Interested people contact me through skype:
+nabeelshamshad_7911 or pm here
+
+
+
+---------POST 2---------
+From: lpe39
+Date</text>
+				</passage>
+				<passage id="490">
+					<docno>com_blackhatworld_www_388bd5701ae9f5e3f251ca72cf4bf8abd523f979_1427097061473</docno>
+					<rating>3</rating>
+					<text>Thread Title:Need German Amazon User- 7¤ for copy&amp;pasting a review
+---------POST 1---------
+From: Sgt Kraut
+Date: 1375645920000
+
+
+%gt; I&amp;apos;m looking for a German Amazon user to do the following:  
+  
+  
+
+%gt;
+
+%gt;   * buy a Kindle ebook
+
+%gt;   * wait 24-48 hours
+
+%gt;   * copy&amp;paste a review that you will be provided with
+
+%gt;   * receive 10¤ via PayPal (book costs 2,99¤)
+
+%gt;  
+  
+The book is legit, high quality and already has positive reviews.  
+  
+Please send me a PM (in German) if you want to help me.
+
+</text>
+				</passage>
+				<passage id="491">
+					<docno>com_blackhatworld_www_16ca4f1ae3f77d772c10f225b013ddb39f38d574_1427087723523</docno>
+					<rating>1</rating>
+					<text>Thread Title:I am looking for an Amazon Kindle SEO expert
+---------POST 1---------
+From: asterisme
+Date: 1397580240000
+
+
+%gt; Hello guys,  
+  
+I project manage my client&amp;apos;s Amazon Kindle publishing account. From deciding
+on what niches to write titles in to hiring people to making sure we sell well
+, I&amp;apos;m responsible for the whole business cycle. I&amp;apos;m looking for someone who
+has excellent expertise in Amazon Kindle SEO and optimization. The ideal
+candidate knows almost everything there is to know about getting a book (kdp
+or createspace version) the highest possible sales ranking, select the right
+kind of keywords, ensure that the product page is optimized, work with
+reviewers in making sure the content for reviews are optimized and run sales
+experiments (such as dual purchases or search find purchases whenever needed).
+In short I am looking for an Amazon Kindle whiz who knows all those neat
+tricks to make a book&amp;apos;s sales soar.  
+  
+The business is fairly new, but has enjoyed some good success organically,
+with limited sales efforts on our part. We&amp;apos;re now looking to grow and I think
+the Amazon sales expert&amp;apos;s role is a very crucial part of this growth. If you
+are someone who can work with us and show us some good results, I&amp;apos;d be
+interested in hearing from you.  
+  
+Asterisme
+
+
+
+</text>
+				</passage>
+				<passage id="492">
+					<docno>com_blackhatworld_www_4240da986dda8e4563f8cfd37c12f5f9a01039bc_1427170216785</docno>
+					<rating>2</rating>
+					<text>From: sameery
+Date: 1378521900000
+
+
+%gt; Hi Im an expert in amazon reviews i fulfilled more than 200 orders on fiverr
+and got some big book writers using my service so hit me up</text>
+				</passage>
+				<passage id="692">
+					<docno>com_blackhatworld_www_03dc4816a8613fff4848f0b8d571b13a06036c13_1427085956166</docno>
+					<rating>2</rating>
+					<text> Guys, since I couldn&amp;apos;t get into any Kindle exchange skype group, I need your
+help once again.  
+  
+I&amp;apos;m paying $5 as a gift to everybody who:  
+  
+1\. Purchase the book ($.99)  
+2\. Wait 24-48 hours to post the review. (Review is provided)  
+3\. ONLY US ACCOUNTS. By US ACCOUNTS I mean your Amazon name MUST SOUND US.
+Last time I got some guys who claimed to be real yankee guys, but their name
+showed as Mohhamad. ONLY US NAMES!  
+4\. After waiting 24-48 hours post the review.  
+  
+Post In the thread and give me your skype or add me.
+
+</text>
+				</passage>
+				<passage id="693">
+					<docno>com_blackhatworld_www_047636096921ff188dc472c237b4251d64ab41c3_1427171920174</docno>
+					<rating>3</rating>
+					<text>hread Title:Amazon Reviews Required - UK, Germany &amp; France
+---------POST 1---------
+From: mrmaddogg
+Date: 1406907060000
+
+
+%gt; Hi,  
+  
+Firstly thanks for reading. Looking for over 100 amazon verified purchase
+reviews for amazon.co.uk, .fr &amp; .de. I will provide the review text and
+discount codes or gift coupon tokens to purchase products. Willing to pay $5
+per review. Please PM me with your skype ID. Successful candidates will be
+paid via Paypal. Looking to establish a long working relationship with a
+freelancer to help me with this project. Any questions please don&amp;apos;t hesitate
+to ask.  
+  
+Cheers  
+  
+MRMADDOGG
+</text>
+				</passage>
+				<passage id="694">
+					<docno>com_blackhatworld_www_0e53aa98f3bdca971b7f0b882586e7a6906ab940_1427160325212</docno>
+					<rating>3</rating>
+					<text>Thread Title:[WTB] Legitimate Amazon.DE Reviews (German IPs only!)
+---------POST 1---------
+From: antagonist
+Date: 1360726920000
+
+
+%gt; Hey guys!  
+  
+I&amp;apos;d like to buy reviews to give my client&amp;apos;s book a boost. I&amp;apos;ll write the
+reviews for you. They just need to be posted.  
+  
+I&amp;apos;ll only accept &amp;quot;aged&amp;quot; accounts from real members. Of course you may use fake
+accounts but none solely created for my purpose!  
+  
+I would like to pay **$15 per review** (around 150-200 words) plus **$4 per
+purchase**. Yes, I need you to actually buy the product.  
+  
+_Yes, I know that I can get a lot of reviews for $15/$19 but I don&amp;apos;t want
+crap. I want quality. The only thing that matters is that the review &amp;quot;sticks&amp;quot;.
+I know there is no guarantee for this but I expect you to do your best._  
+  
+You may contact me via PM or answer within this thread.  
+  
+  
+Thanks in advance,  
+antagonist  
+  
+  
+PS: I&amp;apos;ve got a feeling that there will be many lazy people answering without
+having read at least the headline so I&amp;apos;ll make this clear for you: I need
+GERMAN Amazon reviews. With the .DE TLD, you know?
+![](https://static.blackhatworld.com/blackhat-seo/images/smilies/wink.png)  
+  
+PPS: You may of course contact me in German as I&amp;apos;m from Germany. That would be
+a great way to prove you&amp;apos;re capable of doing what I&amp;apos;m asking for.  
+  
+PPPS: If you are not able to provide this kind of service yourself but you
+know somebody who can - refer me to your contact and I&amp;apos;ll pay you $10 when I
+make a deal with him or her.
+
+
+
+
+
+
+</text>
+				</passage>
+				<passage id="697">
+					<docno>com_blackhatworld_www_29d3d9e13548946e9ca8974615995349a45ddd6f_1427171310682</docno>
+					<rating>2</rating>
+					<text>Thread Title:Looking for people with Amazon accounts in Germany
+---------POST 1---------
+From: Sullivansoft
+Date: 1403627340000
+
+
+%gt; I am looking for people with aged Amazon accounts, that live in Germany and
+speak fluent German. I need all reviews left in German and not copy/paste with
+google translate or anything similar. Your account needs to be aged 6+ months,
+and have multiple purchases, and reviews over the course of the past 6 months.
+I am looking for multiple accounts so if you have an account and know someone
+else I&amp;apos;d like to speak with them as well. You can PM me or skype me, my skype
+details are below my name.  
+  
+This is a paying gig, so don&amp;apos;t worry.
+</text>
+				</passage>
+				<passage id="699">
+					<docno>com_blackhatworld_www_1e868d8e9a7c1d68f6965371edbae701b4e61d89_1427070675175</docno>
+					<rating>3</rating>
+					<text>Thread Title:[WTH] Amazon UK Reviews Needed $4 Per/Review
+---------POST 1---------
+From: rahul77700
+Date: 1424801400000
+
+
+%gt; Hello Guys  
+  
+Iam looking for UK Amazon reviews on my product.If you live in UK or have real
+UK address you can apply for the job.  
+  
+I only need real UK people with real address because product will be shipped.  
+  
+**REQUIRMENTS:**  
+  
+Should have real UK profile with reak real UK address.  
+Should have atlesat one real purchase on that aacount.  
+Account should be three months old.  
+  
+  
+Payments will be made by paypal only.  
+  
+I will provide GC or Promos to buy the product and after 1 to 2 days you will
+leave the review.  
+  
+Once you send me the review links along with your paypal id i will make the
+payments.  </text>
+				</passage>
+				<passage id="703">
+					<docno>com_blackhatworld_www_02d5f7216c736069aef89c9efe45d6ade4cb3d94_1426413495304</docno>
+					<rating>2</rating>
+					<text>From: felixgoh
+Date: 1414287420000
+
+
+%gt; Bought review service from the OP and he didn&amp;apos;t reply to me after that even
+if he did login to account. Something fishy so guys please be careful.  
+  
+Will be posting this to shitlist in a day or 2 when I get the time to show
+screen shots.
+</text>
+				</passage>
+				<passage id="716">
+					<docno>com_blackhatworld_www_326aa2b3c736eb0dc21073fd7f913499a2ad41bf_1427173016563</docno>
+					<rating>1</rating>
+					<text> I&amp;apos;m a dummy. I created a Kindle book and ordered an Amazon review from
+someone on Fiverr.  
+But I didn&amp;apos;t ask for a sample of their prior work. Doh!  
+Now my cool book has a review that sounds like a junior high kid from timbuktu
+wrote it. Looks bad and I can&amp;apos;t remove it.  
+  </text>
+				</passage>
+				<passage id="727">
+					<docno>com_blackhatworld_www_0fe0acc48c9197c13a61badfe8d6749888b0aee1_1427154715163</docno>
+					<rating>1</rating>
+					<text>
+%gt; Hi, I have a legit 250 page paperback on amazon.com about LinkedIn and I
+need to post more 5 star reviews to help with sales. For me, the problem has
+been finding a good posting service. You see, you need someone experienced
+with amazon.com, because to post a review you need to have bought something
+there, physical or digital, before. I have been paying some people on fiverr
+to help. I&amp;apos;d like to find more help. Ideas? Please message me. Thanks.
+
+
+
+---------POST 2---------
+From: codexehow
+Date: 1336746600000
+
+
+%gt; You&amp;apos;ll shoot yourself in the foot buying all 5 star reviews.  
+  
+People don&amp;apos;t give them as much credence as they used to, and they are usually
+able to see right through them. Take a look at any bestseller&amp;apos;s list. Not one
+of them contain books with all 5 star reviews. The best selling books have
+strongly polarized reviews, with plenty of 1 stars. Sometimes, up to half as
+many 1 stars as five stars.  
+  
+If your book is good, just give out review copies to interested individuals
+and let the reviews come in organically. You are rolling the dice with your
+credibility by buying reviews.  </text>
+				</passage>
+				<passage id="735">
+					<docno>com_blackhatworld_www_0306fca5d4fb63802cb05c409ac50fbcddbaf95c_1427081431427</docno>
+					<rating>1</rating>
+					<text> i can give u 100 rating from aged account. per rating 0.60 , if u interested
+pm me
+
+%gt;
+
+%gt; Ive gotten a few PMs.  
+My current rate is $5/100 ratings.
+</text>
+				</passage>
+				<passage id="7163">
+					<docno>com_blackhatworld_www_5964dc75d6cff6e55b99dd8ee29717f02c3cc4a4_1426454640207</docno>
+					<rating>1</rating>
+					<text>eviews for Products/E-Books: Verified/ Unverified Reviews???</text>
+				</passage>
+			</subtopic>
+			<subtopic name="fake reviews" id="27" num_of_passages="2">
+				<passage id="43">
+					<docno>com_blackhatworld_www_d998a6d10791bad1cc7a168ce506da35c7b1ee61_1427083958656</docno>
+					<rating>2</rating>
+					<text>Secondly, Amazon is cracking down on fake reviews. Not mass purchasing. You
+can just Google for this info and see the fact. Nevertheless fake reviews
+provider will still have a way to overcome this else they will be out of
+business.  
+  
+In conclusion, there is no fact stating that Amazon is against mass purchasing
+to boast popularity. However, they do have an active issue with fake reviews.  </text>
+				</passage>
+				<passage id="46">
+					<docno>com_blackhatworld_www_625e3b74bc5527a7d2be81da2ca6fb59a09dc499_1426789380724</docno>
+					<rating>2</rating>
+					<text>**There are so many books that I know some of you are putting out there, and the fake reviews are VERY obvious. 5 star reviews from people who obviously barely speak/understand English? Really? Do you really think these reviews are fooling anyone?   
+**  
+Then I download the 4 or 5 star rated book...and it&amp;apos;s horrible. Typos
+everywhere, bad, even dangerous info, etc.  
+  
+Let me let those of you who need it in on a little secret: when a book has 4x
+the number of 5 star reviews than it does 1 star reviews, and little to no 4
+or 3 star reviews, it&amp;apos;s an obvious fake.  
+  </text>
+				</passage>
+			</subtopic>
+		</topic>
+		<topic name="Spamming can be helpful" id="104" num_of_subtopics="12">
+			<subtopic name="Where is spam illegal" id="131" num_of_passages="3">
+				<passage id="498">
+					<docno>com_blackhatworld_www_0247903732887cbc02eb95f33e9afa9861c06309_1426728430399</docno>
+					<rating>2</rating>
+					<text>Spam is now illegal in nearly all western countrys... but who prosecutes and
+how is the process started, i mean if one of your mails is flagged by to many
+persons as spam will the fbi (or ?) start to take action or how does it work?
+</text>
+				</passage>
+				<passage id="510">
+					<docno>com_blackhatworld_www_574bcc3331c2d17dbdc595acd530ee3756a9307a_1422586088058</docno>
+					<rating>2</rating>
+					<text>It is certainly illegal in the UK; unless you can prove the email was obtained through the normal course of business. </text>
+				</passage>
+				<passage id="511">
+					<docno>com_blackhatworld_www_574bcc3331c2d17dbdc595acd530ee3756a9307a_1422586088058</docno>
+					<rating>3</rating>
+					<text>Spam is not illegal federally but most states have anti spam laws. so if you send spam to anyone in those states then you can get in very big legal trouble. Do not assume because the CAN-SPAM did not make spam illegal federally that states did not assume their powers and making it illegal. </text>
+				</passage>
+			</subtopic>
+			<subtopic name="prosecution for spamming" id="132" num_of_passages="4">
+				<passage id="499">
+					<docno>com_blackhatworld_www_0247903732887cbc02eb95f33e9afa9861c06309_1426728430399</docno>
+					<rating>2</rating>
+					<text> spam might be illegal, but as far as I know, you won&amp;apos;t face jail time unless
+you are in the US and from what I have read, the few people that were actually
+prosecuted were prosecuted for far more than just maling; they faced trial for
+spamming AND fraud, phishing, etc.
+</text>
+				</passage>
+				<passage id="500">
+					<docno>com_blackhatworld_www_0247903732887cbc02eb95f33e9afa9861c06309_1426728430399</docno>
+					<rating>2</rating>
+					<text>Actually, some spammers in the US have &amp;quot;prosecuted&amp;quot; others: [</text>
+				</passage>
+				<passage id="504">
+					<docno>com_blackhatworld_www_0247903732887cbc02eb95f33e9afa9861c06309_1426728430399</docno>
+					<rating>2</rating>
+					<text>A few years ago, Mumma began suing spammers for
+violating federal and state anti-spam laws. &amp;quot;I was determined to be paid for
+the time I&amp;apos;d wasted,&amp;quot; he says. He won settlements totaling around $7,500, and
+created a Web site, Sueaspammer.com, to tout his victories.</text>
+				</passage>
+				<passage id="513">
+					<docno>com_blackhatworld_www_0256606b04ee34fe723a7fcf949f17082898d158_1426631345540</docno>
+					<rating>2</rating>
+					<text>The CAN-SPAM Act makes it unlawful for persons to initiate the transmission of
+commercial electronic mail messages that contain materially false or
+misleading header information. CAN-SPAM defines ?electronic mail message? as
+?a message that is sent to a unique electronic mail address.? It further
+defines ?electronic mail address? as a ?destination, commonly expressed as a
+string of characters, consisting of a unique user name or mailbox and a
+reference to an Internet domain, whether or not displayed, to which an
+electronic mail message can be sent or delivered.?  
+  
+</text>
+				</passage>
+			</subtopic>
+			<subtopic name="Definition of spam" id="133" num_of_passages="3">
+				<passage id="501">
+					<docno>com_blackhatworld_www_0247903732887cbc02eb95f33e9afa9861c06309_1426728430399</docno>
+					<rating>2</rating>
+					<text>There&amp;apos;s no legal definition,&amp;quot;
+says Danny O&amp;apos;Brien, a spam law analyst for the Electronic Frontier Foundation.
+&amp;quot;Spam is in the eye of the beholder.&amp;quot;**  </text>
+				</passage>
+				<passage id="502">
+					<docno>com_blackhatworld_www_0247903732887cbc02eb95f33e9afa9861c06309_1426728430399</docno>
+					<rating>2</rating>
+					<text> ** Linford acknowledges that the murky definition of spam is a problem for
+his group**. &amp;quot;We define spam as unsolicited bulk e-mail,&amp;quot; he says. &amp;quot;But there
+are many different definitions. If you ask a spammer, of course, they&amp;apos;ll
+simply define spam as, ?That which I do not send.&amp;apos; &amp;quot;  
+</text>
+				</passage>
+				<passage id="505">
+					<docno>com_blackhatworld_www_574bcc3331c2d17dbdc595acd530ee3756a9307a_1422586088058</docno>
+					<rating>3</rating>
+					<text>Spam is the use of electronic messaging systems (including most broadcast media, digital delivery systems) to send unsolicited bulk messages indiscriminately. Email spam, also known as unsolicited bulk Email (UBE), junk mail, or unsolicited commercial email (UCE), is the practice of sending unwanted email messages, frequently with commercial content, in large quantities to an indiscriminate set of recipients. (thank you wikipedia</text>
+				</passage>
+			</subtopic>
+			<subtopic name="who sends spam" id="134" num_of_passages="1">
+				<passage id="503">
+					<docno>com_blackhatworld_www_0247903732887cbc02eb95f33e9afa9861c06309_1426728430399</docno>
+					<rating>2</rating>
+					<text>But someone is sending them. Spam levels more than doubled in 2006 and spam
+accounted for more than 94% of all e-mail, according to research by the
+message management company Postini.  
+  </text>
+				</passage>
+			</subtopic>
+			<subtopic name="difficulties prosecuting spam" id="135" num_of_passages="2">
+				<passage id="506">
+					<docno>com_blackhatworld_www_574bcc3331c2d17dbdc595acd530ee3756a9307a_1422586088058</docno>
+					<rating>2</rating>
+					<text>Let&amp;apos;s be honest, how many people really alert the authorities (or anyone for that matter) that they got an email for a bigger dick? People that don&amp;apos;t use the internet that often get annoyed - but it won&amp;apos;t go nowhere. People who do use the internet often don&amp;apos;t remember shit from shinolah as far as what they clicked and what they agreed too, so they are likely to ignore/delete the unwanted messages. I for one get hundreds of spam email/day on one of my email accounts. I scan them over long enough to make sure I didn&amp;apos;t miss anything important, then delete them. Its like getting direct marketing mats in your mailbox. You didn&amp;apos;t ask for it, but somewhere along (a very long line) you agreed to receive stuff. Are you going to contact you local post office, legislator or city official to complain? Probably not. Even if you DID, they&amp;apos;ll probably smile and nod. Bottom line, scraping isn&amp;apos;t as big an issue as what and how you use what you get.</text>
+				</passage>
+				<passage id="514">
+					<docno>com_blackhatworld_www_540ec1d43cef72e5aa9232090568c1a374d5ad09_1426200667141</docno>
+					<rating>2</rating>
+					<text> I imagine that if you spammed off of a remote server in a third world
+country, they would have quite some difficulty finding you. Bonus points if
+you live in that third world country, as they might not have internet laws and
+will have trouble prosecuting you.  </text>
+				</passage>
+			</subtopic>
+			<subtopic name="Legal spam" id="136" num_of_passages="2">
+				<passage id="507">
+					<docno>com_blackhatworld_www_574bcc3331c2d17dbdc595acd530ee3756a9307a_1422586088058</docno>
+					<rating>3</rating>
+					<text>To be legal you must provide a name, address (P.O. box), user agreement (opt-in list), and unsubscribe link. That said this is BlackHatWorld, just know though this is a bit beyond blackhat and could bring you legal issues. Last but not least, most e-mails send much of the unsolicited mail straight into spam if you don&amp;apos;t have agreements and permission, etc.
+</text>
+				</passage>
+				<passage id="508">
+					<docno>com_blackhatworld_www_574bcc3331c2d17dbdc595acd530ee3756a9307a_1422586088058</docno>
+					<rating>2</rating>
+					<text>, you do not need user agreement to send emails. Spam is perfectly legal, as long as you provide unsub options, and your name and mailing address. </text>
+				</passage>
+			</subtopic>
+			<subtopic name="Virginia&amp;apos;s law on spamming" id="137" num_of_passages="1">
+				<passage id="512">
+					<docno>com_blackhatworld_www_574bcc3331c2d17dbdc595acd530ee3756a9307a_1422586088058</docno>
+					<rating>3</rating>
+					<text>State Attorney Generals will be. for instance check out Virginia&amp;apos;s law § 18.2-152.3:1. Transmission of unsolicited commercial electronic mail (spam); penalty. A. Any person who: 1. Uses a computer or computer network with the intent to falsify or forge electronic mail transmission information or other routing information in any manner in connection with the transmission of spam through or into the computer network of an electronic mail service provider or its subscribers; or 2. Knowingly sells, gives, or otherwise distributes or possesses with the intent to sell, give, or distribute software that (i) is primarily designed or produced for the purpose of facilitating or enabling the falsification of the transmission information or other routing information of spam; (ii) has only limited commercially significant purpose or use other than to facilitate or enable the falsification of the transmission information or other routing information of spam; or (iii) is marketed by that person acting alone or with another for use in facilitating or enabling the falsification of the transmission information or other routing information of spam is guilty of a Class 1 misdemeanor. B. Any person who commits a violation of subdivision A 1 when (i) the volume of spam transmitted exceeded 10,000 attempted recipients in any 24-hour time period, 100,000 attempted recipients in any 30-day time period, or one million attempted recipients in any one-year time period or (ii) revenue generated from a specific transmission of spam exceeded $1,000 or the total revenue generated from all spam transmitted to any EMSP exceeded $50,000, is guilty of a Class 6 felony. C. Any person who knowingly hires, employs, uses, or permits any minor to assist in the transmission of spam in violation of subsection B is guilty of a Class 6 felony. (2003, cc. 987, 1016; 2010, c. 489.)</text>
+				</passage>
+			</subtopic>
+			<subtopic name="Questions about sending spam" id="329" num_of_passages="1">
+				<passage id="1796">
+					<docno>com_blackhatworld_www_605f8bce96694bb949ee7f50309c45250c06e237_1422355857415</docno>
+					<rating>2</rating>
+					<text>, can I send mass e-mails with my website? In other words, can I send 3000-4000 unsolicited e-mails per day with my website? My website doesn&amp;apos;t promote adult/hacking/etc. Is it possible that Google will ban or penalize my website?
+
+---------POST 2---------
+From: Smokin
+Date: 1348512480000
+You will eventually get your IP shutdown from Gmail, AOL, Hotmail, and will all go to spam. I remember when I first started I blasted 10k emails, 1ce a day for a week straight. Made about 4k but then my e-mail server went down the drain. Everything was either returned or lost.. My host couldn&amp;apos;t figure it out and requested for us to be removed by the ISP</text>
+				</passage>
+			</subtopic>
+			<subtopic name="Making money from spam" id="330" num_of_passages="1">
+				<passage id="1797">
+					<docno>com_blackhatworld_www_1c0cb081dae05962645590fdfcb8d3f2ddb69e70_1426916956185</docno>
+					<rating>2</rating>
+					<text>Can you make money off spam? As coreygeer said you could set up an
+autoresponder which replys to the &amp;quot;reply-to&amp;quot; email address the spammer used.
+The interesting thing here is that spammers usually use other peoples email
+addresses in the reply-to field so your autoresponse may actually get through
+to people.  
+  
+You could also use spam emails as content for spam sites. Set up a fake yahoo
+account, sign up to lots of shit, have script log into account and scrape
+emails and insert keywords. Kind of long winded when you can spin or use
+markov but it answers the questions right ![](https://static.blackhatworld.com
+/blackhat-seo/images/smilies/tongue.png)</text>
+				</passage>
+			</subtopic>
+			<subtopic name="Seeking spammers" id="331" num_of_passages="2">
+				<passage id="1798">
+					<docno>com_blackhatworld_www_5b2b28101d358f7aead421d7f7449054299dd9ac_1427252640363</docno>
+					<rating>2</rating>
+					<text>Me and a partner of mine are looking for someone who has skills of sending
+mass e-mails and also inboxing most of them. The profits involved are huge and
+the payment can be done weekly via paypal, bank transfer or western union. We
+are going to be three people in total (the two of us + you) and we are going
+to split profits evenly.  
+  
+Me and my partner will provide a good volume of valid e-mails and a tested
+method which was proved to make great money on a small scale! However we don&amp;apos;t
+have the skills to move onto something bigger and send a bigger volume of
+e-mails so here is where we need YOU!  
+  
+If you know how to send mass e-mails, have all the tools necessary and are
+interested in making great money, post a message in this thread or send me a
+PM with an id where you can be reached at (skype, yahoo, aim, gtalk).  
+  </text>
+				</passage>
+				<passage id="1799">
+					<docno>com_blackhatworld_www_24940416160a1c805ca89b4e6b3a267defa70f81_1426699322542</docno>
+					<rating>2</rating>
+					<text>I am looking for a cheap mass e-mailing site (like MailChimp) or mass
+e-mailing software. I want it to be as simple as copy/pasting the e-mail
+addresses and writing the text and hitting &amp;apos;send&amp;apos; button.  
+  
+  
+I don&amp;apos;t want any monthly subscriptions site or something like that. I just
+want to pay when I send the e-mails.  
+  
+  
+I have a list of about 70,000 e-mails. How much do you think it would cost me
+per campaign?  </text>
+				</passage>
+			</subtopic>
+			<subtopic name="Tips on spamming" id="332" num_of_passages="7">
+				<passage id="1801">
+					<docno>com_blackhatworld_www_2b0e75ba5e2c1902e452bb68b643aa4ed58c0b9e_1422347615177</docno>
+					<rating>3</rating>
+					<text> But, I&amp;apos;m going to offer you a few tips that hopefully will help you: 1. Don&amp;apos;t scream &amp;quot;Sign Up Now&amp;quot; in your emails. Be precise and to the point and tell what they would be signing up for instead of the email just being 100% hype. 2. How are you presenting the offer? Part of the sales process are visuals and within it&amp;apos;self is accountable for a good amount of the sales made by any affiliate or service provider. Design an eye catching email that will &amp;quot;Instantly&amp;quot; grab their attention where they have to keep reading or they feel the need to click on the link contained within to find out more. MadMimi has a great software for building custom emails and also offers affordable rates for mass email sending. 3. Who are you sending them to? Who&amp;apos;s your audience and who is receiving these emails? Perhaps the only reason your earnings are low if you&amp;apos;ve done the two previous steps that I stated above. Are you sending to opt-ins? Did you buy the emails or did you harvest them yourself? If you were to have the email addresses to 10,000 people who were interested in your offer, you&amp;apos;d earn a lot more than $4 so try to optimize your email list for better conversions. I hope this helps and if you need any additional help or information, just send me a Private Message. Good luck!
+</text>
+				</passage>
+				<passage id="1802">
+					<docno>com_blackhatworld_www_2b0e75ba5e2c1902e452bb68b643aa4ed58c0b9e_1422347615177</docno>
+					<rating>3</rating>
+					<text>Make an ebook on for example &amp;quot;10 Tips on finding your perfect partner and dating them&amp;quot; make them sign up to get the book. Now start pumping that link out there for the sign up, and before you know a targeted list will start to form in front of your eyes. Now that is something that sounds like email marketing with a plan. Having a good plan is the only way you will be succesful. If you could get rich by randomly spamming 10 000 people with a 1 line offer that smells dodgy from miles away, the world would have a lot more millionaires. Try and make a business plan where you bring at least a little value to the receiver (or at least get him to perceive that what you are offering is of value)</text>
+				</passage>
+				<passage id="2013">
+					<docno>com_blackhatworld_www_1f0f24a50f609f879e718c62b65563418b24c261_1426252404658</docno>
+					<rating>3</rating>
+					<text>
+
+%gt; I would suggest getting a VPS and try not to go with big US hosting
+companies like Hostgator or GoDaddy as they will shut you down for spam abuse.
+Search around for VPS in the Netherlands or in Asia. If you want to stick with
+US webhosting try to sign up with smaller companies</text>
+				</passage>
+				<passage id="2017">
+					<docno>com_blackhatworld_www_1f0f24a50f609f879e718c62b65563418b24c261_1426252404658</docno>
+					<rating>3</rating>
+					<text>you need vps or dedicated server to send this amount of bulk emails,if you
+try to send emails from regular hosting your account can be terminated
+</text>
+				</passage>
+				<passage id="2019">
+					<docno>com_blackhatworld_www_1f0f24a50f609f879e718c62b65563418b24c261_1426252404658</docno>
+					<rating>2</rating>
+					<text>For emailing I use XrumerHosting lately and no problem with lots of emails.
+</text>
+				</passage>
+				<passage id="2028">
+					<docno>com_blackhatworld_www_0c66a1cd1b8b1faf7040fb159af9753392c27515_1422541537792</docno>
+					<rating>2</rating>
+					<text>If the list is scraped and if you have not removed spam traps and all other threats from the list none of your emails will reach inbox. All your domains and IP&amp;apos;s will be blacklisted in a day. Perhaps to check bounces you will have to send those mails and you have no other go..
+</text>
+				</passage>
+				<passage id="2042">
+					<docno>com_blackhatworld_www_0187027e340108d12e6cf50d1dfc929e50c312b5_1422595210310</docno>
+					<rating>3</rating>
+					<text>Mail sent from a trusted SMTP (Example: smtp.gmail.com) is more likely to get through spam filters at the receiving inbox. If an SMTP has been abused, that SMTP would become blacklisted by the likes of hotmail, gmail etc. Any mail sent from a blacklisted SMTP is unlikely to get through spam filters. You can send emails from your computer without the use of an SMTP, you can use port 25. I suggest you read this first as most email clients block port 25 for this reason. Cant put links yet, but add this to the end of wiki&amp;apos;s domain without quotes, &amp;quot;/wiki/Anti-spam_techniques&amp;quot; You may find sendblaster 2. sendblaster.com/ They have a recommended SMTP that you can use. However you have to pay per email. There ARE other members of this forum that know more about this subject then I, but they aren&amp;apos;t here yet. BTW, when choosing text font colour, please consider contrast.</text>
+				</passage>
+			</subtopic>
+			<subtopic name="Protecting against spam" id="354" num_of_passages="2">
+				<passage id="2031">
+					<docno>com_blackhatworld_www_0c66a1cd1b8b1faf7040fb159af9753392c27515_1422541537792</docno>
+					<rating>3</rating>
+					<text>There are websites like mailboxvalidator which can check if any email is bad but does not send an email during the process.
+</text>
+				</passage>
+				<passage id="2032">
+					<docno>com_blackhatworld_www_0c66a1cd1b8b1faf7040fb159af9753392c27515_1422541537792</docno>
+					<rating>3</rating>
+					<text>You must need a SPAM filter to protect your Email Inbox free from some unwanted mails. I&amp;apos;m using boxbe ; and it&amp;apos;s working properly for me for my several mail ids!</text>
+				</passage>
+			</subtopic>
+		</topic>
+    </domain>
+    </trec_dd>

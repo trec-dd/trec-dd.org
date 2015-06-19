@@ -40,11 +40,12 @@
             <ul id="gdcontent">
                 <li><a href="#participation">1. Participation in TREC</a></li>
                 <li><a href="#domains">2. Domains and datasets for 2015</a></li>
-                <li><a href="#topic">3. Sample Topics for 2015</a></li>
+                <li><a href="#topic">3. Topics for 2015</a></li>
                 <li><a href="#task_description">4. Task Description</a></li>
-                <li><a href="#task_measures">5. Task Measures</a></li>
-                <li><a href="#run_format">6. Run Format</a></li>
-                <li><a href="#requirement">7. Requirement</a></li>
+                <li><a href="#jig">5. User Simulator (Jig) and Feedback Format </a> </li>
+                <li><a href="#task_measures">6. Task Measures</a></li>
+                <li><a href="#run_format">7. Run Format</a></li>
+                <li><a href="#requirement">8. Requirement</a></li>
             </ul>
             <div class="gdlinebox">
 
@@ -70,7 +71,7 @@
 
             </div>
 
-            <h4><a name="topic">3. Sample Topics </a></h4>
+            <h4><a name="topic">3. Topics </a></h4>
                 <div class="gd_details">
 
               Within each domain, there will be 25-50 topics that represent user search needs. The topics are developed by the NIST assessors. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation. 
@@ -83,18 +84,81 @@
     
 
     <br/><br/>
-         
+   
+
+         You can find the topics (with ground truth) from <a href="http://trec.nist.gov/act_part/tracks15.html"> TREC Active Participants Page </a> after you register for TREC Participation.        
 
                   
 
                </div>
 
-            <h4><a name="task_description">3. Task Description</a></h4>
+            <h4><a name="task_description">4. Task Description</a></h4>
                 <div class="gd_details">
 
     Your systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The simulated user will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with a graded relevance rating. The system may then return another five documents for more feedback.  Systems should stop when they believe they have covered all the user's subtopics sufficiently.  The subtopics are not known the system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
 
-    The system interactions with the user will be simulated using a jig that the track coordinators will provide to you.  This jigwill run on Windows, Mac OS, and Linux.  The jig will include all relevance information for the task, but your system may only interact with this information through the jig.  The simulator (jig) is under development. 
+    The following picture illustrates the task: <br/> <br/>
+
+   <img src="img/task.png" alt="task" width="900" border="0"> 
+
+   <br/><br/>
+
+   </div>
+
+     <h4> <a name="jig">5. User Simulator (Jig) and Feedback Format </a> </h4>
+   <div class="gd_details">
+
+    The system interactions with the user will be simulated using a jig that the track coordinators will provide to you.  This jigwill run on Linux.  The jig will include all relevance information for the task, but your system may only interact with this information through the jig.  <br/> <br/>
+
+    The simulator (jig) package can be downloaded from <a href="http://trec-dd.org/resource/trec_dd.tar.gz">http://trec-dd.org/resource/trec_dd.tar.gz</a>.
+  
+    <br/> Here is the complete <a href="README.md.txt"> README </a> for the jig package. 
+
+
+    <br/>     <br/> 
+
+
+   The feedback that the jig provides each time to your system is in the following format:
+
+  <pre>
+
+Each feedback is a tuple of (subtopic_id, passage_id, rating, confidence) for a document: 
+
+- subtopic_id: the id of a relevant subtopic that your returned document covers 
+- passage_id: the id of a relevant passage that your returned document covers 
+- rating: the relevance grade provided by NIST assessors. 1: marginally relevant, 2: relevant, 3: highly relevant, 4: key results. The relevance grades refer to the relevance level of your document to the whole topic. 
+- confidence: the similarity matching score from your document to a passage in the ground truth. If there is an exact of your the document you returned to a ground truth passage, the confidence is 1. 
+
+Note that subtopic_id and passage_id are global ids, i.e., a certain topic might contains subtopic with id 12, 45, 101, 103...
+                
+     Example feedback for topic 51 "contamination health worker" for 10 search iterations :
+       
+topic 51 query:contamination health worker 
+feedback:[[["28", "7151", "2", "0.433269"]], [["28", "7151", "2", "0.433767"]], [["28", "7151", "2", "0.445547"]], [["28", "7151", "2", "0.447769"]], [["28", "7151", "2", "0.447784"]]]
+
+feedback:[[], [["23", "42", "4", "0.430611"], ["23", "52", "3", "0.429705"], ["28", "7151", "2", "0.439869"], ["31", "54", "3", "0.430105"], ["31", "484", "2", "0.435456"]], [["23", "37", "3", "1"], ["23", "41", "3", "1"], ["23", "42", "4", "1"], ["23", "45", "3", "1"], ["23", "52", "3", "1"], ["23", "55", "3", "1"], ["23", "62", "4", "1"], ["23", "65", "3", "1"], ["24", "38", "3", "1"], ["26", "40", "3", "1"], ["28", "44", "3", "1"], ["28", "7151", "2", "0.442506"], ["31", "54", "3", "1"], ["31", "484", "2", "0.426873"]], [["28", "7151", "2", "0.445271"]], [["28", "7151", "2", "0.441989"]]]
+
+feedback:[[], [], [], [], []]
+
+feedback:[[["31", "484", "2", "0.440418"]], [["31", "54", "3", "0.430053"]], [["31", "54", "3", "0.430661"]], [["31", "54", "3", "0.432469"]], [["31", "54", "3", "0.43198"]]]
+
+feedback:[[["31", "484", "2", "0.423141"]], [["28", "7151", "2", "0.442778"]], [["28", "7151", "2", "0.442065"]], [["28", "7151", "2", "0.461145"], ["130", "7160", "2", "0.421051"]], [["28", "7151", "2", "0.460194"], ["130", "7160", "2", "0.421116"]]]
+
+feedback:[[], [], [], [], []]
+
+feedback:[[["31", "54", "3", "0.420531"]], [], [["23", "42", "4", "0.42016"], ["28", "7151", "2", "0.503487"], ["31", "54", "3", "0.420527"], ["122", "7248", "2", "0.424148"], ["130", "7160", "2", "0.462615"]], [], []]
+
+feedback:[[], [], [], [], []]
+
+feedback:[[], [], [], [], []]
+
+feedback:[[], [["31", "54", "3", "0.42048"]], [["31", "54", "3", "0.420466"]], [], []]
+
+   </pre> 
+
+    <br/> <br/>
+
+   </div>
 
 <!--  here:<br/>  <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a> <br/><br/>
 -->
@@ -105,15 +169,38 @@
 -->
                 </div>
 
-            <h4><a name="task_measures">4. Task Measures</a></h4>
+            <h4><a name="task_measures">6. Task Measures</a></h4>
                 <div class="gd_details">
                 The primary measures will be Cube Test, &#181;-ERR, and session NDCG.  Reference scripts will be provided by the track coordinators.  We will also likely report other diagnostic measures such as basic precision and recall.<br/><br/>
 
     The Cube Test is a search effectiveness measurement that measures the speed of gaining relevant information (could be documents or passages) in a dynamic search process. It measures the amount of relevant information a search system could gather for the entire search process with multiple runs of retrieval. A higher Cube Test score means a better DD system, which ranks relevant information (documents and/or psaasages) for a complex <a href="#topic">search topic</a>  as much as possible and as early as possible. 
 
 
+
     <br/> <br/>Reference: Jiyun Luo, Christopher Wing, Hui Yang, Marti Hearst. The Water Filling Model and The Cube Test: Multi-Dimensional Evaluation for Professional Search. CIKM 2013. <a href="http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf">http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf</a><br/> 
-    <br /> Codes: <a href="https://github.com/trec-dd/trec-dd-metrics/tree/master/cube-test/cubetest">CubeTest scripts in Github</a><br/> <br/> 
+
+    <br /> Its code is available as part of the jig package. The command to run the cube test is: <br/>
+
+<pre>
+**************************************************************************
+ 
+** The scorer used in TREC DD is cube test. score a submitted run using cubetest.pl
+
+   Usage: perl ./scorer/cubeTest.pl qrel_file run_file cut_off
+   
+   - qrel: qrel file. It is a trec qrel file that converted from topics.xml. Its format is topic_id subtopic_id doc_no rating, which is located at ./truth_data/qrel.txt
+
+   - run_file: Your run for submission.  It is in TREC format. 
+
+  - cutoff: the number of iterations where you run cubetest over your results
+
+   for example: perl scorer/cubeTest.pl truth_data/qrel.txt output/GU_RUN1 10 
+   
+</pre>
+    <br /> You can also find a seperate distribution at <a href="https://github.com/trec-dd/trec-dd-metrics/tree/master/cube-test/cubetest">CubeTest scripts in Github</a><br/> <br/> 
+   
+
+
 
     &#181;-ERR is an extension to the cascade model of ERR by defining an outer loop in which the user changes the entity profile each time they find a useful piece of new information. <br/>
 <!--    Reference: Oliver Chappelle, Don Metzler, Y Zhang, ACM 2009 Expected reciprocal rank for graded relevance.  <a href="http://dl.acm.org/citation.cfm?id=1646033">http://dl.acm.org/citation.cfm?id=1646033</a><br/><br/>
@@ -124,14 +211,46 @@
     Reference: Evangelos Kanoulas, Ben Carterette, Paul D. Clough, Mark Sanderson. Evaluating Multi-Query Sessions. SIGIR 2011. <a href="http://dl.acm.org/citation.cfm?id=2009916.2010056">http://dl.acm.org/citation.cfm?id=2009916.2010056</a><br/><br/>
 
                 </div>
-            <h4><a name="run_format">5. Run Format</a></h4>
+            <h4><a name="run_format">7. Run Format</a></h4>
             <div class="gd_details">
                 In TREC, a "run" is the output of a search system over all topics.  Participating groups typically submit more than one run corresponding to different parameter settings or algorithmic choices.  The maximum number of runs allowed for DD 2015 is five from each team.
     <br/><br/>
-    The jig outputs a correctly-formatted run file, but for completeness, the format will appear here soon.<br/><br/>
+      
+<pre>
+
+**************************************************************************
+
+** Run Format
+
+We use the TREC submission format as the following: 
+
+          topic_id Q0 doc_no doc_rank ranking_score run_id iteration_id
+
+
+   For instance:
+   
+51 Q0 ebola-51c6d350e897850b1b1b654e54fba32e8f20c75642d3a957c8ff1385080852211 -6.07989 GU_RUN1 1
+51 Q0 ebola-0bbd59454ca76fec0751feb64f22a3513babc4c059219984adca8dd15b12a8002 -6.08048 GU_RUN1 1
+51 Q0 ebola-58c00f82c27c9497992dc3f2be5d21fda5cb7f3980de8d7d469454e97113c3943 -6.22642 GU_RUN1 1
+51 Q0 ebola-f31b1ece713598930721e946c35ae0cc5c1be44c6c6740989699c531df7640094 -6.23271 GU_RUN1 1
+51 Q0 ebola-9bcab76e9411db650b6831c177218820c4c181d4d2da4722db5b57b7e9f43f0c5 -6.23287 GU_RUN1 1
+51 Q0 ebola-5682a84bc342c37a7906be01d77a5c68ed2a60395ad6a39460f7228307a8202f6 -6.27632 GU_RUN1 2
+51 Q0 ebola-7c5e0162a9af78dbea4eb0ff7be8f9b7a12b5628d6745282f8c93945360696ca7 -6.32298 GU_RUN1 2
+51 Q0 ebola-0ffc5b206d49788a68b024408f5a8f9775a2f151582b10950dd37284a00ae5108 -6.33974 GU_RUN1 2
+51 Q0 ebola-cf16ae103c906fc433919d92cc4cea1535e4c8aae7eb9e36c7b36f35e2e905659 -6.35099 GU_RUN1 2
+51 Q0 ebola-6836b94bfe72c21436df2cbc5e7543ed1e12a021a2872c4754949418704109d310 -6.38137 GU_RUN1 2
+51 Q0 ebola-69501fadea9c865300e141746188af120ded70ab7e5591611c1c5546b5b767c311 -6.38475 GU_RUN1 3
+51 Q0 ebola-f42cb7bdafa9219f1891ed269746fbfba67e574e091b47249aab2b8f5f7c674812 -6.38526 GU_RUN1 3
+51 Q0 ebola-103918db07a6d95104a015c4c50042acc9384ff5a5a0c80ef11d98fbf846f5ff13 -6.3859 GU_RUN1 3
+51 Q0 ebola-6c94104def405355267ae3c033495f0e5ef306e3cb8a79726f6a623c6cf588e914 -6.38658 GU_RUN1 3
+51 Q0 ebola-4a83026d3eabe1576fa7004971b15ac5d2d5aca356a65a7333094da8f980432715 -6.38679 GU_RUN1 3
+
+    NOTE that the last column is new, which shows the count of the search iterations for that line of result.  
+
+</pre>
 
             </div>
-            <h4><a name="requirement">6. Requirement</a></h4>
+            <h4><a name="requirement">8. Requirement</a></h4>
             <div class="gd_details">
             Participants are expected to submit at least one run by the deadline.<br/><br/>
 
