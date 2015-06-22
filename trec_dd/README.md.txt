@@ -45,7 +45,7 @@ mv trec_dd_2015_release /yourhomedirectory/indri-5.0/.
 
 You will see a bin directory in /yourhomedirectory/indri-5.0/trec_dd_2015_release. 
 
-Your topics (with ground truth) can be downloaded from the TREC Active Participants Home Page. Copy it and put it under ./trec_dd_2015_release/truth_data/topics.xml
+Your topics (with ground truth) can be downloaded from the TREC Active Participants Home Page. Copy it and put it under ./trec_dd_2015_release/topics/topics.xml
 
 Congratulations for a successful installation!!
 
@@ -97,7 +97,7 @@ NOTE: run_lemur_dd.sh executes a program  'lemur_dd':
 		
 	For example, for topic 55  "Theresa Spence" :
 
->$./bin/lemur_dd -topicNum=51 -topics=truth_data/topics.xml -config=jig/config.yaml -rule=method:d,mu:5000 -domain=Ebola -index=/data1/trecdd/index/ebola_html_01_03_tweets -runid=GU_RUN1
+>$./bin/lemur_dd -topicNum=51 -topics=topics/topics.xml -config=jig/config.yaml -rule=method:d,mu:5000 -domain=Ebola -index=/data1/trecdd/index/ebola_html_01_03_tweets -runid=GU_RUN1
 
        Example feedback for topic 55 "Theresa Spence" :
        
@@ -153,7 +153,7 @@ We use the TREC submission format as the following:
 
   - cutoff: the number of iterations where you run cubetest over your results
 
-   for example: perl scorer/cubeTest.pl truth_data/qrel.txt output/GU_RUN1 10 
+   for example: perl scorer/cubeTest.pl scorer/qrel.txt output/GU_RUN1 10 
 	    
 **************************************************************************
 
