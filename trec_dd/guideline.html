@@ -124,35 +124,28 @@
 
 Each feedback is a tuple of (subtopic_id, passage_id, rating, confidence) for a document: 
 
+- docid: the id of a returned document
 - subtopic_id: the id of a relevant subtopic that your returned document covers 
-- passage_id: the id of a relevant passage that your returned document covers 
+- passage_text: the content of a relevant passage that your returned document covers 
 - rating: the relevance grade provided by NIST assessors. 1: marginally relevant, 2: relevant, 3: highly relevant, 4: key results. The relevance grades refer to the relevance level of your document to the whole topic. 
-- confidence: the similarity matching score from your document to a passage in the ground truth. If there is an exact of your the document you returned to a ground truth passage, the confidence is 1. 
 
-Note that subtopic_id and passage_id are global ids, i.e., a certain topic might contains subtopic with id 12, 45, 101, 103...
+
+Note that subtopic_ids are global ids, i.e., a certain topic might contains subtopic with id 12, 45, 101, 103...
                 
-     Example feedback for topic 51 "contamination health worker" for 10 search iterations :
-       
-topic 51 query:contamination health worker 
-feedback:[[["28", "7151", "2", "0.433269"]], [["28", "7151", "2", "0.433767"]], [["28", "7151", "2", "0.445547"]], [["28", "7151", "2", "0.447769"]], [["28", "7151", "2", "0.447784"]]]
+     Example feedback for topic 55 "Theresa Spence" for 5 search iterations :
 
-feedback:[[], [["23", "42", "4", "0.430611"], ["23", "52", "3", "0.429705"], ["28", "7151", "2", "0.439869"], ["31", "54", "3", "0.430105"], ["31", "484", "2", "0.435456"]], [["23", "37", "3", "1"], ["23", "41", "3", "1"], ["23", "42", "4", "1"], ["23", "45", "3", "1"], ["23", "52", "3", "1"], ["23", "55", "3", "1"], ["23", "62", "4", "1"], ["23", "65", "3", "1"], ["24", "38", "3", "1"], ["26", "40", "3", "1"], ["28", "44", "3", "1"], ["28", "7151", "2", "0.442506"], ["31", "54", "3", "1"], ["31", "484", "2", "0.426873"]], [["28", "7151", "2", "0.445271"]], [["28", "7151", "2", "0.441989"]]]
 
-feedback:[[], [], [], [], []]
-
-feedback:[[["31", "484", "2", "0.440418"]], [["31", "54", "3", "0.430053"]], [["31", "54", "3", "0.430661"]], [["31", "54", "3", "0.432469"]], [["31", "54", "3", "0.43198"]]]
-
-feedback:[[["31", "484", "2", "0.423141"]], [["28", "7151", "2", "0.442778"]], [["28", "7151", "2", "0.442065"]], [["28", "7151", "2", "0.461145"], ["130", "7160", "2", "0.421051"]], [["28", "7151", "2", "0.460194"], ["130", "7160", "2", "0.421116"]]]
+topic 55 query:Theresa Spence
+feedback:[[], [], [["1323453660-374c2bc4b4371a227d4b9ff703c9750e", "32", "My community will not consider third-party managers nor pay for them out of our already depressed band support funding budget,\u00e2\u0080\u009d Attawapiskat First Nation Chief Theresa Spence wrote, mostly in capital letters, in a response to Aboriginal Affairs Minister John Duncan on Friday.\n\n ", "4"]], [], []]
 
 feedback:[[], [], [], [], []]
 
-feedback:[[["31", "54", "3", "0.420531"]], [], [["23", "42", "4", "0.42016"], ["28", "7151", "2", "0.503487"], ["31", "54", "3", "0.420527"], ["122", "7248", "2", "0.424148"], ["130", "7160", "2", "0.462615"]], [], []]
+feedback:[[], [], [], [["1323124200-1f699d3ee9a338089fa0bc6ec612b173", "32", "The government said earlier it had chosen Jacques Marion, from the accounting and consulting firm BDO Canada, as its third-party manager for Attawapiskat. Marion was to exercise signing authority for all department spending and would decide which band staff are required to run its program and services.\n\n \nSpence said the minister responsible for First Nations &quot;didn&apos;t listen.&quot;\n\n \n&quot;We&apos;d like to work together but put third party away \u00c3\u00a2\u00c2\u0080\u00c2\u00a6 We&apos;ve demonstrated we have our deficit down. We don&apos;t need a banker to come and tell us what to do,&quot; the chief told Solomon.\n\n ", "4"]], []]
+
+feedback:[[["1322812020-35e06badddb1bd58ca16a34dfffedef3", "70", "Roughly $11 million in debt, the Attawapiskat council has been on financial alert since at least July 2010, when federal officials required it to engage a professional co-manager to monitor spending and accounting procedures.\n\n  \nThe council hired Clayton Kennedy, who admits he is in a romantic relationship with Spence.\n\n  \n\u00e2\u0080\u009cYes, I am,\u00e2\u0080\u009d he said Thursday. \u00e2\u0080\u009cThere is a conflict-of-interest policy in place.\u00e2\u0080\u009d\n\n  \nKennedy said he does not make recommendations to the chief or her deputy but to the council as a whole, and so his personal relationship with Spence should not be a factor.\n\n  \n\u00e2\u0080\u009c", "4"]], [], [], [], []]
 
 feedback:[[], [], [], [], []]
 
-feedback:[[], [], [], [], []]
-
-feedback:[[], [["31", "54", "3", "0.42048"]], [["31", "54", "3", "0.420466"]], [], []]
 
    </pre> 
 
@@ -229,21 +222,23 @@ We use the TREC submission format as the following:
 
    For instance:
    
-51 Q0 ebola-51c6d350e897850b1b1b654e54fba32e8f20c75642d3a957c8ff1385080852211 -6.07989 GU_RUN1 1
-51 Q0 ebola-0bbd59454ca76fec0751feb64f22a3513babc4c059219984adca8dd15b12a8002 -6.08048 GU_RUN1 1
-51 Q0 ebola-58c00f82c27c9497992dc3f2be5d21fda5cb7f3980de8d7d469454e97113c3943 -6.22642 GU_RUN1 1
-51 Q0 ebola-f31b1ece713598930721e946c35ae0cc5c1be44c6c6740989699c531df7640094 -6.23271 GU_RUN1 1
-51 Q0 ebola-9bcab76e9411db650b6831c177218820c4c181d4d2da4722db5b57b7e9f43f0c5 -6.23287 GU_RUN1 1
-51 Q0 ebola-5682a84bc342c37a7906be01d77a5c68ed2a60395ad6a39460f7228307a8202f6 -6.27632 GU_RUN1 2
-51 Q0 ebola-7c5e0162a9af78dbea4eb0ff7be8f9b7a12b5628d6745282f8c93945360696ca7 -6.32298 GU_RUN1 2
-51 Q0 ebola-0ffc5b206d49788a68b024408f5a8f9775a2f151582b10950dd37284a00ae5108 -6.33974 GU_RUN1 2
-51 Q0 ebola-cf16ae103c906fc433919d92cc4cea1535e4c8aae7eb9e36c7b36f35e2e905659 -6.35099 GU_RUN1 2
-51 Q0 ebola-6836b94bfe72c21436df2cbc5e7543ed1e12a021a2872c4754949418704109d310 -6.38137 GU_RUN1 2
-51 Q0 ebola-69501fadea9c865300e141746188af120ded70ab7e5591611c1c5546b5b767c311 -6.38475 GU_RUN1 3
-51 Q0 ebola-f42cb7bdafa9219f1891ed269746fbfba67e574e091b47249aab2b8f5f7c674812 -6.38526 GU_RUN1 3
-51 Q0 ebola-103918db07a6d95104a015c4c50042acc9384ff5a5a0c80ef11d98fbf846f5ff13 -6.3859 GU_RUN1 3
-51 Q0 ebola-6c94104def405355267ae3c033495f0e5ef306e3cb8a79726f6a623c6cf588e914 -6.38658 GU_RUN1 3
-51 Q0 ebola-4a83026d3eabe1576fa7004971b15ac5d2d5aca356a65a7333094da8f980432715 -6.38679 GU_RUN1 3
+51 Q0 ebola-51c6d350e897850b1b1b654e54fba32e8f20c75642d3a957c8ff138508085221 1 -6.07989 GU_RUN1 1
+51 Q0 ebola-0bbd59454ca76fec0751feb64f22a3513babc4c059219984adca8dd15b12a800 2 -6.08048 GU_RUN1 1
+51 Q0 ebola-58c00f82c27c9497992dc3f2be5d21fda5cb7f3980de8d7d469454e97113c394 3 -6.22642 GU_RUN1 1
+51 Q0 ebola-f31b1ece713598930721e946c35ae0cc5c1be44c6c6740989699c531df764009 4 -6.23271 GU_RUN1 1
+51 Q0 ebola-9bcab76e9411db650b6831c177218820c4c181d4d2da4722db5b57b7e9f43f0c 5 -6.23287GU_RUN1 1
+51 Q0 ebola-5682a84bc342c37a7906be01d77a5c68ed2a60395ad6a39460f7228307a8202f 1 -6.27632GU_RUN1 2
+51 Q0 ebola-7c5e0162a9af78dbea4eb0ff7be8f9b7a12b5628d6745282f8c93945360696ca 2 -6.32298GU_RUN1 2
+51 Q0 ebola-0ffc5b206d49788a68b024408f5a8f9775a2f151582b10950dd37284a00ae510 3 -6.33974GU_RUN1 2
+51 Q0 ebola-cf16ae103c906fc433919d92cc4cea1535e4c8aae7eb9e36c7b36f35e2e90565 4 -6.35099GU_RUN1 2
+51 Q0 ebola-6836b94bfe72c21436df2cbc5e7543ed1e12a021a2872c4754949418704109d3 5 -6.38137GU_RUN1 2
+51 Q0 ebola-69501fadea9c865300e141746188af120ded70ab7e5591611c1c5546b5b767c3 1 -6.38475GU_RUN1 3
+51 Q0 ebola-f42cb7bdafa9219f1891ed269746fbfba67e574e091b47249aab2b8f5f7c6748 2 -6.38526GU_RUN1 3
+51 Q0 ebola-103918db07a6d95104a015c4c50042acc9384ff5a5a0c80ef11d98fbf846f5ff 3 -6.3859GU_RUN1 3
+51 Q0 ebola-6c94104def405355267ae3c033495f0e5ef306e3cb8a79726f6a623c6cf588e9 4 -6.38658GU_RUN1 3
+51 Q0 ebola-4a83026d3eabe1576fa7004971b15ac5d2d5aca356a65a7333094da8f9804327 5 -6.38679 GU_RUN1 3
+
+
 
     NOTE that the last column is new, which shows the count of the search iterations for that line of result.  
 
