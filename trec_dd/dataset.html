@@ -238,7 +238,7 @@ This is a set of web pages, scientific data, zip files, PDFs, images, and scienc
   <li> Time frame: September 2014 - May 2015.
   <li> Geographic area: global
   <li> Size of data on disk: 158Gb.
-  <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled data were put into Common Crawl Format, acording to Memex format, using the CommonCrawlDataDumper. The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure. CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data representation format used in many contexts.Each contributed web crawl has an accompanying JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all of the JSON files. Total records at time of generation are provided below:
+  <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled data were put into Common Crawl Format, acording to Memex format, using the <a href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>. The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure. CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data representation format used in many contexts.Each contributed web crawl has an accompanying JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all of the JSON files.
 </ul>
 </div>
 </div>
