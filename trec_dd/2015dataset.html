@@ -1,0 +1,302 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>TREC 2015 Dynamic Domain Track</title>
+                <link rel="stylesheet" type="text/css" href="css/style.css"/>
+                <script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<!--<script type="text/javascript" src="js/main.js"></script>-->
+	</head>
+
+<body>
+		<div class=wrapper>
+			<img class="logo" src="img/cube.png"/>
+			<header>
+
+				TREC Dynamic Domain Track
+
+			</header>
+
+			<nav>
+				<a href="./index.html">overview</a> |
+				<a href="./timeline.html">timeline</a> |
+				<a href="./guideline.html">guidelines</a> |
+				<a href="./dataset.html">datasets</a> |
+				<a href="./ack.html">acknowledgment</a>
+			</nav>
+                        <div class="line"></div>
+<div class="overview">
+<br><br>
+There are four datasets for the 2015 Dynamic Domain track.  This page describes them, and gives information on how to get them, and some links to sample code for working with them.<br>
+</div>
+<ul id="gdcontent">
+<li><a href="#details">1. Dataset details</a>
+<li><a href="#cca">2. CCA generic schema</a>
+<li><a href="#format">3. Data format</a>
+<li><a href="#get">4. How to get the data</a>
+</ul>
+
+            <section class="intro">
+
+<div class="gdlinebox">
+<h4><a name="details">1. Dataset details</a></h4>
+<br>
+<strong>Illicit Goods domain</strong><br>
+<div class="gd_details">
+This data is related to how illicit and counterfeit goods such as fake viagra are made, advertised, and sold on the Internet. The dataset comprises 500,000 million threads from underground hacking forums.
+<br>
+<ul class="gd_details">
+  <li> Company/POC for crawl: Amanda Towler, Hyperion Gray (atowler at hyperiongray dot com)</li>
+  <li> Version: 1.0 </li>
+  <li> Purpose of data: represents an adversarial domain.</li>
+  <li> Description: Threads from BlackHatWorld.com and HackForums.com, two black-hat-SEO forum sites.  Each record contains the HTML of the thread, and extracted posts and metadata.
+  <li> Schema notes: the 'features' slot contains extracted posts and metadata:
+<pre>
+         "features": {
+         "items": [{
+           "author": { "avatar": url, "link": url, "username": "string" },
+           "content": "content of post",
+           "created_at": long,
+           "item_id": int,
+           "link": url,
+           "section": { "name": "forum section title", "url": url },
+           "source": "scraper tool",
+           "thread_id": int,
+           "thread_link": url,
+           "thread_name": "name of thread" },
+       {"author": "..."},
+       ]}}
+</pre>
+  <li> Number of items: 526,717 threads, 3,345,133 posts.</li>
+  <li> Time frame:
+  <li> Geographic area: global
+  <li> Size of data on disk: 8.3 GB
+  <li> Format: Gzipped sequence of CBOR records
+</ul>
+
+</div>
+<br>
+<br>
+<strong>Ebola domain</strong><br>
+<div class="gd_details">
+This data is related to the Ebola outbreak in Africa in 2014-2015. The dataset comprises tweets relating to the outbreak, web pages from sites hosted in the affected countries as well as PDF documents from websites such as The World Health Organization, Financial Tracking Service and The World Bank. Such information resources are designed to provide information to citizens and aid workers on the ground.<br>
+<ul class="gd_details">
+  <li> Company/POC for crawl: Juliana Friere and Kien Pham, NYU (juliana dot freire at nyu dot edu); Peter Landwehr 
+peter dot landwehr at giantoak dot com); Lewis McGibbney, JPL (Lewis dot J dot Mcgibbney at jpl dor nasa dot gov)</li>
+  <li> Version: 1.0 </li>
+  <li> Purpose of data: represents an emerging humanitarian assistance situation.</li>
+  <li> Description: This dataset has four disjoint parts:
+       <ol class="gd_details gdnum">
+	 <li>Ebola-web-01-2015: web pages crawled during January 2015.
+	 <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
+	 <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
+	 <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola outbreak.
+       </ol>
+  <li> Schema notes: The web and PDF subsets only contain the raw crawled data.  The tweets subset as distributed only contains pointers to tweets, because Twitter does not allow redistribution of tweets.  You will need to use the Twittertools crawler (link here) to get the actual tweets.  The output of that crawler includes both the HTML pages from Twitter, as well as extracted tweet data in the 'features' block.
+  <li> Number of items: 497,362 web pages, 19,834 PDFs, 164,961 tweets.
+  <li> Time frame: January - March 2015
+  <li> Geographic area: global, primarily West Africa
+  <li> Size of data on disk: 12.6 GB
+  <li> Format: Gzipped sequence of CBOR records; sequence of tweet pointers
+</ul>
+</div>
+
+<br>
+<br>
+<strong>Local Politics domain</strong><br>
+<div class="gd_details">
+This data is related to regional politics in the Pacific Northwest and the small-town politicians and personalities that work it. The dataset comprises web news items from the TREC 2014 KBA Stream Corpus.<br>
+<ul class="gd_details">
+  <li> Company/POC for crawl: John Frank, Diffeo (jrf at diffeo dot com)</li>
+  <li> Version: 1.0 </li>
+  <li> Purpose of data: represents news on entities in a geographic region.</li>
+  <li> Description: This dataset has HTML web news from many sources, collected as part of the KBA 2014 Stream Corpus.  The HTML has been cleansed of boilerplate, so the content should be just the content of the news item.
+  <li> Schema notes: This dataset is raw HTML with nothing in the features block.
+  <li> Number of items: 6,831,397 web pages.
+  <li> Time frame: October 2011 - February 2013
+  <li> Geographic area: global
+  <li> Size of data on disk: 58 GB
+  <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key.
+</ul>
+</div>
+
+<br>
+<br>
+<strong>Polar domain</strong><br>
+<div class="gd_details">
+This is a set of web pages, scientific data, zip files, PDFs, images, and science code related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic Data and Information System (ACADIS), NASA funded Antarctic Master Directory (AMD), and National Snow and Ice Data Center (NSIDC) Arctic Data Explorer. More information about the dataset can be found <a href="https://github.com/chrismattmann/trec-dd-polar/">here</a>.<br>
+<ul class="gd_details">
+  <li> Company/POC for crawl: Chris Mattman, JPL (chris dot a dot mattmann at jpl dot nasa dot gov)</li>
+  <li> Version: 1.0 </li>
+  <li> Purpose of data: represents a domain for open science and scientific data search.</li>
+  <li> Description: Web pages, data files, zip archives, PDFs, images, and code.
+  <li> Schema notes: Here is a MIME type distribution breakdown of the data.
+   <pre>
+{
+    "application/atom+xml": "2984",
+    "application/dita+xml; format=concept": "345",
+    "application/epub+zip": "36",
+    "application/fits": "24",
+    "application/gzip": "2060",
+    "application/java-vm": "1",
+    "application/msword": "244",
+    "application/octet-stream": "211687",
+    "application/ogg": "26",
+    "application/pdf": "44658",
+    "application/postscript": "219",
+    "application/rdf+xml": "1042",
+    "application/rss+xml": "8894",
+    "application/rtf": "53",
+    "application/vnd.google-earth.kml+xml": "298",
+    "application/vnd.ms-excel": "227",
+    "application/vnd.ms-excel.sheet.4": "1",
+    "application/vnd.ms-htmlhelp": "1",
+    "application/vnd.oasis.opendocument.presentation": "1",
+    "application/vnd.oasis.opendocument.text": "10",
+    "application/vnd.rn-realmedia": "105",
+    "application/vnd.sun.xml.writer": "1",
+    "application/x-7z-compressed": "2",
+    "application/x-bibtex-text-file": "13",
+    "application/x-bittorrent": "3",
+    "application/x-bzip": "6",
+    "application/x-bzip2": "63",
+    "application/x-compress": "44",
+    "application/x-debian-package": "4",
+    "application/x-elc": "324",
+    "application/x-executable": "35",
+    "application/x-font-ttf": "9",
+    "application/x-gtar": "46",
+    "application/x-hdf": "41",
+    "application/x-java-jnilib": "5",
+    "application/x-lha": "2",
+    "application/x-matroska": "66",
+    "application/x-msdownload": "72",
+    "application/x-msdownload; format=pe": "1",
+    "application/x-msdownload; format=pe32": "16",
+    "application/x-msmetafile": "6",
+    "application/x-rar-compressed": "1",
+    "application/x-rpm": "3",
+    "application/x-sh": "5680",
+    "application/x-shockwave-flash": "141",
+    "application/x-sqlite3": "1",
+    "application/x-stuffit": "1",
+    "application/x-tar": "37",
+    "application/x-tex": "17",
+    "application/x-tika-msoffice": "2809",
+    "application/x-tika-ooxml": "1775",
+    "application/x-xz": "11",
+    "application/xhtml+xml": "385751",
+    "application/xml": "21000",
+    "application/xslt+xml": "7",
+    "application/zip": "3762",
+    "audio/basic": "54",
+    "audio/mp4": "18",
+    "audio/mpeg": "646",
+    "audio/vorbis": "5",
+    "audio/x-aiff": "10",
+    "audio/x-flac": "2",
+    "audio/x-mpegurl": "1",
+    "audio/x-ms-wma": "55",
+    "audio/x-wav": "59",
+    "image/gif": "40049",
+    "image/jpeg": "85879",
+    "image/png": "37997",
+    "image/svg+xml": "342",
+    "image/tiff": "477",
+    "image/vnd.adobe.photoshop": "4",
+    "image/vnd.dwg": "3",
+    "image/vnd.microsoft.icon": "1570",
+    "image/x-bpg": "7",
+    "image/x-ms-bmp": "59",
+    "image/x-xcf": "1",
+    "message/rfc822": "182",
+    "message/x-emlx": "1",
+    "text/html": "739588",
+    "text/plain": "137335",
+    "text/troff": "2",
+    "text/x-diff": "1",
+    "text/x-jsp": "3",
+    "text/x-perl": "14",
+    "text/x-php": "25",
+    "text/x-python": "5",
+    "text/x-vcard": "19",
+    "video/mp4": "675",
+    "video/mpeg": "255",
+    "video/quicktime": "954",
+    "video/x-flv": "13",
+    "video/x-m4v": "203",
+    "video/x-ms-asf": "26",
+    "video/x-ms-wmv": "139",
+    "video/x-msvideo": "96",
+    "xscapplication/zip": "85"
+}
+   </pre>
+  <li> Number of items: 1,741,530 records.
+  <li> Time frame: September 2014 - May 2015.
+  <li> Geographic area: global
+  <li> Size of data on disk: 158Gb.
+  <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled data were put into Common Crawl Format, acording to Memex format, using the <a href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>. The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure. CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data representation format used in many contexts.Each contributed web crawl has an accompanying JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all of the JSON files.
+</ul>
+</div>
+</div>
+
+<div class="gdlinebox">
+<h4><a name="cca">2. CCA generic schema</a></h4>
+<br>
+The documents in each dataset are stored in a structured format called the Common Crawl Architecture (CCA), developed as part of the DARPA MEMEX project.  Records in this schema follow this format:
+<br>
+<pre style="font-family: monospace">
+{   'key': 'ebola-03cad6ee34e9dc0aeb77e4c5d31aad2aa41f6ad819f23b8504612d6e6de8a18c',
+    'request': {   'body':    None,
+                   'client':  { '...': '...' },
+                   'headers': [ [ 'Accept-Language': 'en-US,en' ], [ '...', '...' ] ],
+                   'method':  'GET'
+    },
+    'response': {  'body':    '&lt;!DOCTYPE html&gt; &lt;html lang=\'en\' class=\'js-disabled\'&gt; &lt;head&gt; ... &lt;/html&gt;',
+                   'status':  '200',
+                   'headers': [ ['Content-Type', 'text\/html' ], [ '...', '...'] ],
+    },
+    'timestamp': 1421064000L,
+    'url': 'http://www.nature.com/news/ebola-1.15750',
+    'indices': [
+        { 'key': 'crawl', 'value': 'ebola' },
+        { 'key': '...', 'value': '...'},
+    ],
+    'features': [
+        { '...': '...' }, { '...': '...' }
+    ],
+}
+</pre>
+<br>
+More or fewer fields are present in the different datasets depending on how they were created.  Every record in every dataset has a 'key' field (the "document number"), a 'response.body' with raw content, the timestamp, and the source URL.  They should also have an 'indices.key=crawl' field indicating which dataset the document goes with.  The 'features' block is meant to contain extracted or derived data.  In the Ebola tweets subset to hold a structured representation of the tweet, automatically extracted from the raw Twitter HTML contained in the 'response.body'.  In the Illicit-goods dataset, the features block contains extracted posts and thread/post metadata from the raw HTML thread.
+</div>
+
+<div class="gdlinebox">
+<h4><a name="format">3. Data format</a></h4>
+<br>
+The documents are stored in files that each contain a stream of <a href="http://cbor.io/">CBOR</a> records that follow the CCA format above.  CBOR is a variation of JSON that supports binary data and a has more efficient encoding than text.
+
+Here is an example <a href="cbor-python-example.html">using Python and the cbor library</a>.  More example code in Python and Java can be found at <a href="https://github.com/trec-dd/trec-dd-example-code">the TREC DD Github site</a>.
+</div>
+
+<div class="gdlinebox">
+<h4><a name="get">4. Obtaining the data</a></h4>
+<br>
+To get access to the collections, you must be a TREC 2015 participant.  Complete the <a href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Organization User Agreement.html">TREC DD Organizational User Agreement</a> (password protected, use the TREC participant password) and email it as a scanned PDF or a high-quality digital photo to Angela (dot) Ellis (at) NIST (dot) gov, including your TREC participant ID.  Within a week you should receive access credentials to download the data, as well as the decryption key to read the local-politics documents.
+<br><br>
+Local users of the data must complete the <a href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Individual User Agreement.html">Individual User Agreement</a> and return it to the organizational point of contact who will maintain those records.
+</div>
+            </section>
+
+            <div class="footerline"></div>
+
+            <footer>
+				This page is owned by TREC Dynamic Domain Track Group.
+			</footer>
+		</div>
+	</body>
+</html>
+

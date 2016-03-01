@@ -1,0 +1,184 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="ISO-8859-1">
+		<title>TREC 2015 Dynamic Domain Track</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<!--<script type="text/javascript" src="js/main.js"></script>-->
+	</head>
+
+	<body>
+		<div class=wrapper>
+			<img class="logo" src="img/cube.png"/>
+			<header>
+
+				TREC Dynamic Domain Track
+
+			</header>
+
+			<nav>
+				<a href="./index.html">overview</a> |
+				<a href="./timeline.html">timeline</a> |
+				<a href="./guideline.html">guidelines</a> |
+				<a href="./dataset.html">datasets</a> |
+				<a href="./ack.html">acknowledgment</a>
+			</nav>
+
+			<div class="line"></div>
+
+            <section>
+            <h2>TREC Dynamic Domain Track
+    2015 Guidelines </h2>
+
+    <div class="gdlinebox">
+            The goal of the dynamic domain (DD) track is to support research in dynamic, exploratory search of complex information domains.  DD systems receive relevance feedback as they explore a space of subtopics within the collection in order to satisfy a user's information need.
+    </div>
+            <ul id="gdcontent">
+                <li><a href="#participation">1. Participation in TREC</a></li>
+                <li><a href="#domains">2. Domains and datasets for 2015</a></li>
+                <li><a href="#topic">3. Topics for 2015</a></li>
+                <li><a href="#task_description">4. Task Description</a></li>
+                <li><a href="#jig">5. User Simulator (Jig) and Feedback Format </a> </li>
+                <li><a href="#task_measures">6. Task Measures</a></li>
+                <li><a href="#run_format">7. Run Format</a></li>
+                <li><a href="#requirement">8. Requirements</a></li>
+            </ul>
+            <div class="gdlinebox">
+
+            <h4><a name="participation">1. Participation in TREC</a></h4>
+            <div class="gd_details">
+            In order to take part in the DD track, you need to be a registered participant of TREC.  The TREC Call for Participation, at <a href="http://trec.nist.gov/pubs/call2015.html">http://trec.nist.gov/pubs/call2015.html</a>, includes instructions on how to register.  You must register before May 1, 2015 in order to participate.<br/><br/>
+
+    The datasets and relevance judgments will be made generally available to non-participants after the TREC 2015 cycle, in February 2016.  So register to participate if you want early access.<br/><br/>
+            </div>
+            <h4><a name="domains">2. Domains and datasets for 2015</a></h4>
+            <div class="gd_details">
+            For 2015 there are four domains, each with different data:<br/><br/>
+
+    <span class="bold">Illicit Goods:</span> this data is related to how illicit and counterfeit goods such as fake viagra are made, advertised, and sold on the Internet.  The dataset comprises posts from underground hacking forums, arranged into threads.<br/><br/>
+
+    <span class="bold">Ebola:</span> this data is related to the Ebola outbreak in Africa in 2014-2015.  The dataset comprises tweets relating to the outbreak, web pages from sites hosted in the affected countries and designed to provide information to citizens and aid workers on the ground, and text files from West African and other government sources.<br/><br/>
+
+    <span class="bold">Local Politics:</span> this data is related to regional politics in the Pacific Northwest and the small-town politicians and personalities that work it.  The dataset comprises web pages from the TREC 2014 KBA Stream Corpus.<br/><br/>
+
+    <span class="bold">Polar Sciences:</span> this data comprises web pages, scientific data (HDF, NetCDF files, Grib files), zip files, PDFs, images and science code related to the polar sciences and available publicly from the NSF funded <a href="http://www.aonacadis.org"/>Advanced Cooperative Artic Data and Information System (ACADIS)</a>, NASA funded <a href="http://gcmd.nasa.gov/portals/amd/">Antarctic Master Directory (AMD)</a>, and National Snow and Ice Data Center (NSIDC) <a href="http://nsidc.org/acadis/search/">Arctic Data Explorer</a>.<br/><br/>
+
+    All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects.  See the <a href="dataset.html">datasets page</a> for more details.<br/><br/>
+
+            </div>
+
+            <h4><a name="topic">3. Topics </a></h4>
+                <div class="gd_details">
+
+              Within each domain, there will be 25-50 topics that represent user search needs. The topics are developed by the NIST assessors. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation. 
+
+<!-- An example topic for the Ebola domain might be titled, "foreign aid health workers."  The topics will be developed by the NIST assessors.  Each topic will have a number of subtopic interests that make up the various pieces that the user wants to know.  Following the above example, subtopics might include "how many foreign health workers are in Freetown" and "what clinics are primarily staffed by foreign health workers".
+-->
+         <br/> <br/> 
+
+         An example topic for the Illicit Goods domain could be found <a href="./resource/sample_topics.txt"> here</a>.  It is about "paying for amazon book reviews" and contains 2 subtopics.        
+    
+
+    <br/><br/>
+   
+
+         You can find the topics (with ground truth) on the <a href="http://trec.nist.gov/act_part/tracks15.html">Tracks page in the TREC Active Participants area</a> after you register to participate in TREC.
+
+                  
+
+               </div>
+
+            <h4><a name="task_description">4. Task Description</a></h4>
+                <div class="gd_details">
+
+    Your systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The simulated user will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with a graded relevance rating. The system may then return another five documents for more feedback.  Systems should stop when they believe they have covered all the user's subtopics sufficiently.  The subtopics are not known the system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
+
+    The following picture illustrates the task: <br/> <br/>
+
+   <img src="img/task.png" alt="task" width="900" border="0"> 
+
+   <br/><br/>
+
+   </div>
+
+     <h4> <a name="jig">5. User Simulation Harness ("Jig") and Feedback Format </a> </h4>
+   <div class="gd_details">
+
+    The system interactions with the user will be simulated using a jig that the track coordinators will provide to you.  This jig runs on Linux, Mac OS, and Windows.  You will need the  <a href="http://trec.nist.gov/act_part/tracks15.html">topics with ground truth</a> to make the jig work, and your system may only interact with the ground truth through the jig.  <br/> <br/>
+
+The jig package can be found at <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a>.  That page includes instrucions on how to set up and run the jig with an example oracle system, and how to write your system to connect with the jig.
+    <br/>     <br/> 
+
+   </div>
+
+            <h4><a name="task_measures">6. Task Measures</a></h4>
+                <div class="gd_details">
+                The primary measures will be Cube Test and &#181;-ERR.  Scoring scripts are included as part of the jig.  We will also likely report other diagnostic measures such as basic precision and recall.<br/><br/>
+
+The Cube Test is a search effectiveness measurement that measures the speed of gaining relevant information (could be documents or passages) in a dynamic search process. It measures the amount of relevant information a search system could gather for the entire search process with multiple runs of retrieval. A higher Cube Test score means a better DD system, which ranks relevant information (documents and/or psaasages) for a complex <a href="#topic">search topic</a>  as much as possible and as early as possible. <br/> <br/>
+
+Reference: Jiyun Luo, Christopher Wing, Hui Yang, Marti Hearst. The Water Filling Model and The Cube Test: Multi-Dimensional Evaluation for Professional Search. CIKM 2013. <a href="http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf">http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf</a><br/> 
+
+    &#181;-ERR is an extension to the cascade model of ERR by defining an outer loop in which the user changes the entity profile each time they find a useful piece of new information.
+<!--    Reference: Oliver Chappelle, Don Metzler, Y Zhang, ACM 2009 Expected reciprocal rank for graded relevance.  <a href="http://dl.acm.org/citation.cfm?id=1646033">http://dl.acm.org/citation.cfm?id=1646033</a><br/><br/>
+-->
+   <br/> <br/>
+<!--
+    session-nDCG generalizes the nDCG scoring function to multi-query session evaluation.<br/>
+    Reference: Evangelos Kanoulas, Ben Carterette, Paul D. Clough, Mark Sanderson. Evaluating Multi-Query Sessions. SIGIR 2011. <a href="http://dl.acm.org/citation.cfm?id=2009916.2010056">http://dl.acm.org/citation.cfm?id=2009916.2010056</a><br/><br/>
+-->
+                </div>
+            <h4><a name="run_format">7. Run Format</a></h4>
+            <div class="gd_details">
+                In TREC, a "run" is the output of a search system over all topics.  In the DD track, the runs are the output of the harness jig.  Participating groups typically submit more than one run corresponding to different parameter settings or algorithmic choices.  The maximum number of runs allowed for DD 2015 is five from each team.
+    <br/><br/>
+      
+We use a line-oriented format similar to the classic TREC submission format: 
+
+<br/><pre>topic_id docno ranking_score on_topic subtopic_rels</pre>
+
+<br>where 'on_topic' is 1 or 0 if the document is relevant to any subtopic, and the subtopic_rels indicate graded relevance for the document for all relevant subtopics.  For instance:<br>
+<pre>   
+DD15-1  1335424206-b5476b1b8bf25b179bcf92cfda23d975     503.000000      1       DD15-1.4:3
+DD15-1  1321566720-7676cf342cb035e8e09b0696ae85d3a7     883.000000      1       DD15-1.1:2
+DD15-1  1322120460-d6783cba6ad386f4444dcc2679637e0b     26.000000       1       DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.2:2|DD15-1.2:2|DD15-1.1:3|DD15-1.4:2|DD15-1.4:2
+DD15-1  1322088960-3f3465ecc86554b4b449539a46a5e7ba     709.000000      1       DD15-1.6:2|DD15-1.6:2|DD15-1.4:2|DD15-1.4:3
+DD15-1  1321860780-f9c69177db43b0f810ce03c822576c5c     470.000000      1       DD15-1.1:3
+</pre>
+
+            </div>
+            <h4><a name="requirement">8. Requirements</a></h4>
+            <div class="gd_details">
+            Participants are expected to submit at least one run by the deadline.<br/><br/>
+
+    Runs may be fully automatic, or manual.  Manual indicates intervention by a person at any stage of the retrieval.  We welcome unusual approaches to the task including human-in-the-loop searching, as this helps us set upper performance bounds.
+            </div>
+<!--            <h4><a name="timeline">7. Timeline</a></h4>
+            <div class="gd_details">
+                <ul>
+                    <li>Domain collections available: Early June </li>
+                    <li>Topics available to participants: June 15</li>
+                    <li>Runs due from participants: Aug 31</li>
+                    <li>Evaluation results returned: Sep 15</li>
+                    <li>TREC 2015 notebook paper deadline: October</li>
+                    <li>TREC 2015 conference: November 17-20, 2015</li>
+                </ul>
+            <br/>
+            </div>
+-->  
+          </div>
+   
+            </section>
+
+            <div class="footerline"></div>
+
+            <footer>
+				This page is owned by TREC Dynamic Domain Track Group.
+			</footer>
+		</div>
+	</body>
+</html>
