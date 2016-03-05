@@ -55,6 +55,13 @@ html{overflow-y:scroll;}
 a:link{
 	color:#1975FF;
 }
+tbody {
+	text-align: center;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
 
 .wrapper{position:relative; width:1000px; margin:auto; font-family:verdana; padding:20px 20px 0 20px; background:#FEFEFE; box-shadow:0 0 15px 2px #CCC}
 header{position:relative; top:4px; font-family:Minion Pro; font-size:36px; font-weight:bold;}
