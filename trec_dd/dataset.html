@@ -46,7 +46,7 @@
 <li><a href="#details">1. Datasets Descriptions</a>
 <li><a href="#cca">2. CCA Generic Schema</a>
 <li><a href="#format">3. Data Format</a>
-<li><a href="#get">4. How to Get the Data</a>
+<li><a href="#get">4. Obtaining the Datasets</a>
 </ul>
 
             <section class="intro">
@@ -54,9 +54,9 @@
 <div class="gdlinebox">
 <h4><a name="details">1. Datasets Descriptions</a></h4>
 <br>
-    There are three datasets for the TREC 2016 Dynamic Domain Track. The Datasets include Weapon Dataset, Ebola Dataset, and Polar Dataset. Basic statistics of these datasets are shown in the Table 1-1. These datasets contains records in forms of web pages, scientific data, PDFs, and tweets. Detailed Description, as well as some links to sample code, of each dataset is given in the following subsections.
+    There are three datasets for the TREC 2016 Dynamic Domain Track. The Datasets include Weapon Dataset, Ebola Dataset, and Polar Dataset. Basic statistics of these datasets are shown in the Table 1-1. These datasets contains records in forms of web pages, scientific data, PDFs, and tweets. All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects. Detailed Description, as well as some links to sample code, of each dataset is given in the following subsections.
 <br>
-<br>
+
 <table style="width:90%">
   <caption>Table 1-1 Datasets Statistics</caption>
   <tr>
@@ -89,7 +89,7 @@ This dataset was collected from U.S. law enforcement agencies, including a total
   <li> Company/POC for crawl: TBD</li>
   <li> Version: 1.0 </li>
   <li> Purpose of data: TBD.</li>
-  <li> Description: This dataset has four disjoint parts:
+  <!-- <li> Description: This dataset has four disjoint parts: -->
 <!--        <ol class="gd_details gdnum">
    <li>Ebola-web-01-2015: web pages crawled during January 2015.
    <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
@@ -295,10 +295,10 @@ Here is an example <a href="cbor-python-example.html">using Python and the cbor 
 </div>
 
 <div class="gdlinebox">
-<h4><a name="get">4. Obtaining the data</a></h4>
+<h4><a name="get">4. Obtaining the datasets</a></h4>
 <br>
 To get access to the collections, you must be a TREC 2016 participant.  Complete the <a href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Organization User Agreement.html">TREC DD Organizational User Agreement</a> (password protected, use the TREC participant password) and email it as a scanned PDF or a high-quality digital photo to Angela (dot) Ellis (at) NIST (dot) gov, including your TREC participant ID.  Within a week you should receive access credentials to download the data, as well as the decryption key to read the local-politics documents.
-<br><br>
+<br>
 Local users of the data must complete the <a href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Individual User Agreement.html">Individual User Agreement</a> and return it to the organizational point of contact who will maintain those records.
 </div>
             </section>
