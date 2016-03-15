@@ -70,8 +70,8 @@ header{position:relative; top:4px; font-family:Minion Pro; font-size:36px; font-
 nav{margin-top:15px; /*padding-bottom: 5px; border-bottom:1px solid #DDD;*/}
 
 header,nav{position:relative; left:80px;}
-nav a{margin-left:0px; margin-right:0px; text-decoration:none;}
-nav a:first-child{margin-left:0px;}
+nav a{margin-left:10px; margin-right:10px; text-decoration:none;}
+nav a:first-child{margin-left:5px;}
 nav a:hover{cursor:pointer; color:orange;	}
 .line{display:block; height:2px; margin-top:20px; background:#AAA; }
 section{margin-top:20px;}
