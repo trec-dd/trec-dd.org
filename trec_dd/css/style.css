@@ -16,6 +16,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
+	font-family: Cambria, Georgia, serif;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -29,6 +30,8 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: Cambria, Georgia, serif;
+
 }
 ol, ul {
 	list-style: none;
@@ -64,14 +67,14 @@ table, th, td {
 }
 
 .wrapper{position:relative; width:1000px; margin:auto; font-family:verdana; padding:20px 20px 0 20px; background:#FEFEFE; box-shadow:0 0 15px 2px #CCC}
-header{position:relative; top:4px; font-family:Minion Pro; font-size:36px; font-weight:bold;}
+header{position:relative;margin-left: 15px; top:4px; font-family:Minion Pro; font-size:36px; font-weight:bold;}
 .logo{width:90px; height:90px; position:absolute; top:6px; left:6px; opacity:0.4;}
 
 nav{margin-top:15px; /*padding-bottom: 5px; border-bottom:1px solid #DDD;*/}
 
 header,nav{position:relative; left:80px;}
 nav a{margin-left:10px; margin-right:10px; text-decoration:none;}
-nav a:first-child{margin-left:5px;}
+/*nav a:first-child{margin-left:5px;}*/
 nav a:hover{cursor:pointer; color:orange;	}
 .line{display:block; height:2px; margin-top:20px; background:#AAA; }
 section{margin-top:20px;}
@@ -87,7 +90,7 @@ section{margin-top:20px;}
 .organizers img{width:25px; height:25px; position:relative; top:3px; vertical-align:text-bottom;}
 .organizers li{line-height:25px; margin-bottom:5px;}
 .links li{line-height:25px;}
-.footerline{margin-top:60px; display:block; height:2px; background:#AAA; }
+.footerline{margin-top:30px; display:block; height:2px; background:#AAA; }
 footer{padding:10px 0; color:#AAA; font-size:14px;}
 pre{word-break:break-all; white-space:pre-wrap;}
 /* ----*/
@@ -105,3 +108,25 @@ h4{ font-size:18px; font-weight:bold; margin-top:20px;}
 td { padding: 3px;}
 
 /* --Customized CSS*/
+#left {
+    width: 12%;
+    float: left;
+    margin-left: -80px;
+    margin-right: 10px;
+    /*margin-top: 5px;*/
+    font-size: 120%;
+    line-height: 125%;
+    display:inline;
+}
+#right {
+    width: 85%;
+    float: right;
+    margin-left: 10px;
+    margin-bottom: 140px;
+    display:inline;
+    /*margin-top: 5px;*/
+}
+#top {
+    width: 100%;
+    
+}

@@ -5,6 +5,7 @@
 		<title>TREC 2016 Dynamic Domain Track</title>
                 <link rel="stylesheet" type="text/css" href="css/style.css"/>
                 <script type="text/javascript" src="js/jquery.min.js"></script>
+                    <script type="text/javascript" src="js/jquery.pin.js"></script>
 		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js"></script>
 		<![endif]-->
@@ -12,25 +13,31 @@
 	</head>
 
 <body>
-		<div class=wrapper>
-			<img class="logo" src="img/cube.png"/>
-			<header>
 
-				TREC Dynamic Domain Track
+<div id = "top">
+        <img class="logo" src="img/cube.png"/>
+      <header>
+        <br>
+      
+        TREC Dynamic Domain Track
+        
+      </header>
+      
+      <div class="line"></div>
+</div>
 
-			</header>
-
-			<nav>
-				<a href="./index.html">Overview</a> |
-                <a href="./timeline.html">Timeline</a> |
-                <a href="./guideline.html">Guidelines</a> |
-                <a href="./dataset.html">Datasets</a> |
-                <a href="https://groups.google.com/forum/#!forum/trec-dd">Google Group</a> |
-                <a href="./2015.html">TREC DD 2015</a> |
-                <a href="http://trec.nist.gov">TREC Homepage</a> |
-                <a href="./ack.html">Acknowledgment</a>
-			</nav>
-                        <div class="line"></div>
+<div id = "left">
+        <nav>
+        <a href="./index.html">Overview</a> 
+        <a href="./timeline.html">Timeline</a> 
+        <a href="./guideline.html">Guidelines</a> 
+        <a href="./dataset.html">Datasets</a>
+        <a href="https://groups.google.com/forum/#!forum/trec-dd">Google Group</a> 
+        <a href="./ack.html">Acknowledgments</a>
+        <a href="./2015.html">TREC DD 2015</a>
+      </nav>
+</div>
+                        <div id="right">
                              <h4>TREC Dynamic Domain Track 2016 Datasets </h4>
 <div class="overview">
 
@@ -59,7 +66,7 @@
   </tr>
   <tr>
     <td>Weapon</td>
-    <td>~100G</td>        
+    <td>~100 GB</td>        
     <td>3,345,557</td>
   </tr>
   <tr>
@@ -76,10 +83,27 @@
 <br>
 <strong>1.1 Weapon Domain</strong><br>
 <div class="gd_details">
-TBD.
+This dataset was collected from U.S. law enforcement agencies, including a total of 3,345,557 documents. The dataset contains a list of the Defense Logistic Agency's microelectronics suppliers, a list of the buildings in China which are crowded with individual microelectronics suppliers, a list of elements that OSI/HSI are most interested in and are widely available on the counterfeit market, and a list of elements that are suspicious counterfeit. This dataset contains primarily corporate websites, merchant sites for ordering parts, social media sites, onion sites and some defunct sites.
 <br>
+<ul class="gd_details">
+  <li> Company/POC for crawl: TBD</li>
+  <li> Version: 1.0 </li>
+  <li> Purpose of data: TBD.</li>
+  <li> Description: This dataset has four disjoint parts:
+<!--        <ol class="gd_details gdnum">
+   <li>Ebola-web-01-2015: web pages crawled during January 2015.
+   <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
+   <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
+   <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola outbreak.
+       </ol> -->
+  <li> Schema notes: TBD
+  <li> Number of items: 3,345,557 Documents.
+  <li> Time frame: TBD
+  <li> Geographic area: TBD
+  <li> Size of data on disk: ~ 100GB
+  <li> Format: TBD
+</ul>
 </div>
-<br>
 <br>
 <strong>1.2 Ebola Domain</strong><br>
 <div class="gd_details">
@@ -89,33 +113,43 @@ This data is related to the Ebola outbreak in Africa in 2014-2015. The dataset c
 peter dot landwehr at giantoak dot com); Lewis McGibbney, JPL (Lewis dot J dot Mcgibbney at jpl dor nasa dot gov)</li>
   <li> Version: 1.0 </li>
   <li> Purpose of data: represents an emerging humanitarian assistance situation.</li>
-  <li> Description: This dataset has four disjoint parts:
+  <li> Four disjoint parts:
        <ol class="gd_details gdnum">
 	 <li>Ebola-web-01-2015: web pages crawled during January 2015.
 	 <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
 	 <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
 	 <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola outbreak.
        </ol>
-  <li> Schema notes: The web and PDF subsets only contain the raw crawled data.  The tweets subset as distributed only contains pointers to tweets, because Twitter does not allow redistribution of tweets.  You will need to use the Twittertools crawler (link here) to get the actual tweets.  The output of that crawler includes both the HTML pages from Twitter, as well as extracted tweet data in the 'features' block.
-  <li> Number of items: 497,362 web pages, 19,834 PDFs, 164,961 tweets.
   <li> Time frame: January - March 2015
   <li> Geographic area: global, primarily West Africa
   <li> Size of data on disk: 12.6 GB
   <li> Format: Gzipped sequence of CBOR records; sequence of tweet pointers
+  <li> Number of items: 497,362 web pages, 19,834 PDFs, 164,961 tweets.
+  <li> Schema notes: The web and PDF subsets only contain the raw crawled data.  The tweets subset as distributed only contains pointers to tweets, because Twitter does not allow redistribution of tweets.  You will need to use the Twittertools crawler (link here) to get the actual tweets.  The output of that crawler includes both the HTML pages from Twitter, as well as extracted tweet data in the 'features' block.
 </ul>
 </div>
-
-<br>
 <br>
 
 <strong>1.3 Polar Domain</strong><br>
 <div class="gd_details">
-This is a set of web pages, scientific data, zip files, PDFs, images, and science code related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic Data and Information System (ACADIS), NASA funded Antarctic Master Directory (AMD), and National Snow and Ice Data Center (NSIDC) Arctic Data Explorer. More information about the dataset can be found <a href="https://github.com/chrismattmann/trec-dd-polar/">here</a>.<br>
+This dataset is a set of web pages, scientific data, zip files, PDFs, images, and science code related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic Data and Information System (ACADIS), NASA funded Antarctic Master Directory (AMD), and National Snow and Ice Data Center (NSIDC) Arctic Data Explorer. More information about this dataset can be found <a href="https://github.com/chrismattmann/trec-dd-polar/">here</a>.<br>
 <ul class="gd_details">
   <li> Company/POC for crawl: Chris Mattman, JPL (chris dot a dot mattmann at jpl dot nasa dot gov)</li>
   <li> Version: 1.0 </li>
   <li> Purpose of data: represents a domain for open science and scientific data search.</li>
   <li> Description: Web pages, data files, zip archives, PDFs, images, and code.
+  <li> Primary Crawling Sources: 
+      <ol class="gd_details gdnum">
+      <li>Dr. Chris Mattmann's crawl of ADE, performed at the Open Science Codefest and at the NSF DataViz Hackathon for Polar CyberInfrastructure</li>
+      <li>Dr. Mattmann's student Angela Wang, contributed 3 datasets: 2 crawls of ACADIS and one of NASA AMD.</li>
+      <li>Dr. Mattmann's CSCI 572 Course at USC, students submitted 13 individual crawls of NASA ACADIS, NSIDC ADE, and AMD.</li>
+      </ol>
+  
+  <li> Number of items: 1,741,530 records.
+  <li> Time frame: September 2014 - May 2015.
+  <li> Geographic area: global
+  <li> Size of data on disk: 158GB.
+  <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled data were put into Common Crawl Format, acording to Memex format, using the <a href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>. The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure. CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data representation format used in many contexts.Each contributed web crawl has an accompanying JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all of the JSON files.
   <li> Schema notes: Here is a MIME type distribution breakdown of the data.
    <pre>
 {
@@ -216,12 +250,7 @@ This is a set of web pages, scientific data, zip files, PDFs, images, and scienc
     "video/x-msvideo": "96",
     "xscapplication/zip": "85"
 }
-   </pre>
-  <li> Number of items: 1,741,530 records.
-  <li> Time frame: September 2014 - May 2015.
-  <li> Geographic area: global
-  <li> Size of data on disk: 158Gb.
-  <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled data were put into Common Crawl Format, acording to Memex format, using the <a href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>. The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure. CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data representation format used in many contexts.Each contributed web crawl has an accompanying JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all of the JSON files.
+   </pre>  
 </ul>
 </div>
 </div>
@@ -279,7 +308,7 @@ Local users of the data must complete the <a href="http://trec.nist.gov/act_part
             <footer>
 				This page is owned by TREC Dynamic Domain Track Group.
 			</footer>
-		</div>
+      </div>
 	</body>
 </html>
 
