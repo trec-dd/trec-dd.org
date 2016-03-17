@@ -8,8 +8,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -24,7 +24,7 @@ strong{
 	font-weight:bold;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -72,13 +72,13 @@ header{position:relative;margin-left: 15px; top:4px; font-family:Minion Pro; fon
 
 nav{margin-top:15px; /*padding-bottom: 5px; border-bottom:1px solid #DDD;*/}
 
-header,nav{position:relative; left:80px;}
-nav a{margin-left:10px; margin-right:10px; text-decoration:none;}
+header{position:relative; left:80px;}
+nav a{margin-left:10px; margin-right:10px; text-decoration:none;display:block;}
 /*nav a:first-child{margin-left:5px;}*/
 nav a:hover{cursor:pointer; color:orange;	}
 .line{display:block; height:2px; margin-top:20px; background:#AAA; }
 section{margin-top:20px;}
-.welcome{font-size:20px;font-weight: bold}
+.welcome{font-size:20px;font-weight: }
 .intro li{line-height:22px; margin-bottom:15px; list-style-type:square;}
 .intro .introsubli{ list-style-type: disc; margin-left:65px;}
 .overview{padding-right:20px;}
@@ -108,25 +108,28 @@ h4{ font-size:18px; font-weight:bold; margin-top:20px;}
 td { padding: 3px;}
 
 /* --Customized CSS*/
-#left {
-    width: 12%;
+.left {
+    width: 14%;
+	margin-left:0;
     float: left;
-    margin-left: -80px;
-    margin-right: 10px;
-    /*margin-top: 5px;*/
+	position: fixed;
+	top: 100px;
+	left: 0;
+		/*display: inline;*/
     font-size: 120%;
     line-height: 125%;
-    display:inline;
 }
-#right {
+.right {
     width: 85%;
     float: right;
+		/*display: inline;*/
+		margin: auto;;
+		/*margin: auto;
     margin-left: 10px;
     margin-bottom: 140px;
-    display:inline;
-    /*margin-top: 5px;*/
+    margin-top: 5px;*/
 }
 #top {
     width: 100%;
-    
+
 }
