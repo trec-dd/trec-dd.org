@@ -133,3 +133,8 @@ td { padding: 3px;}
     width: 100%;
 
 }
+
+.sub-ul li {
+	text-indent: 20px;
+	list-style-position: inside;
+}

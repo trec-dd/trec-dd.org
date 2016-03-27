@@ -2,224 +2,260 @@
 <html>
 
 <head>
-  <meta charset="ISO-8859-1">
-  <title>TREC 2016 Dynamic Domain Track</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script type="text/javascript" src="js/jquery.min.js"></script>
-  <script type="text/javascript" src="js/jquery.pin.js"></script>
-  <!--[if lt IE 9]>
+    <meta charset="ISO-8859-1">
+    <title>TREC 2016 Dynamic Domain Track</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.pin.js"></script>
+    <!--[if lt IE 9]>
     <script src="js/html5shiv.js"></script>
     <![endif]-->
-  <!--<script type="text/javascript" src="js/main.js"></script>-->
+    <!--<script type="text/javascript" src="js/main.js"></script>-->
 </head>
 
 <body>
-  <div id="top">
-    <img class="logo" src="img/cube.png" />
+<div id="top">
+    <img class="logo" src="img/cube.png"/>
     <header>
-      <br> TREC Dynamic Domain Track
+        <br> TREC Dynamic Domain Track
 
     </header>
 
     <div class="line"></div>
-  </div>
-  <div style="width: 100%;overflow: hidden">
-        <div class="left">
-          <div style="width: 100%">
-                <nav>
-                <a href="./index.html">Overview</a> 
-                <a href="./timeline.html">Timeline</a> 
-                <a href="./guideline.html">Guidelines</a> 
+</div>
+<div style="width: 100%;overflow: hidden">
+    <div class="left">
+        <div style="width: 100%">
+            <nav>
+                <a href="./index.html">Overview</a>
+                <a href="./timeline.html">Timeline</a>
+                <a href="./guideline.html">Guidelines</a>
                 <a href="./dataset.html">Datasets</a>
-                <a href="https://groups.google.com/forum/#!forum/trec-dd">Google Group</a> 
+                <a href="https://groups.google.com/forum/#!forum/trec-dd">Google Group</a>
                 <a href="./ack.html">Acknowledgments</a>
                 <a href="./2015.html">TREC DD 2015</a>
             </nav>
-          </div>
-</div>
+        </div>
+    </div>
 
 
-            <div class="right">
-             <h4>TREC Dynamic Domain Track 2016 Datasets </h4>
-<div class="overview">
+    <div class="right">
+        <h4>TREC Dynamic Domain Track 2016 Datasets </h4>
+        <div class="overview">
 
-</div>
-<ul id="gdcontent">
-<li><a href="#details">1. Datasets Descriptions</a>
-<li><a href="#cca">2. CCA Generic Schema</a>
-<li><a href="#format">3. Data Format</a>
-<li><a href="#get">4. Obtaining the Datasets</a>
-</ul>
-
-            <section class="intro">
-
-<div class="gdlinebox">
-<h4><a name="details">1. Datasets Descriptions</a></h4>
-<br>
-    There are three datasets for the TREC 2016 Dynamic Domain Track. The Datasets include Weapon Dataset, Ebola Dataset, and Polar Dataset. Basic statistics of these datasets are shown in the Table 1-1. These datasets contains records in forms of web pages, scientific data, PDFs, and tweets. All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects. Detailed Description, as well as some links to sample code, of each dataset is given in the following subsections.
-<br>
-
-<table style="width:90%">
-  <caption>Table 1-1 Datasets Statistics</caption>
-  <tr>
-    <th>Datasets</th>
-    <th>Size of Data on Disk</th>      
-    <th>Number of Records</th>
-  </tr>
-  <tr>
-    <td>Weapon</td>
-    <td>~85 GB</td>        
-    <td>3,345,557</td>
-  </tr>
-  <tr>
-    <td>Ebola</td>
-    <td>12.6 GB</td>        
-    <td>682,157</td>
-  </tr>
-  <tr>
-    <td>Polar</td>
-    <td>158 GB</td>        
-    <td>1,741,530</td>
-  </tr>
-</table>
-<br>
-<strong>1.1 Weapon Domain</strong><br>
-<div class="gd_details">
-This dataset was collected from U.S. law enforcement agencies, including a total of 3,345,557 documents. The dataset contains a list of the Defense Logistic Agency's microelectronics suppliers, a list of the buildings in China which are crowded with individual microelectronics suppliers, a list of elements that OSI/HSI are most interested in and are widely available on the counterfeit market, and a list of elements that are suspicious counterfeit. This dataset contains primarily corporate websites, merchant sites for ordering parts, social media sites, onion sites and some defunct sites.
-<br>
-<ul class="gd_details">
-  <li> Company/POC for crawl: TBD</li>
-  <li> Version: 1.0 </li>
-  <li> Purpose of data: TBD.</li>
-  <!-- <li> Description: This dataset has four disjoint parts: -->
-<!--        <ol class="gd_details gdnum">
-   <li>Ebola-web-01-2015: web pages crawled during January 2015.
-   <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
-   <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
-   <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola outbreak.
-       </ol> -->
-  <li> Schema notes: TBD
-  <li> Number of items: 3,345,557 Documents.
-  <li> Time frame: TBD
-  <li> Geographic area: TBD
-  <li> Size of data on disk: ~ 85GB uncompressed
-  <li> Format: CDRv2
-  <li> Data Source:
-    <ul>
-    All data is from the following sites marked a 2 (relevant) by the ATF at the UK Hack:
-       <ul>
-   <li>ebay.com
-   <li>ftfindustries.com
-   <li>shop.jncmanufacturing.com
-       </ul>
-    plus the following sites provided by the ATF as seed sites
-    <ul>
-      <li>www.sturmgewehr.com
-     <li> www.thehighroad.org
-     <li> www.uzitalk.com
-     <li> www.weaponeer.net
-     <li> www.glocktalk.com
-     <li> www.ar15.com
-     <li> www.subguns.com
-     <li> www.firearmstalk.com
-     <li> www.thefiringline.com
-     <li> www.1919a4.com
-     <li> www.armslist.com
-     <li> www.backpage.com
-     <li> www.buyusedguns.net
-      <li>www.freegunclassifieds.com
-     <li> www.gunauction.com
-     <li> www.gunbroker.com
-     <li> www.gundeals.org
-     <li> www.gunlistings.org
-     <li> www.gunsamerica.com
-     <li> www.gunsinternational.com
-     <li> www.guntrader.com
-     <li> www.lionseek.com
-     <li> www.nationalguntrader.com
-     <li> www.shooterswap.com
-     <li> www.shooting.org
-    </ul>
-    </ul>
-  </li>
-
-    <li> Robots.text info
-      <ul>
-        Do not have: (url, #pages)
-        <ul>
-          <li>http://www.gundeals.org               16639
-          <li>http://www.gunlistings.org/            47735
+        </div>
+        <ul id="gdcontent">
+            <li><a href="#details">1. Datasets Descriptions</a>
+            <li><a href="#cca">2. CCA Generic Schema</a>
+            <li><a href="#format">3. Data Format</a>
+            <li><a href="#get">4. Obtaining the Datasets</a>
         </ul>
-        Have robots.txt:(url,#pages)
-        <ul>
-          <li>http://www.armslist.com/robots.txt            648516
-          <li>http://www.backpage.com/robots.txt       255251
-          <li>http://www.buyusedguns.net/robots.txt     2159
-          <li>http://ebay.com/robots.txt                       8199
-          <li>http://freegunclassifieds.com/robots.txt       834
-          <li>http://www.gunauction.com/robots.txt         93701
-          <li>http://www.gunbroker.com/robots.txt            66706
-          <li>https://www.gunsamerica.com/robots.txt       91828
-          <li>http://www.gunsinternational.com/robots.txt       57626
-          <li>http://www.lionseek.com/robots.txt           401519
-          <li>http://www.nationalguntrader.com/robots.txt        16889
-          <li>http://shooterswap.com/robots.txt             10331
-          <li>https://www.shooting.org/robots.txt          282173
-          <li>http://www.thehighroad.org/robots.txt         15
-          <li>http://thefiringline.com/robots.txt          12
-          <li>www.guntrader.com 2 => redirects to shooting.org => which has robots.txt
-        </ul>
-      </ul>
-</ul>
-</div>
-<br>
-<strong>1.2 Ebola Domain</strong><br>
-<div class="gd_details">
-This data is related to the Ebola outbreak in Africa in 2014-2015. The dataset comprises tweets relating to the outbreak, web pages from sites hosted in the affected countries as well as PDF documents from websites such as The World Health Organization, Financial Tracking Service and The World Bank. Such information resources are designed to provide information to citizens and aid workers on the ground.<br>
-<ul class="gd_details">
-  <li> Company/POC for crawl: Juliana Friere and Kien Pham, NYU (juliana dot freire at nyu dot edu); Peter Landwehr 
-peter dot landwehr at giantoak dot com); Lewis McGibbney, JPL (Lewis dot J dot Mcgibbney at jpl dor nasa dot gov)</li>
-  <li> Version: 1.0 </li>
-  <li> Purpose of data: represents an emerging humanitarian assistance situation.</li>
-  <li> Four disjoint parts:
-       <ol class="gd_details gdnum">
-   <li>Ebola-web-01-2015: web pages crawled during January 2015.
-   <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
-   <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
-   <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola outbreak.
-       </ol>
-  <li> Time frame: January - March 2015
-  <li> Geographic area: global, primarily West Africa
-  <li> Size of data on disk: 12.6 GB
-  <li> Format: Gzipped sequence of CBOR records; sequence of tweet pointers
-  <li> Number of items: 497,362 web pages, 19,834 PDFs, 164,961 tweets.
-  <li> Schema notes: The web and PDF subsets only contain the raw crawled data.  The tweets subset as distributed only contains pointers to tweets, because Twitter does not allow redistribution of tweets.  You will need to use the Twittertools crawler (link here) to get the actual tweets.  The output of that crawler includes both the HTML pages from Twitter, as well as extracted tweet data in the 'features' block.
-</ul>
-</div>
-<br>
 
-<strong>1.3 Polar Domain</strong><br>
-<div class="gd_details">
-This dataset is a set of web pages, scientific data, zip files, PDFs, images, and science code related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic Data and Information System (ACADIS), NASA funded Antarctic Master Directory (AMD), and National Snow and Ice Data Center (NSIDC) Arctic Data Explorer. More information about this dataset can be found <a href="https://github.com/chrismattmann/trec-dd-polar/">here</a>.<br>
-<ul class="gd_details">
-  <li> Company/POC for crawl: Chris Mattman, JPL (chris dot a dot mattmann at jpl dot nasa dot gov)</li>
-  <li> Version: 1.0 </li>
-  <li> Purpose of data: represents a domain for open science and scientific data search.</li>
-  <li> Description: Web pages, data files, zip archives, PDFs, images, and code.
-  <li> Number of items: 1,741,530 records.
-  <li> Time frame: September 2014 - May 2015.
-  <li> Geographic area: global
-  <li> Size of data on disk: 158GB.
-  <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled data were put into Common Crawl Format, acording to Memex format, using the <a href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>. The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure. CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data representation format used in many contexts.Each contributed web crawl has an accompanying JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all of the JSON files.
-</ul>
-</div>
-</div>
+        <section class="intro">
 
-<div class="gdlinebox">
-<h4><a name="cca">2. CCA generic schema</a></h4>
-<br>
-The documents in each dataset are stored in a structured format called the Common Crawl Architecture (CCA), developed as part of the DARPA MEMEX project.  Records in this schema follow this format:
-<br>
+            <div class="gdlinebox">
+                <h4><a name="details">1. Datasets Descriptions</a></h4>
+                <br>
+                There are three datasets for the TREC 2016 Dynamic Domain Track. The Datasets include Weapon Dataset,
+                Ebola Dataset, and Polar Dataset. Basic statistics of these datasets are shown in the Table 1-1. These
+                datasets contains records in forms of web pages, scientific data, PDFs, and tweets. All the datasets are
+                formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as
+                sequences of CBOR objects. Detailed Description, as well as some links to sample code, of each dataset
+                is given in the following subsections.
+                <br>
+
+                <table style="width:90%">
+                    <caption>Table 1-1 Datasets Statistics</caption>
+                    <tr>
+                        <th>Datasets</th>
+                        <th>Size of Data on Disk</th>
+                        <th>Number of Records</th>
+                    </tr>
+                    <tr>
+                        <td>Weapon</td>
+                        <td>~85 GB</td>
+                        <td>3,345,557</td>
+                    </tr>
+                    <tr>
+                        <td>Ebola</td>
+                        <td>12.6 GB</td>
+                        <td>682,157</td>
+                    </tr>
+                    <tr>
+                        <td>Polar</td>
+                        <td>158 GB</td>
+                        <td>1,741,530</td>
+                    </tr>
+                </table>
+                <br>
+                <strong>1.1 Weapon Domain</strong><br>
+                <div class="gd_details">
+                    This dataset was collected from U.S. law enforcement agencies, including a total of 3,345,557
+                    documents. The dataset contains a list of the Defense Logistic Agency's microelectronics suppliers,
+                    a list of the buildings in China which are crowded with individual microelectronics suppliers, a
+                    list of elements that OSI/HSI are most interested in and are widely available on the counterfeit
+                    market, and a list of elements that are suspicious counterfeit. This dataset contains primarily
+                    corporate websites, merchant sites for ordering parts, social media sites, onion sites and some
+                    defunct sites.
+                    <br>
+                    <ul class="gd_details">
+                        <li> Company/POC for crawl: TBD</li>
+                        <li> Version: 1.0</li>
+                        <li> Purpose of data: TBD.</li>
+                        <!-- <li> Description: This dataset has four disjoint parts: -->
+                        <!--        <ol class="gd_details gdnum">
+                           <li>Ebola-web-01-2015: web pages crawled during January 2015.
+                           <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
+                           <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
+                           <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola outbreak.
+                               </ol> -->
+                        <li> Schema notes: TBD</li>
+                        <li> Number of items: 3,345,557 Documents.</li>
+                        <li> Time frame: TBD</li>
+                        <li> Geographic area: TBD</li>
+                        <li> Size of data on disk: ~ 85GB uncompressed</li>
+                        <li> Format: CDRv2</li>
+                        <li> Data Source:</li>
+                        <ul class="sub-ul">
+                            All data is from the following sites marked a 2 (relevant) by the ATF at the UK Hack:
+                            <li>ebay.com</li>
+                            <li>ftfindustries.com</li>
+                            <li>shop.jncmanufacturing.com</li>
+                        </ul>
+                        plus the following sites provided by the ATF as seed sites
+                        <ul class="sub-ul">
+                            <li>www.sturmgewehr.com</li>
+                            <li> www.thehighroad.org</li>
+                            <li> www.uzitalk.com</li>
+                            <li> www.weaponeer.net</li>
+                            <li> www.glocktalk.com</li>
+                            <li> www.ar15.com</li>
+                            <li> www.subguns.com</li>
+                            <li> www.firearmstalk.com</li>
+                            <li> www.thefiringline.com</li>
+                            <li> www.1919a4.com</li>
+                            <li> www.armslist.com</li>
+                            <li> www.backpage.com</li>
+                            <li> www.buyusedguns.net</li>
+                            <li>www.freegunclassifieds.com</li>
+                            <li> www.gunauction.com</li>
+                            <li> www.gunbroker.com</li>
+                            <li> www.gundeals.org</li>
+                            <li> www.gunlistings.org</li>
+                            <li> www.gunsamerica.com</li>
+                            <li> www.gunsinternational.com</li>
+                            <li> www.guntrader.com</li>
+                            <li> www.lionseek.com</li>
+                            <li> www.nationalguntrader.com</li>
+                            <li> www.shooterswap.com</li>
+                            <li> www.shooting.org</li>
+                        </ul>
+
+                    <li> Robots.text info</li>
+                    <div>
+                        Do not have: (url, #pages)
+                        <ul class="sub-ul">
+                            <li>http://www.gundeals.org 16639</li>
+                            <li>http://www.gunlistings.org/ 47735</li>
+                        </ul>
+                        Have robots.txt:(url,#pages)
+                        <ul class="sub-ul">
+                            <li>http://www.armslist.com/robots.txt 648516</li>
+                            <li>http://www.backpage.com/robots.txt 255251</li>
+                            <li>http://www.buyusedguns.net/robots.txt 2159</li>
+                            <li>http://ebay.com/robots.txt 8199</li>
+                            <li>http://freegunclassifieds.com/robots.txt 834</li>
+                            <li>http://www.gunauction.com/robots.txt 93701</li>
+                            <li>http://www.gunbroker.com/robots.txt 66706</li>
+                            <li>https://www.gunsamerica.com/robots.txt 91828</li>
+                            <li>http://www.gunsinternational.com/robots.txt 57626</li>
+                            <li>http://www.lionseek.com/robots.txt 401519</li>
+                            <li>http://www.nationalguntrader.com/robots.txt 16889</li>
+                            <li>http://shooterswap.com/robots.txt 10331</li>
+                            <li>https://www.shooting.org/robots.txt 282173</li>
+                            <li>http://www.thehighroad.org/robots.txt 15</li>
+                            <li>http://thefiringline.com/robots.txt 12</li>
+                            <li>www.guntrader.com 2 => redirects to shooting.org => which has robots.txt</li>
+                        </ul>
+                    </div>
+                    </ul>
+                </div>
+                <br>
+                <strong>1.2 Ebola Domain</strong><br>
+                <div class="gd_details">
+                    This data is related to the Ebola outbreak in Africa in 2014-2015. The dataset comprises tweets
+                    relating to the outbreak, web pages from sites hosted in the affected countries as well as PDF
+                    documents from websites such as The World Health Organization, Financial Tracking Service and The
+                    World Bank. Such information resources are designed to provide information to citizens and aid
+                    workers on the ground.<br>
+                    <ul class="gd_details">
+                        <li> Company/POC for crawl: Juliana Friere and Kien Pham, NYU (juliana dot freire at nyu dot
+                            edu); Peter Landwehr
+                            peter dot landwehr at giantoak dot com); Lewis McGibbney, JPL (Lewis dot J dot Mcgibbney at
+                            jpl dor nasa dot gov)
+                        </li>
+                        <li> Version: 1.0</li>
+                        <li> Purpose of data: represents an emerging humanitarian assistance situation.</li>
+                        <li> Four disjoint parts:
+                            <ol class="gd_details gdnum">
+                                <li>Ebola-web-01-2015: web pages crawled during January 2015.
+                                <li>Ebola-web-03-2015: web pages crawled during March 2015. These two parts are
+                                    primarily information from NGO's, relief agencies, and news organizations.
+                                <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
+                                <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola
+                                    outbreak.
+                            </ol>
+                        <li> Time frame: January - March 2015
+                        <li> Geographic area: global, primarily West Africa
+                        <li> Size of data on disk: 12.6 GB
+                        <li> Format: Gzipped sequence of CBOR records; sequence of tweet pointers
+                        <li> Number of items: 497,362 web pages, 19,834 PDFs, 164,961 tweets.
+                        <li> Schema notes: The web and PDF subsets only contain the raw crawled data. The tweets subset
+                            as distributed only contains pointers to tweets, because Twitter does not allow
+                            redistribution of tweets. You will need to use the Twittertools crawler (link here) to get
+                            the actual tweets. The output of that crawler includes both the HTML pages from Twitter, as
+                            well as extracted tweet data in the 'features' block.
+                    </ul>
+                </div>
+                <br>
+
+                <strong>1.3 Polar Domain</strong><br>
+                <div class="gd_details">
+                    This dataset is a set of web pages, scientific data, zip files, PDFs, images, and science code
+                    related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic
+                    Data and Information System (ACADIS), NASA funded Antarctic Master Directory (AMD), and National
+                    Snow and Ice Data Center (NSIDC) Arctic Data Explorer. More information about this dataset can be
+                    found <a href="https://github.com/chrismattmann/trec-dd-polar/">here</a>.<br>
+                    <ul class="gd_details">
+                        <li> Company/POC for crawl: Chris Mattman, JPL (chris dot a dot mattmann at jpl dot nasa dot
+                            gov)
+                        </li>
+                        <li> Version: 1.0</li>
+                        <li> Purpose of data: represents a domain for open science and scientific data search.</li>
+                        <li> Description: Web pages, data files, zip archives, PDFs, images, and code.
+                        <li> Number of items: 1,741,530 records.
+                        <li> Time frame: September 2014 - May 2015.
+                        <li> Geographic area: global
+                        <li> Size of data on disk: 158GB.
+                        <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled
+                            data were put into Common Crawl Format, acording to Memex format, using the <a
+                                    href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>.
+                            The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common
+                            Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure.
+                            CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data
+                            representation format used in many contexts.Each contributed web crawl has an accompanying
+                            JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all
+                            of the JSON files.
+                    </ul>
+                </div>
+            </div>
+
+            <div class="gdlinebox">
+                <h4><a name="cca">2. CCA generic schema</a></h4>
+                <br>
+                The documents in each dataset are stored in a structured format called the Common Crawl Architecture
+                (CCA), developed as part of the DARPA MEMEX project. Records in this schema follow this format:
+                <br>
 <pre style="font-family: monospace">
 {   'key': 'ebola-03cad6ee34e9dc0aeb77e4c5d31aad2aa41f6ad819f23b8504612d6e6de8a18c',
     'request': {   'body':    None,
@@ -242,31 +278,48 @@ The documents in each dataset are stored in a structured format called the Commo
     ],
 }
 </pre>
-<br>
-More or fewer fields are present in the different datasets depending on how they were created.  Every record in every dataset has a 'key' field (the "document number"), a 'response.body' with raw content, the timestamp, and the source URL.  They should also have an 'indices.key=crawl' field indicating which dataset the document goes with.  The 'features' block is meant to contain extracted or derived data.  In the Ebola tweets subset to hold a structured representation of the tweet, automatically extracted from the raw Twitter HTML contained in the 'response.body'.  In the Illicit-goods dataset, the features block contains extracted posts and thread/post metadata from the raw HTML thread.
-</div>
+                <br>
+                More or fewer fields are present in the different datasets depending on how they were created. Every
+                record in every dataset has a 'key' field (the "document number"), a 'response.body' with raw content,
+                the timestamp, and the source URL. They should also have an 'indices.key=crawl' field indicating which
+                dataset the document goes with. The 'features' block is meant to contain extracted or derived data. In
+                the Ebola tweets subset to hold a structured representation of the tweet, automatically extracted from
+                the raw Twitter HTML contained in the 'response.body'. In the Illicit-goods dataset, the features block
+                contains extracted posts and thread/post metadata from the raw HTML thread.
+            </div>
 
-<div class="gdlinebox">
-<h4><a name="format">3. Data format</a></h4>
-<br>
-The documents are stored in files that each contain a stream of <a href="http://cbor.io/">CBOR</a> records that follow the CCA format above.  CBOR is a variation of JSON that supports binary data and a has more efficient encoding than text.
+            <div class="gdlinebox">
+                <h4><a name="format">3. Data format</a></h4>
+                <br>
+                The documents are stored in files that each contain a stream of <a href="http://cbor.io/">CBOR</a>
+                records that follow the CCA format above. CBOR is a variation of JSON that supports binary data and a
+                has more efficient encoding than text.
 
-Here is an example <a href="cbor-python-example.html">using Python and the cbor library</a>.  More example code in Python and Java can be found at <a href="https://github.com/trec-dd/trec-dd-example-code">the TREC DD Github site</a>.
-</div>
+                Here is an example <a href="cbor-python-example.html">using Python and the cbor library</a>. More
+                example code in Python and Java can be found at <a
+                    href="https://github.com/trec-dd/trec-dd-example-code">the TREC DD Github site</a>.
+            </div>
 
-<div class="gdlinebox">
-<h4><a name="get">4. Obtaining the datasets</a></h4>
-<br>
-To get access to the collections, you must be a TREC 2016 participant.  Complete the <a href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Organization User Agreement.html">TREC DD Organizational User Agreement</a> (password protected, use the TREC participant password) and email it as a scanned PDF or a high-quality digital photo to Angela (dot) Ellis (at) NIST (dot) gov, including your TREC participant ID.  Within a week you should receive access credentials to download the data, as well as the decryption key to read the local-politics documents.
-<br>
-Local users of the data must complete the <a href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Individual User Agreement.html">Individual User Agreement</a> and return it to the organizational point of contact who will maintain those records.
-</div>
-            </section>
-                            <div class="footerline"></div>
+            <div class="gdlinebox">
+                <h4><a name="get">4. Obtaining the datasets</a></h4>
+                <br>
+                To get access to the collections, you must be a TREC 2016 participant. Complete the <a
+                    href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Organization User Agreement.html">TREC DD
+                Organizational User Agreement</a> (password protected, use the TREC participant password) and email it
+                as a scanned PDF or a high-quality digital photo to Angela (dot) Ellis (at) NIST (dot) gov, including
+                your TREC participant ID. Within a week you should receive access credentials to download the data, as
+                well as the decryption key to read the local-politics documents.
+                <br>
+                Local users of the data must complete the <a
+                    href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Individual User Agreement.html">Individual
+                User Agreement</a> and return it to the organizational point of contact who will maintain those records.
+            </div>
+        </section>
+        <div class="footerline"></div>
 
-            <footer>
-        This page is owned by TREC Dynamic Domain Track Group.
-      </footer>
+        <footer>
+            This page is owned by TREC Dynamic Domain Track Group.
+        </footer>
 </body>
 
 </html>
