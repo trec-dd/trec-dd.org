@@ -67,26 +67,26 @@
             </div>
             <h4><a name="domains">2. Domains and datasets for 2016</a></h4>
             <div class="gd_details">
-            TREC DD Track provides interesing and understudied domains of documents. In 2016, we release our corpora from three domains: Weapon domain, Ebola domain and Polar Domain. All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects. See the <a href="dataset.html">datasets page</a> for more details.<br/>
+            TREC DD Track provides interesing and understudied domains of documents. In 2016, we release our corpora from three domains: Weapon domain, Ebola domain and Polar domain. All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects. See the <a href="dataset.html">Datasets page</a> for more details.<br/>
 
             </div>
 
             <h4><a name="topic">3. Topics </a></h4>
                 <div class="gd_details">
 
-              Within each domain, there will be 25-50 topics that represent user search needs. The topics are developed by the NIST assessors. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation. 
+              Within each domain, there will be 25-50 topics that represent user search needs. These topics are developed by the NIST assessors. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation. 
 
 <!-- An example topic for the Ebola domain might be titled, "foreign aid health workers."  The topics will be developed by the NIST assessors.  Each topic will have a number of subtopic interests that make up the various pieces that the user wants to know.  Following the above example, subtopics might include "how many foreign health workers are in Freetown" and "what clinics are primarily staffed by foreign health workers".
 -->
          <br/> <br/> 
 
-         An example topic for the Illicit Goods domain could be found <a href="./resource/sample_topics.txt"> here</a>.  It is about "paying for amazon book reviews" and contains 2 subtopics.        
+         An example topic from the Illicit Goods domain could be found <a href="./resource/sample_topics.txt"> here</a>.  It is about "paying for amazon book reviews" and contains 2 subtopics.        
     
 
     <br/><br/>
    
 
-         You can find the topics (with ground truth) on the <a href="http://trec.nist.gov/act_part/tracks15.html">Tracks page in the TREC Active Participants area</a> after you register to participate in TREC.
+         The topics are under assessing by assessors now. They are expected to finished annotating by end of May, at that time you can find the topics (with ground truth) on the <a href="http://trec.nist.gov/act_part/tracks15.html">Tracks page in the TREC Active Participants area</a> after you register to participate in TREC. Before the topics for 2016 releases, you may check on the topics from 2015 (with ground truth) on the <a href="http://trec.nist.gov/act_part/tracks15.html">Tracks page in the TREC Active Participants area</a>.
 
                   
 
@@ -95,7 +95,7 @@
             <h4><a name="task_description">4. Task Description</a></h4>
                 <div class="gd_details">
 
-    Your systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The simulated user will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with a graded relevance rating. The system may then return another five documents for more feedback.  Systems should stop when they believe they have covered all the user's subtopics sufficiently.  The subtopics are not known the system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
+        Your systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The simulated user will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with a graded relevance rating. The system may then return another five documents for more feedback.  Systems should stop until they believe they have covered all the user's subtopics sufficiently.  The subtopics are not known by the system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
 
     The following picture illustrates the task: <br/> <br/>
 
@@ -108,10 +108,10 @@
      <h4> <a name="jig">5. User Simulation Harness ("Jig") and Feedback Format </a> </h4>
    <div class="gd_details">
 
-    The system interactions with the user will be simulated using a jig that the track coordinators will provide to you.  This jig runs on Linux, Mac OS, and Windows.  You will need the  <a href="http://trec.nist.gov/act_part/tracks15.html">topics with ground truth</a> to make the jig work, and your system may only interact with the ground truth through the jig.  <br/> <br/>
+    The system's interactions with the user can be simulated by a jig that the track coordinators provide. This jig runs on Linux, Mac OS, and Windows. You will need the  <a href="http://trec.nist.gov/act_part/tracks15.html">topics with ground truth</a> to make the jig work, and your system may only interact with the ground truth through the jig.<br/> <br/>
 
-The jig package can be found at <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a>.  That page includes instrucions on how to set up and run the jig with an example oracle system, and how to write your system to connect with the jig.
-    <br/>     <br/> 
+    The jig package can be found at <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a>. This page includes instrucions on how to set up and run the jig with an example oracle system, and how to write your system to connect with the jig.
+    <br/>
 
    </div>
 
@@ -134,21 +134,25 @@ Reference: Jiyun Luo, Christopher Wing, Hui Yang, Marti Hearst. The Water Fillin
                 </div>
             <h4><a name="run_format">7. Run Format</a></h4>
             <div class="gd_details">
-                In TREC, a "run" is the output of a search system over all topics.  In the DD track, the runs are the output of the harness jig.  Participating groups typically submit more than one run corresponding to different parameter settings or algorithmic choices.  The maximum number of runs allowed for DD 2016 is five from each team.
+                In TREC, a "run" is the output of a search system over all topics.  In the DD track, the runs are the output of the harness jig.  Participating groups typically submit more than one run corresponding to different parameter settings or algorithmic choices.  The maximum number of runs allowed for DD-2016 is <i>five</i> from each team.
     <br/><br/>
       
 We use a line-oriented format similar to the classic TREC submission format: 
+<br>
 
-<br/><pre>topic_id docno ranking_score on_topic subtopic_rels</pre>
+<br/><div align="center"><pre>topic_id docno ranking_score on_topic subtopic_rels</pre></div>
 
 <br>where 'on_topic' is 1 or 0 if the document is relevant to any subtopic, and the subtopic_rels indicate graded relevance for the document for all relevant subtopics.  For instance:<br>
-<pre>   
-DD15-1  1335424206-b5476b1b8bf25b179bcf92cfda23d975     503.000000      1       DD15-1.4:3
-DD15-1  1321566720-7676cf342cb035e8e09b0696ae85d3a7     883.000000      1       DD15-1.1:2
-DD15-1  1322120460-d6783cba6ad386f4444dcc2679637e0b     26.000000       1       DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.2:2|DD15-1.2:2|DD15-1.1:3|DD15-1.4:2|DD15-1.4:2
-DD15-1  1322088960-3f3465ecc86554b4b449539a46a5e7ba     709.000000      1       DD15-1.6:2|DD15-1.6:2|DD15-1.4:2|DD15-1.4:3
-DD15-1  1321860780-f9c69177db43b0f810ce03c822576c5c     470.000000      1       DD15-1.1:3
-</pre>
+<div align="left">
+    <pre>   
+    <strong>topic_id                                           docno                                               ranking_score  on_topic  subtopic_rels</strong>
+    DD15-1  1335424206-b5476b1b8bf25b179bcf92cfda23d975     503.000000       1               DD15-1.4:3
+    DD15-1  1321566720-7676cf342cb035e8e09b0696ae85d3a7     883.000000      1               DD15-1.1:2
+    DD15-1  1322120460-d6783cba6ad386f4444dcc2679637e0b     26.000000        1               DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.2:2|DD15-1.2:2|DD15-1.1:3|DD15-1.4:2|DD15-1.4:2
+    DD15-1  1322088960-3f3465ecc86554b4b449539a46a5e7ba     709.000000      1               DD15-1.6:2|DD15-1.6:2|DD15-1.4:2|DD15-1.4:3
+    DD15-1  1321860780-f9c69177db43b0f810ce03c822576c5c     470.000000       1                DD15-1.1:3
+    </pre>
+</div>
 
             </div>
             <h4><a name="requirement">8. Requirements</a></h4>
