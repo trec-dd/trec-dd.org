@@ -56,8 +56,8 @@
             <div class="gdlinebox">
                 <h4><a name="details">1. Datasets Descriptions</a></h4>
                 <br>
-                There are three datasets for the TREC 2016 Dynamic Domain Track. The Datasets include Weapon Dataset,
-                Ebola Dataset, and Polar Dataset. Basic statistics of these datasets are shown in the Table 1-1. These
+	There are two datasets for the TREC 2016 Dynamic Domain Track: Ebola Dataset and Polar Dataset.
+	Basic statistics of these datasets are shown in the Table 1-1. These
                 datasets contains records in forms of web pages, scientific data, PDFs, and tweets. All the datasets are
                 formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as
                 sequences of CBOR objects. Detailed Description, as well as some links to sample code, of each dataset
@@ -72,11 +72,6 @@
                         <th>Number of Records</th>
                     </tr>
                     <tr>
-                        <td>Weapon</td>
-                        <td>~85 GB</td>
-                        <td>3,345,557</td>
-                    </tr>
-                    <tr>
                         <td>Ebola</td>
                         <td>12.6 GB</td>
                         <td>682,157</td>
@@ -88,100 +83,7 @@
                     </tr>
                 </table>
                 <br>
-                <strong>1.1 Weapon Domain</strong><br>
-                <div class="gd_details">
-                    This dataset was collected from U.S. law enforcement agencies, including a total of 3,345,557
-                    documents. The dataset contains a list of the Defense Logistic Agency's microelectronics suppliers,
-                    a list of the buildings in China which are crowded with individual microelectronics suppliers, a
-                    list of elements that OSI/HSI are most interested in and are widely available on the counterfeit
-                    market, and a list of elements that are suspicious counterfeit. This dataset contains primarily
-                    corporate websites, merchant sites for ordering parts, social media sites, onion sites and some
-                    defunct sites.
-                    <br>
-                    <ul class="gd_details">
-                        <li> Company/POC for crawl: TBD</li>
-                        <li> Version: 1.0</li>
-                        <li> Purpose of data: TBD.</li>
-                        <!-- <li> Description: This dataset has four disjoint parts: -->
-                        <!--        <ol class="gd_details gdnum">
-                           <li>Ebola-web-01-2015: web pages crawled during January 2015.
-                           <li>Ebola-web-03-2015: web pages crawled during March 2015.  These two parts are primarily information from NGO's, relief agencies, and news organizations.
-                           <li>Ebola-pdfs: PDF documents collected from West African government and other sources.
-                           <li>Ebola-tweets: Tweets that originate from West African regions involved in the Ebola outbreak.
-                               </ol> -->
-                        <li> Schema notes: TBD</li>
-                        <li> Number of items: 3,345,557 Documents.</li>
-                        <li> Time frame: TBD</li>
-                        <li> Geographic area: TBD</li>
-                        <li> Size of data on disk: ~ 85GB uncompressed</li>
-                        <li> Format: CDRv2</li>
-                        <li> Data Source:</li>
-                        <ul class="sub-ul">
-                            All data is from the following sites marked a 2 (relevant) by the ATF at the UK Hack:
-                            <li>ebay.com</li>
-                            <li>ftfindustries.com</li>
-                            <li>shop.jncmanufacturing.com</li>
-                        </ul>
-                        plus the following sites provided by the ATF as seed sites
-                        <ul class="sub-ul">
-                            <li>www.sturmgewehr.com</li>
-                            <li> www.thehighroad.org</li>
-                            <li> www.uzitalk.com</li>
-                            <li> www.weaponeer.net</li>
-                            <li> www.glocktalk.com</li>
-                            <li> www.ar15.com</li>
-                            <li> www.subguns.com</li>
-                            <li> www.firearmstalk.com</li>
-                            <li> www.thefiringline.com</li>
-                            <li> www.1919a4.com</li>
-                            <li> www.armslist.com</li>
-                            <li> www.backpage.com</li>
-                            <li> www.buyusedguns.net</li>
-                            <li>www.freegunclassifieds.com</li>
-                            <li> www.gunauction.com</li>
-                            <li> www.gunbroker.com</li>
-                            <li> www.gundeals.org</li>
-                            <li> www.gunlistings.org</li>
-                            <li> www.gunsamerica.com</li>
-                            <li> www.gunsinternational.com</li>
-                            <li> www.guntrader.com</li>
-                            <li> www.lionseek.com</li>
-                            <li> www.nationalguntrader.com</li>
-                            <li> www.shooterswap.com</li>
-                            <li> www.shooting.org</li>
-                        </ul>
-
-                    <li> Robots.text info</li>
-                    <div>
-                        Do not have: (url, #pages)
-                        <ul class="sub-ul">
-                            <li>http://www.gundeals.org 16639</li>
-                            <li>http://www.gunlistings.org/ 47735</li>
-                        </ul>
-                        Have robots.txt:(url,#pages)
-                        <ul class="sub-ul">
-                            <li>http://www.armslist.com/robots.txt 648516</li>
-                            <li>http://www.backpage.com/robots.txt 255251</li>
-                            <li>http://www.buyusedguns.net/robots.txt 2159</li>
-                            <li>http://ebay.com/robots.txt 8199</li>
-                            <li>http://freegunclassifieds.com/robots.txt 834</li>
-                            <li>http://www.gunauction.com/robots.txt 93701</li>
-                            <li>http://www.gunbroker.com/robots.txt 66706</li>
-                            <li>https://www.gunsamerica.com/robots.txt 91828</li>
-                            <li>http://www.gunsinternational.com/robots.txt 57626</li>
-                            <li>http://www.lionseek.com/robots.txt 401519</li>
-                            <li>http://www.nationalguntrader.com/robots.txt 16889</li>
-                            <li>http://shooterswap.com/robots.txt 10331</li>
-                            <li>https://www.shooting.org/robots.txt 282173</li>
-                            <li>http://www.thehighroad.org/robots.txt 15</li>
-                            <li>http://thefiringline.com/robots.txt 12</li>
-                            <li>www.guntrader.com 2 => redirects to shooting.org => which has robots.txt</li>
-                        </ul>
-                    </div>
-                    </ul>
-                </div>
-                <br>
-                <strong>1.2 Ebola Domain</strong><br>
+                <strong>1.1 Ebola Domain</strong><br>
                 <div class="gd_details">
                     This data is related to the Ebola outbreak in Africa in 2014-2015. The dataset comprises tweets
                     relating to the outbreak, web pages from sites hosted in the affected countries as well as PDF
@@ -219,7 +121,7 @@
                 </div>
                 <br>
 
-                <strong>1.3 Polar Domain</strong><br>
+                <strong>1.2 Polar Domain</strong><br>
                 <div class="gd_details">
                     This dataset is a set of web pages, scientific data, zip files, PDFs, images, and science code
                     related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic
