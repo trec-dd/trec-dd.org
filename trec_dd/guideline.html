@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="ISO-8859-1">
-    <title>TREC 2016 Dynamic Domain Track</title>
+    <title>TREC 2017 Dynamic Domain Track</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery.pin.js"></script>
@@ -17,7 +17,7 @@
     <div id="top">
         <img class="logo" src="img/cube.png" />
         <header>
-            <br> TREC Dynamic Domain Track
+            <br> TREC Dynamic Domain Track 2017
 
         </header>
 
@@ -34,146 +34,157 @@
                 <a href="./dataset.html">Datasets</a>
                 <a href="https://groups.google.com/forum/#!forum/trec-dd">Google Group</a> 
                 <a href="./ack.html">Acknowledgments</a>
-                <a href="./2015.html">TREC DD 2015</a>
-            </nav>
+                <a href="./2016/index.html">TREC DD 2016</a>
+                </nav>
+            </div>
         </div>
-</div>
-
-
-            <div class="right">
-            <h4>TREC Dynamic Domain Track
-    2016 Guidelines </h4>
-
-    <div class="gdlinebox">
-        <br>
-            The goal of the dynamic domain (DD) track is to support research in dynamic, exploratory search of complex information domains.  DD systems receive relevance feedback as they explore a space of subtopics within the collection in order to satisfy a user's information need.
     </div>
-            <ul id="gdcontent">
+
+
+    <div class="right">
+        <h4>TREC Dynamic Domain Track 2017 Guidelines </h4>
+
+        <div class="gdlinebox">
+            <br>
+            The goal of the dynamic domain (DD) track is to support research in dynamic, exploratory search of complex information domains.  DD systems receive relevance feedback as they explore a space of subtopics within the collection in order to satisfy a user's information need.
+        </div>
+        <ul id="gdcontent">
                 <li><a href="#participation">1. Participation in TREC</a></li>
-                <li><a href="#domains">2. Domains and datasets for 2016</a></li>
-                <li><a href="#topic">3. Topics for 2016</a></li>
+                <li><a href="#domains">2. Domains and datasets for 2017</a></li>
+                <li><a href="#topic">3. Topics for 2017</a></li>
                 <li><a href="#task_description">4. Task Description</a></li>
                 <li><a href="#jig">5. User Simulator (Jig) and Feedback Format </a> </li>
                 <li><a href="#task_measures">6. Task Measures</a></li>
                 <li><a href="#run_format">7. Run Format</a></li>
                 <li><a href="#requirement">8. Requirements</a></li>
-            </ul>
-            <div class="gdlinebox">
+        </ul>
+
+        <div class="gdlinebox">
 
             <h4><a name="participation">1. Participation in TREC</a></h4>
-            <div class="gd_details">
-            In order to take part in the DD track, you need to be a registered participant of TREC.  The TREC Call for Participation, at <a href="http://trec.nist.gov/pubs/call2016.html">http://trec.nist.gov/pubs/call2016.html</a>, includes instructions on how to register.  You must register before May 1, 2016 in order to participate.<br/><br/>
 
-    The datasets and relevance judgments will be made generally available to non-participants after the TREC 2016 cycle, in February 2017.  So register to participate if you want early access.<br/><br/>
-            </div>
-            <h4><a name="domains">2. Domains and datasets for 2016</a></h4>
             <div class="gd_details">
-            The TREC DD track provides interesting and understudied domains of documents. In 2016, we will have two domains: Ebola and Polar. All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects. See the <a href="dataset.html">Datasets page</a> for more details.<br/>
+                    In order to take part in the DD track, you need to be a registered participant of TREC.  The TREC Call for Participation, at <a href="http://trec.nist.gov/pubs/call2017.html">http://trec.nist.gov/pubs/call2017.html</a>, includes instructions on how to register.  You must register before May 1, 2017 in order to participate.<br/><br/>
 
-            </div>
+                    The datasets and relevance judgments will be made generally available to non-participants after the TREC 2017 cycle, in February 2018.  So register to participate if you want early access.<br/><br/>
+                </div>
+            <h4><a name="domains">2. Domains and datasets for 2017</a></h4>
+
+            <div class="gd_details">
+                    The TREC DD track provides interesting and understudied domains of documents. In 2017, we will have two domains: Ebola and Polar. All the datasets are formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as sequences of CBOR objects. See the <a href="dataset.html">Datasets page</a> for more details.<br/>
+                </div>
 
             <h4><a name="topic">3. Topics </a></h4>
-                <div class="gd_details">
 
-              Within each domain, there will be 25-50 topics that represent user search needs. In the Ebola domain, these have been developed by the NIST assessors, whereas in the Polar domain, the topics were developed by Annie Burgess and Chris Mattman at USC. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation. 
+            <div class="gd_details">
+
+                    Within each domain, there will be 25-50 topics that represent user search needs. In the Ebola domain, these have been developed by the NIST assessors, whereas in the Polar domain, the topics were developed by Annie Burgess and Chris Mattman at USC. A topic (which is like a query) contains a few words. It is the main search target for one complete run of dynamic search. Each topic contains multiple subtopics, each of which addresses one aspect of the topic. The NIST assessors have tried (very hard to) produce a complete set of subtopics for each topic, and so we will treat them as the complete set and use them in the interactions and evaluation.
 
 <!-- An example topic for the Ebola domain might be titled, "foreign aid health workers."  The topics will be developed by the NIST assessors.  Each topic will have a number of subtopic interests that make up the various pieces that the user wants to know.  Following the above example, subtopics might include "how many foreign health workers are in Freetown" and "what clinics are primarily staffed by foreign health workers".
 -->
-         <br/> <br/> 
+                    <br/> <br/>
 
-         An example topic from the 2015 Illicit Goods domain topic set may be found <a href="./resource/sample_topics.txt"> here</a>.  It is about "paying for amazon book reviews" and contains 2 subtopics.        
+                    An example topic from the 2015 Illicit Goods domain topic set may be found <a href="./resource/sample_topics.txt"> here</a>.  It is about "paying for amazon book reviews" and contains 2 subtopics.
     
 
-    <br/><br/>
+                    <br/><br/>
    
 
-The topics will be made available from the <a href="http://trec.nist.gov/act_part/tracks.html">Tracks page in the TREC Active Participants area</a>. You cannot access this page without registering for TREC.  If you lose your active participants password, you will need to contact <a href="trec@nist.gov">trec@nist.gov</a>.
+                    The topics will be made available from the <a href="http://trec.nist.gov/act_part/tracks.html">Tracks page in the TREC Active Participants area</a>. You cannot access this page without registering for TREC.  If you lose your active participants password, you will need to contact <a href="trec@nist.gov">trec@nist.gov</a>.
 
-               </div>
+                </div>
 
             <h4><a name="task_description">4. Task Description</a></h4>
-                <div class="gd_details">
 
-The topics file contains not only the queries but in fact the full ground truth data: subtopics, relevant documents, and highlighted passages.  <b>DO NOT READ THE FILE.</b>  The file should be used only as input to the jig, and your system receives the truth data via the jig.  If you examine the topics file, your run <b>may not</b> be labeled automatic but rather is a manual run.
+            <div class="gd_details">
 
-When your "run" starts, your system will communicate with the jig via a simple API. Your system indicates that it is ready for a new query, and the jig will give you a query along with its domain label.  Your system can use that query to search the domain collection and return up to five documents to the jig.  The jig will reply with relevance information for any of those retrieved documents that have been judged.  
+                    The topics file contains not only the queries but in fact the full ground truth data: subtopics, relevant documents, and highlighted passages.  <b>DO NOT READ THE FILE.</b>  The file should be used only as input to the jig, and your system receives the truth data via the jig.  If you examine the topics file, your run <b>may not</b> be labeled automatic but rather is a manual run.
 
-Your systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The jig (acting as a simulated user) will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with a graded relevance rating. The system may then return another five documents for more feedback.  Systems should stop until they believe they have covered all the user's subtopics sufficiently.<br/><br/>
+                    When your "run" starts, your system will communicate with the jig via a simple API. Your system indicates that it is ready for a new query, and the jig will give you a query along with its domain label.  Your system can use that query to search the domain collection and return up to five documents to the jig.  The jig will reply with relevance information for any of those retrieved documents that have been judged.
 
-The subtopics are not known to your system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
+                    Your systems will receive an initial query for each topic, where the query is two to four words and additionally indicates the domain by a number 1, 2, 3 or 4.  In response to that query, systems may return up to five documents to the user.  The jig (acting as a simulated user) will respond by indicating which of the retrieved documents are relevant to their interests in the topic, and to which subtopic the document is relevant to.  Additionally, the simulated user will identify passages from the relevant documents and assign the passages to the subtopics with a graded relevance rating. The system may then return another five documents for more feedback.  Systems should stop until they believe they have covered all the user's subtopics sufficiently.<br/><br/>
 
-The jig only gives relevance information when it exists.  If the jig gives no information about a document your system retrieved, it does not mean that the document is not relevant, it means that the user hasn't examined it.  Your system should assume this partial relevance situation, <b>NOT</b> the traditional TREC interpretation that unjudged documents are not relevant.<br/><br/>
+                    The subtopics are not known to your system in advance; systems must discover the subtopics from the user's responses.<br/><br/>
 
-    The following picture illustrates the task: <br/> <br/>
+                    The jig only gives relevance information when it exists.  If the jig gives no information about a document your system retrieved, it does not mean that the document is not relevant, it means that the user hasn't examined it.  Your system should assume this partial relevance situation, <b>NOT</b> the traditional TREC interpretation that unjudged documents are not relevant.<br/><br/>
 
-   <img src="img/task.png" alt="task" width="900" border="0"> 
+                    The following picture illustrates the task: <br/> <br/>
 
-   <br/><br/>
+                    <img src="img/task.png" alt="task" width="900" border="0">
 
-   </div>
+                    <br/><br/>
 
-     <h4> <a name="jig">5. User Simulation ("Jig") and Feedback Format </a> </h4>
-   <div class="gd_details">
+                </div>
 
-    The system's interactions with the user can be simulated by a jig that the track coordinators provide. This jig runs on Linux, Mac OS, and Windows. You will need the  <a href="http://trec.nist.gov/act_part/tracks.html">topics with ground truth</a> to make the jig work, and your system may only interact with the ground truth through the jig that we provide.<br/> <br/>
+            <h4> <a name="jig">5. User Simulation ("Jig") and Feedback Format </a> </h4>
 
-    The jig package will be released on the Github soon.<!-- <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a>. --> We will provide the jig program, as well as instrucions on how to set up and run the jig with an example oracle system, and how to write your system to connect with the jig.
-    <br/>
+            <div class="gd_details">
 
-   </div>
+                The system's interactions with the user can be simulated by a jig that the track coordinators provide. This jig runs on Linux, Mac OS, and Windows. You will need the  <a href="http://trec.nist.gov/act_part/tracks.html">topics with ground truth</a> to make the jig work, and your system may only interact with the ground truth through the jig that we provide.<br/> <br/>
+
+                The jig package will be released on the Github soon.<!-- <a href="https://github.com/trec-dd/trec-dd-simulation-harness">https://github.com/trec-dd/trec-dd-simulation-harness</a>. --> We will provide the jig program, as well as instrucions on how to set up and run the jig with an example oracle system, and how to write your system to connect with the jig.
+                    <br/>
+
+                </div>
 
             <h4><a name="task_measures">6. Task Measures</a></h4>
-                <div class="gd_details">
-                The primary measures will be Cube Test and &#181;-ERR.  Scoring scripts are included as part of the jig.  We will also likely report other diagnostic measures such as basic precision and recall.<br/><br/>
 
-The Cube Test is a search effectiveness measurement that measures the speed of gaining relevant information (could be documents or passages) in a dynamic search process. It measures the amount of relevant information a search system could gather for the entire search process with multiple runs of retrieval. A higher Cube Test score means a better DD system, which ranks relevant information (documents and/or psaasages) for a complex <a href="#topic">search topic</a>  as much as possible and as early as possible. <br/> <br/>
+            <div class="gd_details">
+                <br/>
+                The measurements of runs are CubeTest, sDCG and Expected Utility. Scoring scripts are included in the jig. other diagnostic measures such as precision and recall may also be reported. <br/>
+                <br/>
+                CubeTest is a search effectiveness measurement evaluating the speed of gaining relevant information (could be documents or passages) in a dynamic search process. It measures the amount of relevant information a system could gather and the time needed in the entire search process. The higher the CubeTest score, the better the IR system. <br/> <br/>
 
-Reference: Jiyun Luo, Christopher Wing, Hui Yang, Marti Hearst. The Water Filling Model and The Cube Test: Multi-Dimensional Evaluation for Professional Search. CIKM 2013. <a href="http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf">http://cs-sys-1.uis.georgetown.edu/~xd47/InfoSense/publication/cikm2013.pdf</a><br/> 
+                sDCG extends the classic DCG to a search session which consists of multiple queries. It gives more discounts to the relevant results in latter ranking lists within the session. <br/><br/>
 
-<!--    Reference: Oliver Chappelle, Don Metzler, Y Zhang, ACM 2009 Expected reciprocal rank for graded relevance.  <a href="http://dl.acm.org/citation.cfm?id=1646033">http://dl.acm.org/citation.cfm?id=1646033</a><br/><br/>
--->
-   <br/>
-<!--
-    session-nDCG generalizes the nDCG scoring function to multi-query session evaluation.<br/>
-    Reference: Evangelos Kanoulas, Ben Carterette, Paul D. Clough, Mark Sanderson. Evaluating Multi-Query Sessions. SIGIR 2011. <a href="http://dl.acm.org/citation.cfm?id=2009916.2010056">http://dl.acm.org/citation.cfm?id=2009916.2010056</a><br/><br/>
--->
+                Expected Utility scores different runs by measuring the relevant information a system found and the length of documents. Ranking order and novelty are both considered in discounts.<br/><br/>
+
+                <strong>References:</strong><br/>
+                Jiyun Luo, Christopher Wing, Hui Yang, and Marti Hearst. 2013. <a href="http://infosense.cs.georgetown.edu/publication/cikm2013.pdf">The water  lling model and the cube test: multi-dimensional evaluation for professional search.</a> In Proceedings of the 22nd ACM international conference on Information & Knowledge Management. ACM, 709&#45;714.<br/>
+                Kalervo Järvelin, Susan L Price, Lois ML Delcambre, and Marianne Lykke Nielsen. 2008. <a href="https://link.springer.com/chapter/10.1007/978-3-540-78646-7_4">Discounted cumulated gain based evaluation of multiple-query IR sessions.</a> In European Conference on Information Retrieval. Springer, 4&#45;15.<br/>
+                Yiming Yang and Abhimanyu Lad. 2009. <a href="https://link.springer.com/chapter/10.1007/978-3-642-04417-5_15">Modeling expected utility of multi-session information distillation.</a> In Conference on the Theory of Information Retrieval. Springer, 164&#45;175.<br/>
+
+
                 </div>
+
             <h4><a name="run_format">7. Run Format</a></h4>
+
             <div class="gd_details">
-                In TREC, a "run" is the output of a search system over all topics.  In the DD track, the runs are the output of the harness jig.  Participating groups typically submit more than one run corresponding to different parameter settings or algorithmic choices.  The maximum number of runs allowed for DD-2016 is <i>five</i> from each team.
-    <br/><br/>
+                In TREC, a "run" is the output of a search system over all topics.  In the DD track, the runs are the output of the harness jig.  Participating groups typically submit more than one run corresponding to different parameter settings or algorithmic choices.  The maximum number of runs allowed for DD-2017 is <i>five</i> from each team.
+                <br/><br/>
       
-We use a line-oriented format similar to the classic TREC submission format: 
-<br>
+                We use a line-oriented format similar to the classic TREC submission format:
+                <br><br/>
 
-<br/><div align="center"><pre>topic_id docno ranking_score on_topic subtopic_rels</pre></div>
-
-<br>where 'on_topic' is 1 or 0 if the document is relevant to any subtopic, and the subtopic_rels indicate graded relevance for the document for all relevant subtopics.  For instance:<br>
-<div align="left">
-    <pre>   
-    <strong>topic_id                                           docno                                               ranking_score  on_topic  subtopic_rels</strong>
-    DD15-1  1322120460-d6783cba6ad386f4444dcc2679637e0b     883.000000       1               DD15-1.1:3|DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.2:2|DD15-1.2:2
-    DD15-1  1322509200-f67659162ce908cc510881a6b6eabc8b     564.000000       1               DD15-1.1:3
-    DD15-1  1321860780-f9c69177db43b0f810ce03c822576c5c     177.000000        1               DD15-1.1:3
-    DD15-1  1320503040-e8c92486dc3462e4a352c4fd41d3a723    66.000000          0
-    DD15-1  1327908780-d9ad76f0947e2acd79cba3acd5f449f7      25.000000          1                DD15-1.3:2|DD15-1.1:2
-    </pre>
-</div>
-
+                <div align="center"><pre>topic_id               docno       ranking_score         on_topic          subtopic_rels</pre></div>
+                <br>
+                where 'on_topic' is 1 or 0 if the document is relevant to any subtopic, and the subtopic_rels indicate graded relevance for the document for all relevant subtopics.  For instance:<br>
+                <div align="left">
+                    <pre>
+                        <strong>topic_id                                           docno                              ranking_score  on_topic  subtopic_rels</strong><br/>
+                        DD15-1  2322120460-d6783cba6ad386f4444dcc2679637e0b     883.000000          1               DD15-1.1:3|DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.4:2|DD15-1.2:2|DD15-1.2:2<br/>
+                        DD15-1  1322509200-f67659162ce908cc510881a6b6eabc8b     564.000000          1               DD15-1.1:3<br/>
+                        DD15-1  1321860780-f9c69177db43b0f810ce03c822576c5c         177.000000          1               DD15-1.1:3<br/>
+                        DD15-1  1320503040-e8c92486dc3462e4a352c4fd41d3a723         66.000000           0               <br/>
+                        DD15-1  1327908780-d9ad76f0947e2acd79cba3acd5f449f7         25.000000           1                DD15-1.3:2|DD15-1.1:2<br/>
+                    </pre>
+                </div>
             </div>
+
             <h4><a name="requirement">8. Requirements</a></h4>
+
             <div class="gd_details">
-            Participants are expected to submit at least one run by the deadline.<br/><br/>
-
-    Runs may be fully automatic, or manual.  Manual indicates intervention by a person at any stage of the retrieval.  We welcome unusual approaches to the task including human-in-the-loop searching, as this helps us set upper performance bounds.
+                Participants are expected to submit at least one run by the deadline.<br/><br/>
+                Runs may be fully automatic, or manual.  Manual indicates intervention by a person at any stage of the retrieval.  We welcome unusual approaches to the task including human-in-the-loop searching, as this helps us set upper performance bounds.
             </div>
+        </div>
 
-          </div>
-                            <div class="footerline"></div>
+        <div class="footerline"></div>
 
-            <footer>
+        <footer>
                 This page is owned by TREC Dynamic Domain Track Group.
-            </footer>
+        </footer>
+    </div>
 </body>
 
 </html>
