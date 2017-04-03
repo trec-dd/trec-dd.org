@@ -48,9 +48,9 @@
         </div>
         <ul id="gdcontent">
             <li><a href="#details">1. Datasets Descriptions</a>
-            <li><a href="#cca">2. CCA Generic Schema</a>
-            <li><a href="#format">3. Data Format</a>
-            <li><a href="#get">4. Obtaining the Datasets</a>
+                <!--<li><a href="#cca">2. CCA Generic Schema</a>-->
+            <li><a href="#format">2. Data Format</a>
+            <li><a href="#get">3. Obtaining the Datasets</a>
         </ul>
 
         <section class="intro">
@@ -58,15 +58,21 @@
             <div class="gdlinebox">
                 <h4><a name="details">1. Datasets Descriptions</a></h4>
                 <br>
-	There are two datasets for the TREC 2017 Dynamic Domain Track: Ebola Dataset and Polar Dataset.
-	Basic statistics of these datasets are shown in the Table 1-1. These
-                datasets contains records in forms of web pages, scientific data, PDFs, and tweets. All the datasets are
-                formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as
-                sequences of CBOR objects. Detailed Description, as well as some links to sample code, of each dataset
-                is given in the following subsections.
+                The dataset used for TREC 2017 Dynamic Domain Track is <cite> New York Times Annotated Corpus</cite>.
+                The dataset was published in 2008 containing over 1.8 million articles in New York Times
+                from January 1, 1987 to June 19, 2007.
+                The dataset is formatted in <a href="https://iptc.org/standards/nitf/">News Industry Text Format
+                (NITF)</a>. 
+                More details can be found in the following sections.
+                <!--There are two datasets for the TREC 2017 Dynamic Domain Track: Ebola Dataset and Polar Dataset.
+                Basic statistics of these datasets are shown in the Table 1-1. These
+                            datasets contains records in forms of web pages, scientific data, PDFs, and tweets. All the datasets are
+                            formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as
+                            sequences of CBOR objects. Detailed Description, as well as some links to sample code, of each dataset
+                            is given in the following subsections.-->
                 <br>
 
-                <table style="width:90%">
+                <!--<table style="width:90%">
                     <caption>Table 1-1 Datasets Statistics</caption>
                     <tr>
                         <th>Datasets</th>
@@ -83,8 +89,8 @@
                         <td>158 GB</td>
                         <td>1,741,530</td>
                     </tr>
-                </table>
-                <br>
+                </table>-->
+                <!--<br>
                 <strong>1.1 Ebola Domain</strong><br>
                 <div class="gd_details">
                     This data is related to the Ebola outbreak in Africa in 2014-2015. The dataset comprises tweets
@@ -121,40 +127,40 @@
                             well as extracted tweet data in the 'features' block.
                     </ul>
                 </div>
-                <br>
+                <br>-->
 
-                <strong>1.2 Polar Domain</strong><br>
-                <div class="gd_details">
-                    This dataset is a set of web pages, scientific data, zip files, PDFs, images, and science code
-                    related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic
-                    Data and Information System (ACADIS), NASA funded Antarctic Master Directory (AMD), and National
-                    Snow and Ice Data Center (NSIDC) Arctic Data Explorer. More information about this dataset can be
-                    found <a href="https://github.com/chrismattmann/trec-dd-polar/">here</a>.<br>
-                    <ul class="gd_details">
-                        <li> Company/POC for crawl: Chris Mattman, JPL (chris dot a dot mattmann at jpl dot nasa dot
-                            gov)
-                        </li>
-                        <li> Version: 1.0</li>
-                        <li> Purpose of data: represents a domain for open science and scientific data search.</li>
-                        <li> Description: Web pages, data files, zip archives, PDFs, images, and code.
-                        <li> Number of items: 1,741,530 records.
-                        <li> Time frame: September 2014 - May 2015.
-                        <li> Geographic area: global
-                        <li> Size of data on disk: 158GB.
-                        <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled
-                            data were put into Common Crawl Format, acording to Memex format, using the <a
-                                    href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>.
-                            The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common
-                            Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure.
-                            CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data
-                            representation format used in many contexts.Each contributed web crawl has an accompanying
-                            JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all
-                            of the JSON files.
-                    </ul>
-                </div>
+                <!--               <strong>1.2 Polar Domain</strong><br>
+                               <div class="gd_details">
+                                   This dataset is a set of web pages, scientific data, zip files, PDFs, images, and science code
+                                   related to the polar sciences and available publicly from the NSF funded Advanced Cooperative Artic
+                                   Data and Information System (ACADIS), NASA funded Antarctic Master Directory (AMD), and National
+                                   Snow and Ice Data Center (NSIDC) Arctic Data Explorer. More information about this dataset can be
+                                   found <a href="https://github.com/chrismattmann/trec-dd-polar/">here</a>.<br>
+                                   <ul class="gd_details">
+                                       <li> Company/POC for crawl: Chris Mattman, JPL (chris dot a dot mattmann at jpl dot nasa dot
+                                           gov)
+                                       </li>
+                                       <li> Version: 1.0</li>
+                                       <li> Purpose of data: represents a domain for open science and scientific data search.</li>
+                                       <li> Description: Web pages, data files, zip archives, PDFs, images, and code.
+                                       <li> Number of items: 1,741,530 records.
+                                       <li> Time frame: September 2014 - May 2015.
+                                       <li> Geographic area: global
+                                       <li> Size of data on disk: 158GB.
+                                       <li> Format: Gzipped sequence of CBOR records, encrypted with the KBA StreamCorpus key. Crawled
+                                           data were put into Common Crawl Format, acording to Memex format, using the <a
+                                                   href="http://wiki.apache.org/nutch/CommonCrawlDataDumper">CommonCrawlDataDumper</a>.
+                                           The CommonCrawlDataDumper is an Apache Nutch tool that can dump Nutch segments into Common
+                                           Crawl data format, mapping each crawled-by-Nutch file on a JSON-based data structure.
+                                           CommonCrawlDataDumper dumps out the files and serialize them with CBOR encoding, a data
+                                           representation format used in many contexts.Each contributed web crawl has an accompanying
+                                           JSON file that lists the total records, by mimeType. A program, aggregate.py, aggregates all
+                                           of the JSON files.
+                                   </ul>
+                               </div>-->
             </div>
 
-            <div class="gdlinebox">
+            <!--<div class="gdlinebox">
                 <h4><a name="cca">2. CCA generic schema</a></h4>
                 <br>
                 The documents in each dataset are stored in a structured format called the Common Crawl Architecture
@@ -191,21 +197,28 @@
                 the raw Twitter HTML contained in the 'response.body'. In the Illicit-goods dataset, the features block
                 contains extracted posts and thread/post metadata from the raw HTML thread.
             </div>
-
+-->
             <div class="gdlinebox">
-                <h4><a name="format">3. Data format</a></h4>
+                <h4><a name="format">2. Data format</a></h4>
                 <br>
-                The documents are stored in files that each contain a stream of <a href="http://cbor.io/">CBOR</a>
-                records that follow the CCA format above. CBOR is a variation of JSON that supports binary data and a
-                has more efficient encoding than text.
+                The documents are stored in in <a href="https://iptc.org/standards/nitf/">News Industry Text Format
+                (NITF) </a>
+                developed by the International Press Telecommunications Council,
+                an independent association of news agencies and publishers.
+                As an industry specification, NITF uses the eXtensible Markup Language to define the
+                content and structure of news articles. Here is a
+                <a href="https://catalog.ldc.upenn.edu/desc/addenda/LDC2008T19_large.jpg">sample</a> of the corpus.
+                <!-- The documents are stored in files that each contain a stream of <a href="http://cbor.io/">CBOR</a>
+                 records that follow the CCA format above. CBOR is a variation of JSON that supports binary data and a
+                 has more efficient encoding than text.
 
-                Here is an example <a href="cbor-python-example.html">using Python and the cbor library</a>. More
-                example code in Python and Java can be found at <a
-                    href="https://github.com/trec-dd/trec-dd-example-code">the TREC DD Github site</a>.
+                 Here is an example <a href="cbor-python-example.html">using Python and the cbor library</a>. More
+                 example code in Python and Java can be found at <a
+                     href="https://github.com/trec-dd/trec-dd-example-code">the TREC DD Github site</a>.-->
             </div>
 
             <div class="gdlinebox">
-                <h4><a name="get">4. Obtaining the datasets</a></h4>
+                <h4><a name="get">3. Obtaining the datasets</a></h4>
                 <br>
                 To get access to the collections, you must be a TREC 2017 participant. Complete the <a
                     href="http://trec.nist.gov/act_part/tracks/dd/TREC DD Organization User Agreement.html">TREC DD
