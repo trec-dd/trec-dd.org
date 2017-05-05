@@ -50,45 +50,61 @@
             <li><a href="#details">1. Datasets Descriptions</a>
             <!--<li><a href="#cca">2. CCA Generic Schema</a>-->
             <li><a href="#format">2. Data Format</a>
-            <li><a href="#get">. Obtaining the Datasets</a>
+            <li><a href="#get">3. Obtaining the Datasets</a>
         </ul>
 
         <section class="intro">
 
             <div class="gdlinebox">
                 <h4><a name="details">1. Datasets Descriptions</a></h4>
-                <br>
-                The dataset used for TREC 2017 Dynamic Domain Track is <cite> New York Times Annotated Corpus</cite>.
-                The dataset was published in 2008 containing over 1.8 million articles in New York Times
-                from January 1, 1987 to June 19, 2007.
-                The dataset is formatted in <a href="https://iptc.org/standards/nitf/">News Industry Text Format (NITF)</a>. 
-                More details can be found in the following sections.
-	<!--There are two datasets for the TREC 2017 Dynamic Domain Track: Ebola Dataset and Polar Dataset.
-	Basic statistics of these datasets are shown in the Table 1-1. These
-                datasets contains records in forms of web pages, scientific data, PDFs, and tweets. All the datasets are
-                formatted using the Common Crawl Architecture schema from the DARPA MEMEX project, and stored as
-                sequences of CBOR objects. Detailed Description, as well as some links to sample code, of each dataset
-                is given in the following subsections.-->
-                <br>
+                <br/>
+                The dataset used for TREC 2017 Dynamic Domain Track consists of two domains: Ebola and New York Times.
+                <br/>
+                <br/>
+                The Ebola dataset is crawled by Juliana Friere (NYU, juliana dot freire at nyu dot edu), Kien Pham(NYU),
+                Peter Landwehr (Giant Oak, peter dot landwehr at giantoak dot com) and Lewis McGibbney (JPL, Lewis dot J
+                dot Mcgibbney at jpl dor nasa dot gov).
+                <br/>
+                <br/>
+                The Ebola dataset contains records related to the Ebola outbreak in Africa in 2014-2015.
+                The original dataset includes tweets relating to the outbreak, web pages from sites hosted in the
+                affected countries as well as PDF documents from websites such as World Health Organization,
+                Financial Tracking Service and The World Bank.
+                Such information resources are designed to provide information to citizens and aid workers on the ground.
+                <br/>
+                <br/>
+                The New York Times dataset is published by Evan Sandhaus in 2008 under LDC Catalog No.
+                <a href="https://catalog.ldc.upenn.edu/ldc2008t19">LDC2008T19</a>.
+                <br/>
+                <br/>
+                The New York Times dataset consists of articles published in New York Times from January 1, 1987
+                to June 19, 2007 with metadata provided by the New York Times Newsroom, the New York Times Indexing Service
+                and the online production staff at nytimes.com. Most articles are manually summarized and tagged by professional staffs.
+                The original form of this dataset is in
+                <a href="https://iptc.org/standards/nitf/">News Industry Text Format (NITF)</a>.
+                <br/>
+                <br/>
+                The details of these two datasets are shown in Table 1.
+                <br/>
 
-                <!--<table style="width:90%">
-                    <caption>Table 1-1 Datasets Statistics</caption>
+                <table style="width:90%">
+                    <caption>Table 1 Datasets Statistics</caption>
                     <tr>
                         <th>Datasets</th>
                         <th>Size of Data on Disk</th>
-                        <th>Number of Records</th>
+                        <th>Number of Documents</th>
                     </tr>
                     <tr>
                         <td>Ebola</td>
-                        <td>12.6 GB</td>
-                        <td>682,157</td>
+                        <td>9.5 GB</td>
+                        <td>194,481</td>
                     </tr>
                     <tr>
-                        <td>Polar</td>
-                        <td>158 GB</td>
-                        <td>1,741,530</td>
+                        <td>New York Times</td>
+                        <td>16 GB</td>
+                        <td>1,855,658</td>
                     </tr>
-                </table>-->
+                </table>
                 <!--<br>
                 <strong>1.1 Ebola Domain</strong><br>
                 <div class="gd_details">
@@ -200,12 +216,22 @@
             <div class="gdlinebox">
                 <h4><a name="format">2. Data format</a></h4>
                 <br>
-                The documents are stored in in <a href="https://iptc.org/standards/nitf/">News Industry Text Format (NITF) </a>
-                developed by the International Press Telecommunications Council,
-                an independent association of news agencies and publishers.
-                As an industry specification, NITF uses the eXtensible Markup Language to define the
-                content and structure of news articles. Here is a
-                <a href="https://catalog.ldc.upenn.edu/desc/addenda/LDC2008T19_large.jpg">sample</a> of the corpus.
+                All the released data will be in TRECTEXT format.
+                <pre>
+                    &lt;DOC&gt;
+                        &lt;DOCNO&gt;document_number&lt;/DOCNO&gt;
+                        &lt;TEXT&gt; original_content &lt;/TEXT&gt;
+                    &lt;/DOC&gt;
+                </pre>
+
+                The <code>document_number</code> is a globally unique id across all the datasets. The <code>original_content</code>
+                is the document content in the original format. That is, if the document is from Ebola dataset, then its
+                <code>original_content</code> is usually in html format (<a href="img/ebola_sample.png">sample</a>) ;
+                if the document is from New York Times dataset, then
+                its <code>original_content</code> is in <a href="https://iptc.org/standards/nitf/">NITF </a>
+                (<a href="https://catalog.ldc.upenn.edu/desc/addenda/LDC2008T19_large.jpg">sample</a>).
+
+
                <!-- The documents are stored in files that each contain a stream of <a href="http://cbor.io/">CBOR</a>
                 records that follow the CCA format above. CBOR is a variation of JSON that supports binary data and a
                 has more efficient encoding than text.
